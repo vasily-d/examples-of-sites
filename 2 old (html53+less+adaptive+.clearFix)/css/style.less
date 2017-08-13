@@ -11,14 +11,17 @@ div,nav,header,section,footer,aside,ul,li
 	clear: both;
 }
 
-@widthWrapper: 948px;
+img{max-width: 100%; height: auto;}
+
+@widthWrapper: 700px;
 @heightWrapper: 100%;//900px;
 
-body{background: linear-gradient(to top, grey, #111);}//background-color: grey;}
+body{background: linear-gradient(to top, grey, #111);}
 #wrapper
 {
 	//WRAPPER
-	height: @heightWrapper; max-width: @widthWrapper;
+	max-width: @widthWrapper;
+	height: @heightWrapper;
 	margin: 69px auto; background-color: black;
 	color: white; border: 7px solid grey; border-radius: 20px;
 	overflow: hidden;
@@ -55,6 +58,7 @@ body{background: linear-gradient(to top, grey, #111);}//background-color: grey;}
 			div:nth-child(2){float: left; margin: 10px;}
 			div:nth-child(3){float: left; margin: 10px;}
 			div:nth-child(4){float: left; margin: 10px;}
+
 			.form{
 				float: left; position: absolute; bottom: 10px; right: 10px;
 			
@@ -62,6 +66,7 @@ body{background: linear-gradient(to top, grey, #111);}//background-color: grey;}
 				input:last-child{width: 70px; height: 30px;}
 			}
 		}
+
 		aside{
 			height: inherit; overflow: hidden;
 			border-left: 1px solid white;

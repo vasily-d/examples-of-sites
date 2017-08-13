@@ -1,0 +1,31 @@
+// body *{outline: 1px solid black;}
+
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body{
+	padding: 0; margin: 0;
+	background: url(../img/bg.jpg);
+	color: #5e5e5e;
+
+	font-size: 13px;
+	line-height: 1.4;
+	font-family: Arial, Verdana, Tahoma, sans-serif;
+
+	a{
+		text-decoration: none; color: #5e5e5e;
+		
+		&:hover{text-decoration: underline;}
+	}
+	img{max-width: 100%; height: auto;}
+	ul, p, h2, h1, h3{margin: 0; padding: 0;}
+}
+
+.margin-content-center{
+	max-width: 1200px;
+	min-width: 960px;
+	margin: 0 auto;
+}

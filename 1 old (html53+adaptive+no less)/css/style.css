@@ -1,6 +1,5 @@
 ﻿*{padding: 0; margin: 0;}
 /**{outline: 1px solid black;}*/
-.clear{clear:both;}
 
 #wrapper{max-width: 930px; height: 100%; background-color: #fefefe; margin: 16px auto;}
 
@@ -26,7 +25,7 @@ header .menu a{color: black; font-family: arial;
 header .menu a:hover{color:#cf3232; background-color: yellow;
 		border-top: 2px solid black;}
 
-/*убираем полностью меню*/
+/* hide menu */
 #menu2 {display: none;}
 
 /* SLIDER */
@@ -34,7 +33,7 @@ header .menu a:hover{color:#cf3232; background-color: yellow;
 
 /* ASIDE */
 aside{min-height: 465px; width: 158px; float: left;}
-aside .mtext{margin: 26px 0 0 0px; color: #575656;;}
+aside h2{margin: 26px 0 0 0px; color: #575656; font-size: 16px;}
 aside ul{list-style-type: none;}
 aside li{margin: 18px 10px 0 0px;}
 aside .ltext{margin-top: 24px;}
@@ -48,7 +47,7 @@ aside .ltext a:hover{background-color: yellow;}
 #content{min-height: 465px; overflow: hidden; color: #575656;}
 #content div{font-size: Georgia; font-size: 12px; line-height: 2em;}
 #content .one{text-indent: 16px;}
-#content h1{font-size: 18px; font-family: Georgia; margin: 25px 0;}
+#content h2{font-size: 18px; font-family: Georgia; margin: 25px 0;}
 
 /* FOOTER */
 footer{height: 87px; font-family: Georgia; font-size: 12px;
@@ -82,6 +81,7 @@ footer .f2 span{font-size: 20px;}
 	/*отключение меню и вкл меню внизу ранее отключенного*/
 
 	header .menu {display:none;}
+	aside {display:none;}
 	#menu2 {display: block;}
 	#menu2 ul{text-align: center; list-style-type: none;}
 	#menu2 li{display: inline; margin-right: 23px;}
