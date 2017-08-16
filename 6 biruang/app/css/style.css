@@ -1,0 +1,113 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  padding: 0;
+  margin: 0;
+  color: #7e7f84;
+  font-family: 'Roboto', sans-serif;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+p,
+h2,
+h3,
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  max-width: 1171px;
+  margin: 0 auto;
+}
+header .wrapper .header-top {
+  border-bottom: 1px solid #eeeeee;
+  padding: 30px 0;
+}
+header .wrapper .header-top .logo {
+  float: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  color: #67686d;
+}
+header .wrapper .header-top .contact-basket {
+  float: right;
+}
+header .wrapper .header-top .contact-basket p {
+  float: left;
+  margin-left: 25px;
+}
+header .wrapper .header-top .contact-basket p:first-child {
+  margin-left: 0;
+}
+header .wrapper .header-top .contact-basket p img {
+  margin-bottom: -3px;
+  margin-right: 7px;
+}
+header .wrapper .header-top .contact-basket .header-phone {
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 126px;
+}
+header .wrapper .header-top .contact-basket .header-basket {
+  font-size: 12px;
+  border: 1px solid #eee;
+  padding: 12px 27px 12px 20px;
+  margin-top: -12px;
+  min-width: 165px;
+}
+header .wrapper .header-top .contact-basket .header-basket a {
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #7e7f84;
+  text-decoration: none;
+  margin-left: 38px;
+}
+header .wrapper .header-top .contact-basket .header-basket a:hover {
+  color: #f45a40;
+}
+header .wrapper .header-bottom {
+  margin: 15px 0;
+}
+header .wrapper .header-bottom nav {
+  float: left;
+}
+header .wrapper .header-bottom nav ul {
+  list-style: none;
+  overflow: hidden;
+}
+header .wrapper .header-bottom nav ul li {
+  float: left;
+  margin-right: 36px;
+}
+header .wrapper .header-bottom nav ul li a {
+  color: #7e7f84;
+  font-size: 14px;
+  line-height: 1.42;
+  display: block;
+}
+header .wrapper .header-bottom nav ul li a:hover {
+  color: #f45a40;
+}
+header .wrapper .header-bottom .search-block {
+  float: left;
+}
+header .wrapper .header-bottom .search-block .search-btn {
+  float: left;
+  margin: 2px 5px 0 0;
+}
+header .wrapper .header-bottom .search-block .search {
+  float: left;
+  font-size: 14px;
+  line-height: 1.42;
+  outline: 0;
+  border: 0;
+}
