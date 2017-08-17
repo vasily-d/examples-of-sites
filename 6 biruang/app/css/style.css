@@ -1,3 +1,6 @@
+* {
+  outline: 1px solid black;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -205,4 +208,29 @@ a {
 .wrapper .second-section .second-section-bottom .second-section-bottom-article article .price-plus span + span {
   float: right;
   margin-top: 16px;
+}
+.wrapper .about {
+  margin-bottom: 28px;
+}
+.wrapper .about article {
+  float: left;
+  width: 60%;
+}
+.wrapper .about article h2 {
+  color: #67686d;
+  font-size: 22.65px;
+  margin-bottom: 46px;
+}
+.wrapper .about article p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+.wrapper .about article .last-p {
+  margin-bottom: 0;
+}
+.wrapper .about .map {
+  float: right;
+  widht: 35%;
+  margin-top: 25px;
 }
