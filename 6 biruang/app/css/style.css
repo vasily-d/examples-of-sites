@@ -1,3 +1,6 @@
+* {
+  outline: 1px solid black;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -27,43 +30,43 @@ a {
   max-width: 1171px;
   margin: 0 auto;
 }
-header .wrapper .header-top {
+.wrapper header .header-top {
   border-bottom: 1px solid #eeeeee;
   padding: 30px 0;
 }
-header .wrapper .header-top .logo {
+.wrapper header .header-top .logo {
   float: left;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   color: #67686d;
 }
-header .wrapper .header-top .contact-basket {
+.wrapper header .header-top .contact-basket {
   float: right;
 }
-header .wrapper .header-top .contact-basket p {
+.wrapper header .header-top .contact-basket p {
   float: left;
   margin-left: 25px;
 }
-header .wrapper .header-top .contact-basket p:first-child {
+.wrapper header .header-top .contact-basket p:first-child {
   margin-left: 0;
 }
-header .wrapper .header-top .contact-basket p img {
+.wrapper header .header-top .contact-basket p img {
   margin-bottom: -3px;
   margin-right: 7px;
 }
-header .wrapper .header-top .contact-basket .header-phone {
+.wrapper header .header-top .contact-basket .header-phone {
   font-size: 12px;
   font-weight: bold;
   min-width: 126px;
 }
-header .wrapper .header-top .contact-basket .header-basket {
+.wrapper header .header-top .contact-basket .header-basket {
   font-size: 12px;
   border: 1px solid #eee;
   padding: 12px 27px 12px 20px;
   margin-top: -12px;
   min-width: 165px;
 }
-header .wrapper .header-top .contact-basket .header-basket a {
+.wrapper header .header-top .contact-basket .header-basket a {
   font-weight: bold;
   font-size: 12px;
   text-transform: uppercase;
@@ -71,43 +74,78 @@ header .wrapper .header-top .contact-basket .header-basket a {
   text-decoration: none;
   margin-left: 38px;
 }
-header .wrapper .header-top .contact-basket .header-basket a:hover {
+.wrapper header .header-top .contact-basket .header-basket a:hover {
   color: #f45a40;
 }
-header .wrapper .header-bottom {
+.wrapper header .header-bottom {
   margin: 15px 0;
 }
-header .wrapper .header-bottom nav {
+.wrapper header .header-bottom nav {
   float: left;
 }
-header .wrapper .header-bottom nav ul {
+.wrapper header .header-bottom nav ul {
   list-style: none;
   overflow: hidden;
 }
-header .wrapper .header-bottom nav ul li {
+.wrapper header .header-bottom nav ul li {
   float: left;
   margin-right: 36px;
 }
-header .wrapper .header-bottom nav ul li a {
+.wrapper header .header-bottom nav ul li a {
   color: #7e7f84;
   font-size: 14px;
   line-height: 1.42;
   display: block;
 }
-header .wrapper .header-bottom nav ul li a:hover {
+.wrapper header .header-bottom nav ul li a:hover {
   color: #f45a40;
 }
-header .wrapper .header-bottom .search-block {
+.wrapper header .header-bottom .search-block {
   float: left;
 }
-header .wrapper .header-bottom .search-block .search-btn {
+.wrapper header .header-bottom .search-block .search-btn {
   float: left;
   margin: 2px 5px 0 0;
 }
-header .wrapper .header-bottom .search-block .search {
+.wrapper header .header-bottom .search-block .search {
   float: left;
   font-size: 14px;
   line-height: 1.42;
   outline: 0;
   border: 0;
+}
+.wrapper .slider {
+  font-size: 0;
+  margin-bottom: 52px;
+}
+.wrapper .first-section {
+  margin-bottom: 65px;
+}
+.wrapper .first-section article {
+  float: left;
+  margin-left: 2.56%;
+  width: 31.6%;
+}
+.wrapper .first-section article:first-child {
+  margin-left: 0;
+}
+.wrapper .first-section article img {
+  display: block;
+  margin-bottom: -2px;
+}
+.wrapper .first-section article h2 {
+  margin: 25px 0;
+}
+.wrapper .first-section article h2 a {
+  color: #f45a40;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 22.65px;
+}
+.wrapper .first-section article h2 a:hover {
+  text-decoration: underline;
+}
+.wrapper .first-section article p {
+  color: #7e7f84;
+  font-size: 14px;
+  line-height: 1.5;
 }
