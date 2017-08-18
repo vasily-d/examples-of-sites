@@ -19,7 +19,8 @@ body {
 p,
 h2,
 h3,
-ul {
+ul,
+input {
   padding: 0;
   margin: 0;
 }
@@ -245,7 +246,7 @@ a {
   font-size: 22.65px;
   font-weight: normal;
   float: left;
-  margin-top: 8px;
+  margin-top: 9px;
 }
 .subscribe .wrapper .subscribe-form {
   float: right;
@@ -272,5 +273,67 @@ a {
 }
 footer {
   background: #2a2d34;
-  min-height: 355px;
+  padding: 46px 0;
+}
+footer h2 {
+  color: #fff;
+  font-size: 22.65px;
+  margin-bottom: 28px;
+  font-weight: normal;
+}
+footer p,
+footer a {
+  font-size: 14px;
+  line-height: 1.5;
+}
+footer p {
+  margin-bottom: 34px;
+}
+footer p:last-child {
+  margin-bottom: 0;
+}
+footer a {
+  color: #fff;
+}
+footer .wrapper article {
+  float: left;
+  width: 23%;
+  margin-left: 2.6666%;
+}
+footer .wrapper article:first-child {
+  margin-left: 0;
+}
+footer .wrapper article .ftr-third ul {
+  float: left;
+  margin-bottom: 0;
+  width: 47%;
+  margin-right: 3%;
+  list-style: none;
+}
+footer .wrapper article .ftr-third ul li {
+  margin-top: 10px;
+}
+footer .wrapper article .ftr-third ul li:first-child {
+  margin-top: 0;
+}
+footer .wrapper article .ftr-third ul li a {
+  color: #6d6f74;
+}
+footer .wrapper article .ftr-fourth .ftrmail,
+footer .wrapper article .ftr-fourth .ftrtext {
+  width: 270px;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+footer .wrapper article .ftr-fourth .ftrtext {
+  margin: 21px 0;
+}
+footer .wrapper article .ftr-fourth .ftrsubmit {
+  background: #f45a40;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
 }

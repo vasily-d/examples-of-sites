@@ -251,7 +251,7 @@
 			font-size: 22.65px;
 			font-weight: normal;
 			float: left;
-			margin-top: 8px;
+			margin-top: 9px;
 		}
 
 		.subscribe-form{
@@ -278,13 +278,75 @@
 				padding: 14px 22px;
 				margin-left: 22px;
 			}
-
 		}
 	}
 }
 
 footer{
 	background: #2a2d34;
-	min-height: 355px;
+	// min-height: 355px;
+	padding: 46px 0;
 
+	h2{
+		color: #fff;
+		font-size: 22.65px;
+		margin-bottom: 28px;
+		font-weight: normal;
+	}
+
+	p,a{
+		font-size: 14px;
+		line-height: 1.5;
+	}
+
+	p{
+		margin-bottom: 34px;
+		&:last-child{margin-bottom: 0;}
+	}
+	a{color: #fff;}
+
+	.wrapper{
+		article{
+			float: left;
+			width:23%;
+			margin-left:2.6666%;
+
+			&:first-child{margin-left: 0;}
+
+			.ftr-third{
+				ul{
+					float: left;
+					margin-bottom: 0;
+					width:47%;
+					margin-right:3%;
+					list-style: none;
+
+					li{
+						margin-top: 10px;
+
+						&:first-child{margin-top: 0;}
+
+						a{color: #6d6f74;}
+					}
+				}
+			}
+			.ftr-fourth{
+				.ftrmail, .ftrtext{
+					width: 270px;
+					border: none;
+					outline: none;
+					font-size: 12px;
+					padding: 12px 20px;
+					box-sizing: border-box;
+				}
+				.ftrtext{margin: 21px 0;}
+				.ftrsubmit{
+					background: #f45a40;
+					color: #fff;
+					border: none;
+					padding: 12px 20px;
+				}
+			}
+		}
+	}
 }

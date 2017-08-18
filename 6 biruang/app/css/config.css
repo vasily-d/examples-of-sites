@@ -19,7 +19,8 @@ body {
 p,
 h2,
 h3,
-ul {
+ul,
+input {
   padding: 0;
   margin: 0;
 }
