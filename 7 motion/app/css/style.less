@@ -1,1 +1,94 @@
 @import "config.less";
+
+header{
+	background: #f56262;
+	// min-height: 110px;
+
+	.wrapper{
+		.logo{
+			margin: 26px 0;
+			float: left;
+			color: #fff;
+			width: 170px;
+
+			.log-top{
+				overflow: hidden;
+
+				img{float: left; margin-right: 10px; width: 48px; height: 36px;}
+
+				h1{
+					float: right;
+					font-size: 35px;
+					margin-top: 3px;
+
+					a{color: #fff;}
+				}
+			}
+
+			p{
+				font-size: 17px;
+				line-height: 1.4;
+			}
+		}
+
+		nav{
+			float: right;
+			margin: 40px 0;
+
+			ul{
+				list-style: none;
+
+				li{
+					float: left;
+					margin-left: 22px;
+
+					&:first-child{margin-left: 0;}
+
+					a{
+						padding: 12px 10px 9px 10px;
+						display: block;
+						color: #fff;
+						font-size: 16px;
+						font-weight: bold;
+						border-radius: 4px;
+						
+						&:hover{
+							background: #232324;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+footer{
+	background: #232324;
+
+	.wrapper{
+		.ftr-left{
+			float: left;
+			margin: 19px 0;
+			font-size: 18px;
+			line-height: 1.7;
+			color: #fff;
+
+			span{
+				color: #eb4f4e;
+			}
+		}
+		.ftr-right{
+			float: right;
+			font-size: 0;
+			width: 100px;
+
+			margin-top: 20px;
+
+			img{
+				margin-left: 8px;
+				
+				&:first-child{margin-left: 0;}
+			}
+		}
+	}
+}
