@@ -87,6 +87,38 @@ header .wrapper nav ul li a {
 header .wrapper nav ul li a:hover {
   background: #232324;
 }
+section.fourth {
+  background: #eb4f4e;
+}
+section.fourth .wrapper {
+  padding: 50px 0 32px 0;
+  text-align: center;
+}
+section.fourth .wrapper h2 {
+  margin-bottom: 26px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 0.6;
+}
+section.fourth .wrapper h2 + p {
+  margin-bottom: 33px;
+  color: #232324;
+  font-size: 20px;
+}
+section.fourth .wrapper > div {
+  margin-bottom: 30px;
+}
+section.fourth .wrapper > div img {
+  margin-bottom: -3px;
+}
+section.fourth .wrapper div + p {
+  color: #1f1f20;
+  font-size: 21px;
+  line-height: 1.7;
+}
+section.fourth .wrapper div + p span {
+  color: #fff;
+}
 footer {
   background: #232324;
 }
