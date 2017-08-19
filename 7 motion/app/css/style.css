@@ -14,6 +14,7 @@ ul {
   margin: 0;
 }
 body {
+  position: relative;
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,12 +29,22 @@ body a {
 }
 .wrapper {
   max-width: 970px;
-  padding: 0 10px 0 10px;
-  box-sizing: border-box;
   margin: 0 auto;
+}
+.flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 121px;
+  background: url(../img/flag.png);
 }
 header {
   background: #f56262;
+}
+header .wrapper {
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
 }
 header .wrapper .logo {
   margin: 26px 0;
@@ -87,11 +98,27 @@ header .wrapper nav ul li a {
 header .wrapper nav ul li a:hover {
   background: #232324;
 }
+section.first {
+  background: #232324;
+}
+section.first .wrapper {
+  text-align: center;
+  padding: 52px 10px 28px 10px;
+  box-sizing: border-box;
+}
+section.first .wrapper > h2 {
+  font-size: 40px;
+  color: #fff;
+}
+section.first .wrapper .first-bottom {
+  float: left;
+}
 section.fourth {
   background: #eb4f4e;
 }
 section.fourth .wrapper {
-  padding: 50px 0 32px 0;
+  padding: 50px 10px 32px 10px;
+  box-sizing: border-box;
   text-align: center;
 }
 section.fourth .wrapper h2 {
@@ -121,6 +148,10 @@ section.fourth .wrapper div + p span {
 }
 footer {
   background: #232324;
+}
+footer .wrapper {
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
 }
 footer .wrapper .ftr-left {
   float: left;

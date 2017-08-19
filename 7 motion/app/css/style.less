@@ -1,10 +1,23 @@
 @import "config.less";
 
+.flag{
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: 64px;
+	height: 121px;
+	background: url(../img/flag.png);
+}
+
 header{
 	background: #f56262;
 	// min-height: 110px;
 
 	.wrapper{
+		padding: 0 10px 0 10px;
+		box-sizing: border-box;
+
 		.logo{
 			margin: 26px 0;
 			float: left;
@@ -68,7 +81,39 @@ header{
 }
 
 section{
+	&.first{
+		background: #232324;
 
+		.wrapper{
+			text-align: center;
+			padding: 52px 10px 28px 10px;
+			box-sizing: border-box;
+
+			>h2{
+				font-size: 40px;
+				color: #fff;
+
+
+
+
+
+
+
+
+
+
+				
+			}
+			>p{
+
+			}
+
+			.first-bottom{
+				float: left;
+
+			}
+		}
+	}
 
 
 
@@ -76,7 +121,8 @@ section{
 		background: #eb4f4e;
 
 		.wrapper{
-			padding: 50px 0 32px 0;
+			padding: 50px 10px 32px 10px;
+			box-sizing: border-box;
 			text-align: center;
 
 			h2{
@@ -113,6 +159,9 @@ footer{
 	background: #232324;
 
 	.wrapper{
+		padding: 0 10px 0 10px;
+		box-sizing: border-box;
+
 		.ftr-left{
 			float: left;
 			margin: 19px 0;
