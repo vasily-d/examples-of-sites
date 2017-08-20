@@ -12,10 +12,10 @@ p,
 ul {
   padding: 0;
   margin: 0;
-  line-height: 1;
 }
 body {
   position: relative;
+  line-height: 1;
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -137,6 +137,61 @@ section.first .wrapper .first-bottom article p {
   color: #e74c3c;
   font-size: 18px;
   line-height: 1.16;
+}
+section.second {
+  background: #6cc372;
+}
+section.second .wrapper {
+  padding: 52px 10px 26px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+section.second .wrapper h2 {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 26px;
+}
+section.second .wrapper p {
+  font-size: 20px;
+  color: #232324;
+  margin-bottom: 41px;
+}
+section.second .wrapper .second-bottom {
+  background: #fff;
+  width: 23.7%;
+  float: left;
+  margin-right: 1.7%;
+  border-radius: 5px;
+  min-height: 403px;
+  padding: 0 12px 12px 12px;
+  box-sizing: border-box;
+}
+section.second .wrapper .second-bottom.last {
+  margin-right: 0;
+}
+section.second .wrapper .second-bottom img {
+  border: 9px solid #6cc372;
+  border-radius: 50%;
+  margin: 25px 0 27px 0;
+}
+section.second .wrapper .second-bottom h3 {
+  font-size: 25px;
+  color: #6cc372;
+  margin-bottom: 23px;
+}
+section.second .wrapper .second-bottom p {
+  font-size: 18px;
+  color: #e74c3c;
+  margin-bottom: 26px;
+}
+section.second .wrapper .second-bottom .btn {
+  background: url(../img/twitter2.png) no-repeat 9px #6cc372;
+}
+section.second .wrapper .second-bottom .btn a {
+  color: #fff;
+  font-size: 25px;
+  display: block;
+  padding: 18px 0 12px 0;
 }
 section.fourth {
   background: #eb4f4e;
