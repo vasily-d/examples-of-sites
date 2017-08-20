@@ -255,3 +255,33 @@ footer .wrapper .ftr-right img {
 footer .wrapper .ftr-right img:first-child {
   margin-left: 0;
 }
+.map {
+  position: relative;
+}
+.map div + div {
+  width: 617px;
+  background: #232324;
+  background: rgba(35, 35, 36, 0.9);
+  border-radius: 5px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -308px;
+  text-align: center;
+}
+.map div + div h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 21px;
+  margin-bottom: 34px;
+}
+.map div + div p.first {
+  color: #eb4f4e;
+  font-size: 20px;
+  margin-bottom: 34px;
+}
+.map div + div p + p {
+  color: #eb4f4e;
+  font-size: 20px;
+  margin-bottom: 26px;
+}
