@@ -12,6 +12,7 @@ p,
 ul {
   padding: 0;
   margin: 0;
+  line-height: 1;
 }
 body {
   position: relative;
@@ -50,10 +51,11 @@ header .wrapper .logo {
   margin: 26px 0;
   float: left;
   color: #fff;
-  width: 170px;
+  min-width: 170px;
 }
 header .wrapper .logo .log-top {
   overflow: hidden;
+  margin-bottom: 15px;
 }
 header .wrapper .logo .log-top img {
   float: left;
@@ -109,9 +111,32 @@ section.first .wrapper {
 section.first .wrapper > h2 {
   font-size: 40px;
   color: #fff;
+  margin-bottom: 26px;
+  line-height: 1;
+}
+section.first .wrapper > p {
+  margin-bottom: 42px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #d94948;
 }
 section.first .wrapper .first-bottom {
   float: left;
+  width: 33.3333%;
+}
+section.first .wrapper .first-bottom img {
+  margin-bottom: -2px;
+}
+section.first .wrapper .first-bottom article h3 {
+  margin: 26px 0 20px 0;
+  color: #fff;
+  font-size: 30px;
+  line-height: 0.8;
+}
+section.first .wrapper .first-bottom article p {
+  color: #e74c3c;
+  font-size: 18px;
+  line-height: 1.16;
 }
 section.fourth {
   background: #eb4f4e;
