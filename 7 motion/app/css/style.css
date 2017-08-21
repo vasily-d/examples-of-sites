@@ -100,6 +100,15 @@ header .wrapper nav ul li a {
 header .wrapper nav ul li a:hover {
   background: #232324;
 }
+.unslider {
+  background: grey;
+}
+.unslider .unslider-nav {
+  max-width: 970px;
+  position: relative;
+  margin: 0 auto;
+  top: -40px;
+}
 section.first {
   background: #232324;
 }
@@ -338,10 +347,10 @@ footer .wrapper .ftr-right {
   width: 100px;
   margin-top: 20px;
 }
-footer .wrapper .ftr-right img {
+footer .wrapper .ftr-right a {
   margin-left: 8px;
 }
-footer .wrapper .ftr-right img:first-child {
+footer .wrapper .ftr-right a:first-child {
   margin-left: 0;
 }
 .map {

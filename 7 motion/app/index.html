@@ -9,6 +9,9 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="stylesheet" href="css/unslider.css">
+	<link rel="stylesheet" href="css/unslider-dots.css">
 </head>
 
 <body>
@@ -37,10 +40,26 @@
 		</div>
 	</header>
 
-	<div class="slider">
-		slider
+	<div class="slider wrapper">
+		<!-- 
+			установка слайдера:
+			-подключаем css
+			-подключаем <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+			и js и пишем небольшой скрипт перед </body>
+			-в js прописываем наш класс под слайдер
+			-создаем список в классе нашего слайдера там где стоит наш слайдер
+			- стилизуем кнопки через уже определенный класс
+				.unslider-nav{
+					max-width:1170px; margin:0 auto; position:relative; top:-40px;
+				}
+			- надписи делаем через позиционирования в li
+		-->
 
-		
+		<ul>
+			<li><img src="img/slider.png" alt="slider"></li>
+			<li><img src="img/slider.png" alt="slider"></li>
+			<li><img src="img/slider.png" alt="slider"></li>
+		</ul>
 	</div>
 	
 	<section class="first">
@@ -181,9 +200,9 @@
 		<div class="wrapper clearfix">
 			<p class="ftr-left">&copy; 2013 <span>Motion Template</span>. Design by Begha</p>
 			<div class="ftr-right">
-				<img src="img/fb.png" alt="fb">
-				<img src="img/twitter.png" alt="twitter">
-				<img src="img/rss.png" alt="rss">
+				<a href="https://facebook.com" target="_blank"><img src="img/fb.png" alt="fb"></a>
+				<a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
+				<a href="#" target="_blank"><img src="img/rss.png" alt="rss"></a>
 			</div>
 		</div>
 	</footer>
@@ -198,5 +217,19 @@
 			<p>Your address goes here</p>
 		</div>
 	</div>
+	
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<script src="js/unslider-min.js"></script>
+	<script>
+			jQuery(document).ready(function($) {
+				$('.slider').unslider({
+					autoplay:true,
+					arrows:false
+				});
+			});
+	</script>
 </body>
 </html>
