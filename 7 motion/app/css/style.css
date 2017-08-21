@@ -29,7 +29,7 @@ body a {
   clear: both;
 }
 .wrapper {
-  max-width: 970px;
+  width: 970px;
   margin: 0 auto;
 }
 .flag {
