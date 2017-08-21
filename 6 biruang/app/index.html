@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+
 	<link rel="stylesheet" href="css/unslider.css">
 	<link rel="stylesheet" href="css/unslider-dots.css">
 
@@ -53,8 +54,30 @@
 			</div>
 		</header>
 
-		<div class="slider">
-			<img src="img/slider.jpg" alt="slider">
+		<!-- 
+			установка слайдера:
+			-подключаем css
+			-подключаем <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+			и js и пишем небольшой скрипт перед </body>
+			-в js прописываем наш класс под слайдер
+			-создаем список в классе нашего слайдера там где стоит наш слайдер
+			- стилизуем кнопки через уже определенный класс
+				.unslider-nav{
+					max-width:1170px; margin:0 auto; position:relative; top:-40px;
+				}
+			- надписи делаем через позиционирования в li
+		-->
+
+		<div class="slider wrapper">
+			<ul>
+				<li>
+					<img src="img/slider.jpg" alt="slider">	
+				</li>
+				<li>
+					<img src="img/slider.jpg" alt="slider">	
+				</li>
+
+			</ul>
 		</div>
 
 		<section class="first-section clearfix">
@@ -216,5 +239,16 @@
 			</article>
 		</div>
 	</footer>
+	
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/unslider-min.js"></script>
+	<script>
+			jQuery(document).ready(function($) {
+				$('.slider').unslider({
+					autoplay:true,
+					arrows:false
+				});
+			});
+	</script>
 </body>
 </html>

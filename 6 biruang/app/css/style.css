@@ -25,7 +25,7 @@ a {
   text-decoration: none;
 }
 .wrapper {
-  max-width: 1171px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 .wrapper header .header-top {
@@ -113,11 +113,11 @@ a {
   outline: 0;
   border: 0;
 }
-.wrapper .slider {
-  margin-bottom: 52px;
-}
-.wrapper .slider img {
-  display: block;
+.wrapper .unslider-nav {
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+  top: -40px;
 }
 .wrapper .first-section {
   margin-bottom: 65px;
