@@ -9,6 +9,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 body img {
   max-width: 100%;
@@ -18,7 +19,8 @@ body h1,
 body h2,
 body h3,
 body p,
-body ul {
+body ul,
+body input {
   margin: 0;
   padding: 0;
 }
@@ -41,7 +43,6 @@ body a {
   left: 40%;
   color: #fff;
   max-width: 640px;
-  font-family: 'Lato', sans-serif;
 }
 .slider ul li .slide-text h2 {
   font-size: 48px;
@@ -114,7 +115,6 @@ body a {
   padding-top: 58px;
   margin-bottom: 57px;
   text-align: center;
-  font-family: 'Lato', sans-serif;
 }
 .first-section .wrapper > h2 {
   color: #414042;
@@ -152,7 +152,6 @@ body a {
   line-height: 1.7;
 }
 .second-section .wrapper {
-  font-family: 'Lato', sans-serif;
   text-align: center;
   margin-bottom: 111px;
 }
@@ -182,4 +181,62 @@ body a {
   color: #838383;
   font-size: 13px;
   line-height: 1.7;
+}
+.map {
+  position: relative;
+  font-size: 0;
+}
+.map .popup-contact {
+  position: absolute;
+  top: 108px;
+  left: 50%;
+  margin-left: -117px;
+  width: 334px;
+  background: #4bcaff;
+  background: rgba(75, 202, 255, 0.8);
+  border: 1px solid #96afd6;
+  border-radius: 5px;
+  text-align: center;
+}
+.map .popup-contact h2 {
+  color: #fff;
+  font-size: 36px;
+  margin: 36px 0 29px 0;
+}
+.map .popup-contact .ftr-form form input,
+.map .popup-contact .ftr-form form textarea {
+  width: 270px;
+  background: #fff;
+  border: none;
+  outline: none;
+  font-family: Arial sans-serif;
+  font-size: 14px;
+  padding: 14px 10px 12px 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+}
+.map .popup-contact .ftr-form form input::placeholder,
+.map .popup-contact .ftr-form form textarea::placeholder {
+  text-align: center;
+  color: #d3d3d3;
+}
+.map .popup-contact .ftr-form form textarea + input {
+  background: #414042;
+  color: #72b3cc;
+  box-shadow: 0 4px #313032;
+  font-size: 15px;
+  cursor: pointer;
+}
+.map .popup-contact .ftr-form form textarea + input:hover {
+  background: #114042;
+}
+footer {
+  background: #414042;
+}
+footer .wrapper p {
+  color: #707071;
+  font-size: 12px;
+  padding: 53px 0 51px 0;
 }
