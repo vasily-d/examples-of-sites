@@ -1,5 +1,6 @@
 @import "config.less";
 
+/* SLIDER */
 .slider{
 	border-bottom: 4px solid #4bcaff;
 
@@ -43,6 +44,7 @@
 		}
 	}
 
+	/* HEADER */
 	header{
 		position: absolute;
 		top: 0;
@@ -87,6 +89,7 @@
 	max-width: 1168px; margin: -18px auto 0 auto; position: relative; top: -15px;
 }
 
+/* FIRST SECTION */
 .first-section{
 	background: #f9f9f9;
 
@@ -135,6 +138,7 @@
 	}
 }
 
+/* SECOND SECTION */
 .second-section{
 	.wrapper{
 		text-align: center;
@@ -172,6 +176,49 @@
 	}
 }
 
+/* VIDEO SECTION */
+.video-section{
+	background: grey;
+	.wrapper{
+		iframe{margin: auto; display: block;}
+	}
+}
+
+/* DOWNLOAD APP */
+.download-app{
+	background: #414042;
+
+	.wrapper{
+		text-align: center;
+		overflow: hidden;
+
+		h2{
+			color: #fff;
+			font-size: 55px;
+			margin: 48px 0 37px 0;
+			font-weight: 600;
+		}
+
+		p{
+			margin-bottom: 30px;
+
+			a{
+				display: inline-block;
+				padding: 24px 32px;
+				background: #4bcaff;
+				border-radius: 5px;
+				font-size: 15px;
+				color: #414042;
+				font-weight: 600;
+				box-shadow: 0 5px #277697;
+
+				&:hover{color: #fff;}
+			}
+		}
+	}
+}
+
+/* MAP */
 .map{
 	position: relative;
 	font-size: 0;
@@ -180,7 +227,7 @@
 		position: absolute;
 		top: 108px;
 		left: 50%;
-		margin-left: -117px;
+		margin-left: -167px;
 
 		width: 334px;
 		background: #4bcaff;
@@ -229,6 +276,8 @@
 	}
 }
 
+
+/* FOOTER */
 footer{
 	background: #414042;
 
