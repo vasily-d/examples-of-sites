@@ -108,5 +108,46 @@ body a {
   top: -15px;
 }
 .first-section {
+  background: #f9f9f9;
+}
+.first-section .wrapper {
   padding-top: 58px;
+  margin-bottom: 57px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+.first-section .wrapper > h2 {
+  color: #414042;
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.first-section .wrapper > h3 {
+  margin-bottom: 72px;
+  color: #414042;
+  font-size: 20px;
+}
+.first-section .wrapper div article {
+  width: 30%;
+  margin-left: 5%;
+  float: left;
+}
+.first-section .wrapper div article:first-child {
+  margin-left: 0;
+}
+.first-section .wrapper div article img {
+  margin-bottom: -2px;
+  margin-bottom: 30px;
+}
+.first-section .wrapper div article h2 {
+  margin-bottom: 30px;
+  color: #414042;
+  font-size: 15px;
+  font-weight: 600;
+}
+.first-section .wrapper div article p {
+  margin-bottom: 117px;
+  color: #838383;
+  font-size: 13px;
+  line-height: 1.7;
 }
