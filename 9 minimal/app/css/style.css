@@ -27,50 +27,106 @@ body input {
 body a {
   text-decoration: none;
 }
-header .wrap {
+.wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+.wrapper header .wrap {
   width: 973px;
   margin: auto;
 }
-header .wrap .logo {
+.wrapper header .wrap .logo {
   float: left;
   margin: 23px 0 16px 0;
 }
-header .wrap .logo img {
+.wrapper header .wrap .logo img {
   float: left;
 }
-header .wrap .logo p {
+.wrapper header .wrap .logo p {
   float: left;
   margin-left: 8px;
   margin-top: 5px;
   font-size: 43px;
   color: #038c8c;
 }
-header .wrap nav {
+.wrapper header .wrap nav {
   float: right;
 }
-header .wrap nav ul {
+.wrapper header .wrap nav ul {
   list-style: none;
 }
-header .wrap nav ul li {
+.wrapper header .wrap nav ul li {
   float: left;
   padding: 0 17px;
   border-left: 1px solid #8e8e8e;
   border-right: 1px solid #b0b0b0;
   margin: 36px 0 41px 0;
 }
-header .wrap nav ul li:first-child {
+.wrapper header .wrap nav ul li:first-child {
   border: none;
   padding-left: 0;
 }
-header .wrap nav ul li.last-li {
+.wrapper header .wrap nav ul li.last-li {
   border: none;
   padding-right: 0;
 }
-header .wrap nav ul li a {
+.wrapper header .wrap nav ul li a {
   display: block;
   color: #565656;
   font-size: 19px;
 }
-header .wrap nav ul li a:hover {
+.wrapper header .wrap nav ul li a:hover {
   color: #aaa;
+}
+.wrapper .slider {
+  position: relative;
+  background: url(../img/slider.png), linear-gradient(to right, #00727c, #0ec3ae);
+  max-width: 1280px;
+  height: 539px;
+  margin: auto;
+}
+.wrapper .slider .basket {
+  position: absolute;
+  top: 100px;
+  left: 60%;
+  width: 376px;
+}
+.wrapper .slider .basket > div:first-child {
+  width: 160px;
+  margin-bottom: 58px;
+}
+.wrapper .slider .basket > div:first-child img {
+  float: left;
+}
+.wrapper .slider .basket > div:first-child p {
+  float: right;
+  font-size: 21px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 94px;
+}
+.wrapper .slider .basket > div + div {
+  margin-bottom: 34px;
+}
+.wrapper .slider .basket > div + div h2 {
+  font-size: 39px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.wrapper .slider .basket > div + div p {
+  font-size: 17px;
+  line-height: 2;
+  color: #fff;
+  margin-bottom: 34px;
+}
+.wrapper .slider .basket a {
+  display: block;
+  width: 170px;
+  height: 45px;
+  background: url(../img/basket.jpg) 0 0 no-repeat, #54d3c3;
+  padding: 10px 0 10px 70px;
+  box-sizing: border-box;
+  font-size: 21px;
+  color: #fff;
 }
