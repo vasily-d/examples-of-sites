@@ -278,6 +278,35 @@ footer {
 }
 footer .wrapper p {
   color: #707071;
-  font-size: 12px;
+  font-size: 14px;
   padding: 53px 0 51px 0;
+}
+@media screen and (max-width: 1080px) {
+  .slider ul li .slide-text p {
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  .slider ul li .slide-text .download-btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 615px) {
+  .slider ul li .slide-text h2 {
+    font-size: 25px;
+  }
+  .slider header .wrapper .logo {
+    display: none;
+  }
+  .slider header .wrapper nav ul {
+    margin: 10px 0 47px 0;
+  }
+  .slider header .wrapper nav {
+    float: left;
+  }
+}
+@media screen and (max-width: 580px) {
+  .video-section .wrapper iframe {
+    width: 100%;
+  }
 }
