@@ -1,6 +1,3 @@
-* {
-  outline: 1px solid black;
-}
 .clearfix:after {
   content: "";
   display: table;
@@ -28,11 +25,11 @@ body a {
   text-decoration: none;
 }
 .wrapper {
-  width: 1280px;
+  max-width: 1280px;
   margin: auto;
 }
 .wrapper header .wrap {
-  width: 973px;
+  max-width: 973px;
   margin: auto;
 }
 .wrapper header .wrap .logo {
@@ -241,4 +238,39 @@ body a {
   color: #989898;
   line-height: 1.5;
   padding: 44px 0;
+}
+@media screen and (max-width: 1300px) {
+  .wrapper .second .right {
+    display: none;
+  }
+  .wrapper .second .left {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper .second .left span {
+    margin-left: 0;
+  }
+  .wrapper .second .left p {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1295px) {
+  .wrapper .middle-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1126px) {
+  .wrapper .first .basket {
+    display: none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .wrapper .slider .basket {
+    display: none;
+  }
+}
+@media screen and (max-width: 910px) {
+  .wrapper {
+    width: 910px;
+  }
 }

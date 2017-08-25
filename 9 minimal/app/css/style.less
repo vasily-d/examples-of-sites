@@ -1,14 +1,14 @@
 @import "config.less";
 
 .wrapper{
-	width: 1280px;
+	max-width: 1280px;
 	margin: auto;
 }
 
 .wrapper{
 	header{
 		.wrap{
-			width: 973px;
+			max-width: 973px;
 			margin: auto;
 
 			.logo{
@@ -250,4 +250,33 @@
 			padding: 44px 0;
 		}
 	}
+}
+
+
+
+@media screen and (max-width: 1300px){
+	.wrapper .second .right{display: none;}
+	.wrapper .second .left{
+		width: 100%;
+		text-align: center;
+
+		span{margin-left: 0;}
+		p{margin-left: 0;}
+	}
+}
+
+@media screen and (max-width: 1295px){
+	.wrapper .middle-menu{display: none;}
+}
+
+@media screen and (max-width: 1126px){
+	.wrapper .first .basket{display: none;}
+}
+
+@media screen and (max-width: 960px){
+	.wrapper .slider .basket{display: none;}
+}
+
+@media screen and (max-width: 910px){
+	.wrapper{width: 910px;}
 }
