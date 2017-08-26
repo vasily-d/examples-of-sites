@@ -9,6 +9,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 body img {
   max-width: 100%;
@@ -22,4 +23,7 @@ body ul,
 body input {
   margin: 0;
   padding: 0;
+}
+body a {
+  text-decoration: none;
 }
