@@ -9,6 +9,7 @@
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 body img {
   max-width: 100%;
@@ -23,7 +24,132 @@ body input {
   margin: 0;
   padding: 0;
 }
+body a {
+  text-decoration: none;
+}
 .wrapper {
-  max-width: 1024px;
+  width: 1024px;
   margin: 0 auto;
+}
+footer .footer-top {
+  min-height: 334px;
+  background: #39a0b9;
+}
+footer .footer-top .wrapper {
+  padding-top: 49px;
+}
+footer .footer-top .wrapper h2 {
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 38px;
+}
+footer .footer-top .wrapper .facebook {
+  width: 233px;
+  margin-left: 3px;
+  float: left;
+  margin-right: 28px;
+}
+footer .footer-top .wrapper .from-twitter {
+  width: 233px;
+  float: left;
+  margin-right: 28px;
+  margin-bottom: 68px;
+}
+footer .footer-top .wrapper .from-twitter p {
+  background: url(../img/twitter.png) 0 0 no-repeat;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.46;
+  padding-left: 50px;
+  padding-bottom: 36px;
+}
+footer .footer-top .wrapper .from-twitter p.last-p {
+  padding-bottom: 0;
+}
+footer .footer-top .wrapper .from-twitter p span {
+  color: #9ae2f4;
+}
+footer .footer-top .wrapper .information {
+  width: 233px;
+  float: left;
+  margin-right: 28px;
+}
+footer .footer-top .wrapper .information ul {
+  list-style: none;
+}
+footer .footer-top .wrapper .information ul li {
+  background: url(../img/arrow.png) 0 6px no-repeat;
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.84;
+  padding-left: 15px;
+  margin-top: 17px;
+}
+footer .footer-top .wrapper .information ul li:first-child {
+  margin-top: 0;
+}
+footer .footer-top .wrapper .contact-us {
+  width: 233px;
+  float: left;
+}
+footer .footer-top .wrapper .contact-us .contact-top {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #4cb1ca;
+}
+footer .footer-top .wrapper .contact-us .contact-top p {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1.84;
+  margin-top: 17px;
+}
+footer .footer-top .wrapper .contact-us .contact-top p:first-child {
+  margin-top: 0;
+}
+footer .footer-top .wrapper .contact-us .contact-bottom {
+  margin-top: 16px;
+  font-size: 0;
+}
+footer .footer-top .wrapper .contact-us .contact-bottom img {
+  margin-left: 10px;
+}
+footer .footer-top .wrapper .contact-us .contact-bottom img:first-child {
+  margin-left: 0;
+}
+footer .footer-bottom {
+  background: #0b4b5a;
+}
+footer .footer-bottom .wrapper {
+  color: #8adcf0;
+  font-size: 13px;
+  line-height: 1.46;
+}
+footer .footer-bottom .wrapper .copyright {
+  margin: 27px 0 27px 3px;
+  float: left;
+}
+footer .footer-bottom .wrapper .footer-nav {
+  float: right;
+  margin: 27px 3px 27px 0;
+}
+footer .footer-bottom .wrapper .footer-nav ul {
+  list-style: none;
+}
+footer .footer-bottom .wrapper .footer-nav ul li {
+  padding: 0 14px;
+  float: left;
+  border-left: 1px solid #39a0b9;
+}
+footer .footer-bottom .wrapper .footer-nav ul li.last-li {
+  margin-right: 0;
+}
+footer .footer-bottom .wrapper .footer-nav ul li:first-child {
+  margin-left: 0;
+  border-left: none;
+}
+footer .footer-bottom .wrapper .footer-nav ul li a {
+  color: #8adcf0;
+}
+footer .footer-bottom .wrapper .footer-nav ul li a:hover {
+  color: #fffcf0;
 }
