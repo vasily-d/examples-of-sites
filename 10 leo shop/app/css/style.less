@@ -8,9 +8,27 @@
 
 
 .call-us{
-	???
+	background: #4cb1ca;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 21px;
 
+	.wrapper{
+		overflow: hidden;
 
+		p:first-child{
+			background: url(../img/to-car.png) 0 21px no-repeat;
+			float: left;
+			padding: 45px 0 46px 83px;
+			margin-left: 3px;
+		}
+		p+p{
+			background: url(../img/phone.png) 0 21px no-repeat;
+			float: right;
+			padding: 45px 31px 46px 83px;
+			margin-right: 3px;
+		}
+	}
 }
 
 footer{
@@ -127,7 +145,7 @@ footer{
 						border-left: 1px solid #39a0b9;
 
 						&.last-li{margin-right: 0;}
-						&:first-child{margin-left: 0; border-left: none;}
+						&:first-child{padding-left: 0; border-left: none;}
 
 						a{
 							color: #8adcf0;
