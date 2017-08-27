@@ -31,6 +31,27 @@ body a {
   width: 1024px;
   margin: 0 auto;
 }
+.call-us {
+  background: #4cb1ca;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.call-us .wrapper {
+  overflow: hidden;
+}
+.call-us .wrapper p:first-child {
+  background: url(../img/to-car.png) 0 21px no-repeat;
+  float: left;
+  padding: 45px 0 46px 83px;
+  margin-left: 3px;
+}
+.call-us .wrapper p + p {
+  background: url(../img/phone.png) 0 21px no-repeat;
+  float: right;
+  padding: 45px 31px 46px 83px;
+  margin-right: 3px;
+}
 footer .footer-top {
   min-height: 334px;
   background: #39a0b9;
@@ -144,7 +165,7 @@ footer .footer-bottom .wrapper .footer-nav ul li.last-li {
   margin-right: 0;
 }
 footer .footer-bottom .wrapper .footer-nav ul li:first-child {
-  margin-left: 0;
+  padding-left: 0;
   border-left: none;
 }
 footer .footer-bottom .wrapper .footer-nav ul li a {
