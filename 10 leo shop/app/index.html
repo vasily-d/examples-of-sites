@@ -16,35 +16,52 @@
 
 <body>
 	<header>
-		<div class="header-top">
-			<div class="wrapper">
-				<div class="language-usd">
-					select language and usd
-				</div>
-				<div class="menu">
-					menu
-				</div>
+		<div class="header-top wrapper clearfix">
+			<div class="language-usd">
+				<label>Language:</label>
+				<select name="language">
+					<option value="English">English</option>
+					<option value="Russia">Russia</option>
+				</select>
+				<label>Currency:</label>
+				<select name="language">
+					<option value="USD">USD</option>
+					<option value="EUR">EUR</option>
+				</select>
+			</div>
+			<div class="top-menu">
+				<ul class="clearfix">
+					<li><a href="#">Account</a></li>
+					<li><a href="#">Wishlist</a></li>
+					<li><a href="#">Checkout</a></li>
+					<li><a href="#">Log In</a></li>
+					<li><a href="#">Sign Up</a></li>
+				</ul>
 			</div>
 		</div>
-		<div class="header-bottom wrapper">
+		<div class="header-bottom wrapper clearfix">
 			<div class="logo">
-				logo
+				<p>Leo shop</p>
 			</div>
-			<nav>
-				<ul>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
-					<li><a href=""></a></li>
+			<nav class="bottom-menu">
+				<ul class="clearfix">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Other</a></li>
+					<li><a href="#">Purchase</a></li>
 				</ul>
 			</nav>
-
-			<div class="search">
-				search
+			
+			<div class="basket clearfix">
+				<img src="img/icon1.png" alt="icon1">
+				<img src="img/to-basket.png" alt="to basket">
+				<p>Cars (<span>0</span>)</p>
 			</div>
-			<div class="basket">
-				basket
+			<div class="search">
+				<form action="/" method="post">
+					<input type="search" name="search" placeholder="Search..">
+				</form>
 			</div>
 		</div>
 	</header>

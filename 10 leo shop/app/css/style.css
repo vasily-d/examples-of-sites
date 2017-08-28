@@ -31,6 +31,104 @@ body a {
   width: 1024px;
   margin: 0 auto;
 }
+header .header-top {
+  background: #4cb1ca;
+}
+header .header-top .language-usd {
+  float: left;
+  padding: 19px 0 17px 0;
+}
+header .header-top .top-menu {
+  float: right;
+}
+header .header-top .top-menu ul {
+  list-style: none;
+  margin: 19px 0 17px 0;
+}
+header .header-top .top-menu ul li {
+  float: left;
+  border-left: 1px solid #bff2ff;
+}
+header .header-top .top-menu ul li:first-child {
+  border-left: none;
+}
+header .header-top .top-menu ul li a {
+  color: #fff;
+  font-size: 13px;
+  padding: 0 15px;
+  diaplay: block;
+}
+header .header-top .top-menu ul li a:hover {
+  color: #bff2ff;
+}
+header .header-bottom {
+  background: #fff;
+  padding: 0 3px;
+  box-sizing: border-box;
+}
+header .header-bottom .logo {
+  float: left;
+  font-size: 36px;
+  color: #656565;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 42px 59px 42px 0;
+}
+header .header-bottom .bottom-menu {
+  float: left;
+  margin-top: 54px;
+}
+header .header-bottom .bottom-menu ul {
+  list-style: none;
+}
+header .header-bottom .bottom-menu ul li {
+  float: left;
+  margin-left: 25px;
+}
+header .header-bottom .bottom-menu ul li:first-child {
+  margin-left: 0;
+}
+header .header-bottom .bottom-menu ul li a {
+  color: #656565;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+header .header-bottom .bottom-menu ul li a:hover {
+  color: #000;
+}
+header .header-bottom .search {
+  float: right;
+  margin: 42px 14px 0 0;
+}
+header .header-bottom .search form input {
+  width: 172px;
+  background: url(../img/search.png) no-repeat right 10px;
+  border: 1px solid #c6c6c6;
+  outline: none;
+  color: #b7b7b7;
+  font-size: 13px;
+  padding: 8px 15px 8px 8px;
+}
+header .header-bottom .basket {
+  float: right;
+  width: 146px;
+  margin: 41px 0;
+  font-size: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+header .header-bottom .basket img {
+  float: left;
+}
+header .header-bottom .basket img + img {
+  margin-left: 4px;
+}
+header .header-bottom .basket p {
+  float: left;
+  margin: 10px 0 0 12px;
+}
 .call-us {
   background: #4cb1ca;
   color: #fff;
