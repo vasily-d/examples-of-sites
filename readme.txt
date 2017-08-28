@@ -12,3 +12,4 @@ examples of sites
 8 bazinger
 9 minimal
 10 leo shop
+11 barber
