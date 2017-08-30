@@ -4,39 +4,43 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-
-	<!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<![endif]-->
+	<link rel="stylesheet" href="css/unslider.css">
+	<link rel="stylesheet" href="css/unslider-dots.css">
 </head>
 
 <body>
 	<header>
-		<div class="header-top wrapper clearfix">
-			<div class="language-usd">
-				<label>Language:</label>
-				<select name="language">
-					<option value="English">English</option>
-					<option value="Russia">Russia</option>
-				</select>
-				<label>Currency:</label>
-				<select name="language">
-					<option value="USD">USD</option>
-					<option value="EUR">EUR</option>
-				</select>
-			</div>
-			<div class="top-menu">
-				<ul class="clearfix">
-					<li><a href="#">Account</a></li>
-					<li><a href="#">Wishlist</a></li>
-					<li><a href="#">Checkout</a></li>
-					<li><a href="#">Log In</a></li>
-					<li><a href="#">Sign Up</a></li>
-				</ul>
+		<div class="header-top clearfix">
+			<div class="wrapper">
+				<div class="language-usd">
+					<label>Language:</label>
+					<select name="language">
+						<option value="English">English</option>
+						<option value="Russia">Russia</option>
+					</select>
+					<label>Currency:</label>
+					<select name="language">
+						<option value="USD">USD</option>
+						<option value="EUR">EUR</option>
+					</select>
+				</div>
+				<div class="top-menu">
+					<ul class="clearfix">
+						<li><a href="#">Account</a></li>
+						<li><a href="#">Wishlist</a></li>
+						<li><a href="#">Checkout</a></li>
+						<li><a href="#">Log In</a></li>
+						<li><a href="#">Sign Up</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="header-bottom wrapper clearfix">
@@ -54,8 +58,8 @@
 			</nav>
 			
 			<div class="basket clearfix">
-				<img src="img/icon1.png" alt="icon1">
-				<img src="img/to-basket.png" alt="to basket">
+				<a href="#"><img src="img/icon1.png" alt="icon1"></a>
+				<a href="#"><img src="img/to-basket.png" alt="to basket"></a>
 				<p>Cars (<span>0</span>)</p>
 			</div>
 			<div class="search">
@@ -67,165 +71,214 @@
 	</header>
 
 	<div class="slider">
-		slider
-
-
-		
+		<ul>
+			<li><img src="img/slider.jpg" alt="slider"></li>
+			<li><img src="img/slider.jpg" alt="slider"></li>
+		</ul>
 	</div>
 
-	<div class="content wrapper">
-		<main>
-			<section>
-				<h2>Featured Products</h2>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-			</section>
-			<section>
-				<h2>Staff pick</h2>
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-			</section>
-			<section>
-				<h2>New Products</h2>
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-
-				<img src="img/sunglasses1.jpg" alt="sunglasses1">
-				<div class="block1">
-					<div class="left">
-						<p>Lorem Ipsum is simply.</p>
-						<span>$388.00</span>
-					</div>
-					<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
-				</div>
-			</section>
-		</main>
+	<div class="content wrapper clearfix">
 		<aside>
 			<section class="aside-top">
-				aside top
+				<ul>
+					<li>
+						<img src="img/aside.jpg" alt="slider2">
+					</li>
+					<li>
+						<img src="img/aside.jpg" alt="slider2">
+					</li>
+					<li>
+						<img src="img/aside.jpg" alt="slider2">
+					</li>
+				</ul>
 			</section>
 			<section class="aside-bottom">
-				aside-bottom
+				<form action="/" method="get">
+					<h2>newsletters signup</h2>
+					<p>Lorem ipsum dolor sit amen, dolor imun ra adlip</p>
+					<input type="email" name="email" placeholder="email...">
+					<button type="submit">Subscribe</button>
+				</form>
 			</section>
 		</aside>
+		<main>
+			<section class="clearfix">
+				<h2>Featured Products</h2>
+				
+				<article>
+					<img src="img/sunglasses1.jpg" alt="sunglasses1">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+				
+				<article>
+					<img src="img/sunglasses2.jpg" alt="sunglasses2">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>	
+				</article>
+				
+				<article>
+					<img src="img/sunglasses3.jpg" alt="sunglasses3">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses4.jpg" alt="sunglasses4">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses5.jpg" alt="sunglasses5">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses6.jpg" alt="sunglasses6">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses7.jpg" alt="sunglasses7">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses8.jpg" alt="sunglasses8">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses9.jpg" alt="sunglasses9">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+			</section>
+
+			<section class="clearfix">
+				<h2>Staff pick</h2>
+
+				<article>
+					<img src="img/sunglasses1_1.jpg" alt="sunglasses10">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses1_2.jpg" alt="sunglasses11">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses1_3.jpg" alt="sunglasses12">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+			</section>
+
+			<section class="clearfix last-section">
+				<h2>New Products</h2>
+
+				<article>
+					<img src="img/sunglasses2_1.jpg" alt="sunglasses13">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses2_2.jpg" alt="sunglasses14">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+
+				<article>
+					<img src="img/sunglasses2_3.jpg" alt="sunglasses15">
+					<div class="block1">
+						<div class="left">
+							<p>Lorem Ipsum is simply.</p>
+							<span>$388.00</span>
+						</div>
+						<div class="right"><a href="#"><img src="img/basket.png" alt="basket"></a></div>
+					</div>
+				</article>
+			</section>
+		</main>
 	</div>
 
 	<div class="call-us">
@@ -291,5 +344,20 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/unslider-min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.slider').unslider({
+				autoplay:true,
+				arrows:false
+			});
+			$('.aside-top').unslider({
+				autoplay:true,
+				arrows:false
+			});
+		});
+	</script>
 </body>
 </html>
