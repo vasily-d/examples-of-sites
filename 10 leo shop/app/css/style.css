@@ -52,6 +52,18 @@ header .header-top .language-usd label {
 header .header-top .language-usd select + label {
   margin-left: 20px;
 }
+header .header-top .language-usd select {
+  border: none;
+  background: #4cb1ca;
+  color: #fff;
+  font-family: Tahoma, sans-serif;
+}
+header .header-top .language-usd select:hover {
+  color: #eee;
+}
+header .header-top .language-usd select option {
+  background: #000;
+}
 header .header-top .top-menu {
   float: right;
 }
