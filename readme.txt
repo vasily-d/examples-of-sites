@@ -12,4 +12,8 @@ examples of sites
 8 bazinger
 9 minimal
 10 leo shop
-11 barber
+11 barber index
+11.1 barber items
+11.2 barber price
+11.3 barber shop
+12 nerds

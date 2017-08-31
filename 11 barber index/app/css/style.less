@@ -54,6 +54,19 @@
 	}
 }
 
+.btn{
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	padding: 15px 32px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+}
+
 main{
 	.logo{
 		width: 368px;
@@ -62,16 +75,32 @@ main{
 
 		font-size: 0;
 
-		margin-bottom: 25px;
+		margin-bottom: 80px;
 	}
 	
 	.features{
 		margin-bottom: 80px;
+		text-align: center;
 		
 		.features-item{
 			float: left;
 			width: 300px;
 			margin-left: 20px;
+
+			b{
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 42px;
+				color: #f7f4f1;
+			}
+
+			p{
+				color: #000;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: bold;
+				color: #f7f4f1;
+			}
 
 			&:first-child{margin-left: 0;}
 		}
@@ -80,25 +109,95 @@ main{
 	.content{
 		padding: 50px 80px;
 		margin-bottom: 35px;
+		background: url("../img/bg-content.jpg") 0 0;
+
+		h2{
+			color: #000;
+			font-size: 30px;
+			line-height: 42px;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 30px; 
+		}
+
+		p{
+			color: #000;
+			font-size: 14px;
+			line-height: 24px;
+			font-weight: bold;
+			margin-bottom: 30px;
+		}
 
 		.content-news{
 			float: left;
 			width: 380px;
+
+			p{margin-bottom: 14px;}
+
+			time{
+				color: #000;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: bold;
+			}
+
+			li{margin-bottom: 32px;}
 		}
 
 		.content-gallery{
 			float: right;
 			width: 300px;
+
+			h2{margin-bottom: 27px;}
+
+			.gallery{
+				font-size: 0;
+				overflow: hidden;
+				
+				img{border: 7px solid #fff; margin-bottom: 38px;}
+				
+				.gallery-prev{
+					float: left;
+					padding: 11px 48px;	
+				}
+				.gallery-next{
+					float: right;
+					padding: 11px 48px;	
+				}
+			}
 		}
 
 		.content-contact{
 			float: left;
 			width: 380px;
+
+			.btn-way{float: left;}
+			.btn-feedback{float: right;}
 		}
 
 		.content-form{
 			float: right;
 			width: 300px;
+
+			form{
+				input{
+					margin-bottom: 20px;
+					border: 2px solid #000101;
+					padding: 13px;
+
+					color: #000;
+					font-size: 14px;
+					line-height: 24px;
+					font-weight: bold;
+					width: 110px;
+				}
+				input[name="data"]{float: left;}
+				input[name="time"]{float: right;}
+				input[name="name"]{float: left;}
+				input[name="tel"]{float: right;}
+
+				button{width: 100%;}
+			}
 		}
 	}
 }
@@ -106,21 +205,40 @@ main{
 .main-footer{
 	margin-top: 65px;
 	padding: 40px 0 60px 0;
+	background: #222222;
+	
+	p, a{
+		color: #fff;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
 
 	.footer-contacts{
 		float: left;
 		width: 320px;
-		margin-right: 60px;
+		margin-right: 60px;		
+
+		a{border-bottom: 2px solid #929292;}
 	}
 
 	.footer-social{
 		width: 180px;
 		float: left;
+		text-align: center;
 
+		p{margin-bottom: 19px;}
+		// a{font-size: 0;}
 	}
 
 	.footer-copyright{
 		float: right;
 		width: 180px;
+
+		text-align: center;
+
+		p{margin-bottom: 18px;}
+		.btn{padding: 12px 20px;}
 	}
 }
