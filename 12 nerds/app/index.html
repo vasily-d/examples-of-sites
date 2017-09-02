@@ -4,15 +4,118 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<![endif]-->
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/unslider.css">
+	<link rel="stylesheet" href="css/unslider-dots.css">
 </head>
 
 <body>
+	<header>
+		<div class="wrapper clearfix">
+			<div class="logo">
+				<a href="/"><img src="img/logo.png" alt="logo"></a>
+			</div>
+			<nav>
+				<ul class="clearfix">
+					<li><a href="#">Студия</a></li>
+					<li><a href="#">Клиенты</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<p class="basket">
+				<a href="#"><img src="img/basket.png" alt="basket"></a>
+				<a href="#">Корзина</a>
+			</p>
+		</div>
+	</header>
+
+	<div class="slider">
+		<div class="wrapper">
+			<ul>
+				<li>
+					<!-- <img src="img/slider.png" alt="slider1"> -->
+					<div class="box-slider">
+						<h2>Долго, дорого, скрупулезно.</h2>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+						<a href="#">Узнать больше</a>
+					</div>
+				</li>
+				<li>
+					<!-- <img src="img/slider2.png" alt="slider2"> -->
+					<div class="box-slider">
+						<h2>Долго, дорого, скрупулезно.</h2>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+						<a href="#">Узнать больше</a>
+					</div>
+				</li>
+				<li class="last">
+					<!-- <img src="img/slider3.png" alt="slider3"> -->
+					<div class="box-slider">
+						<h2>Долго, дорого, скрупулезно.</h2>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+						<a href="#">Узнать больше</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<main class="wrapper">
+		<div class="features clearfix">
+			<article>
+				<img src="img/features1.jpg" alt="features1">
+				<h2>Веб-сайты</h2>
+				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+				<a href="#">Заказать</a>	
+			</article>
+			<article>
+				<img src="img/features2.jpg" alt="features2">
+				<h2>Приложения</h2>
+				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+				<a href="#">Заказать</a>
+			</article>
+			<article class="last">
+				<img src="img/features3.jpg" alt="features3">
+				<h2>Презентации</h2>
+				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+				<a href="#">Заказать</a>
+			</article>
+		</div>
+		<div class="content">
+			content
+
+			
+		</div>
+		<div class="brands">
+			brands
+		</div>
+	</main>
 	
+	<div class="map">
+		map
+	</div>
+
+	<footer class="wrapper">
+		footer
+	</footer>
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="js/unslider-min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('.slider').unslider({
+				autoplay:true,
+				arrows:false
+			});
+		});
+	</script>
 </body>
 </html>
