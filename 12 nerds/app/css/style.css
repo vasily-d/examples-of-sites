@@ -9,23 +9,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 body img {
   max-width: 100%;
   height: auto;
-}
-body h1,
-body h2,
-body h3,
-body p,
-body ul,
-body input {
-  margin: 0;
-  padding: 0;
-}
-body ul {
-  list-style: none;
 }
 body a {
   text-decoration: none;
@@ -48,6 +36,11 @@ header nav {
   margin-top: 76px;
   margin-left: 200px;
 }
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 header nav ul li {
   float: left;
   margin-left: 45px;
@@ -60,28 +53,36 @@ header nav ul li a {
   font-size: 16px;
   line-height: 30px;
   display: block;
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
+}
+header nav ul li a:hover {
+  color: #777;
 }
 header .basket {
   float: right;
   margin-top: 76px;
 }
 header .basket a {
+  background: url("../img/basket.png") no-repeat 0 2px;
   color: #000;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-left: 24px;
+  padding-left: 24px;
   font-weight: 500;
 }
-header .basket a:first-child {
-  margin-left: 0;
+header .basket a:hover {
+  color: #777;
 }
 .slider {
   background: #eeeeee;
   margin-bottom: 60px;
+}
+.slider .wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .slider .wrapper ul li {
   position: relative;
@@ -89,27 +90,32 @@ header .basket a:first-child {
   height: 429px;
 }
 .slider .wrapper ul li:first-child {
-  background: url('../img/slider.png') 0 0 no-repeat;
+  background: url("../img/slider.png") no-repeat 0 0;
 }
 .slider .wrapper ul li:first-child + li {
-  background: url('../img/slider2.png') 0 0 no-repeat;
+  background: url("../img/slider2.png") no-repeat 0 0;
 }
 .slider .wrapper ul li.last {
-  background: url('../img/slider3.png') 0 0 no-repeat;
+  background: url("../img/slider3.png") no-repeat 0 0;
 }
 .slider .wrapper ul li .box-slider {
+  width: 516px;
   position: absolute;
   top: 74px;
   left: 0;
-  width: 380px;
 }
 .slider .wrapper ul li .box-slider h2 {
+  margin: 0;
+  padding: 0;
   color: #000;
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 38px;
+  font-weight: 500;
 }
 .slider .wrapper ul li .box-slider p {
+  margin: 0;
+  padding: 0;
   color: #283136;
   font-size: 16px;
   line-height: 24px;
@@ -123,6 +129,7 @@ header .basket a:first-child {
   padding: 18px 52px;
   border-radius: 5px;
   display: inline-block;
+  font-weight: 500;
 }
 .unslider-nav {
   max-width: 1200px;
@@ -130,29 +137,43 @@ header .basket a:first-child {
   position: relative;
   top: -84px;
 }
+main {
+  background: #fff;
+}
 main .features {
   padding-bottom: 80px;
   border-bottom: 2px solid #eeeeee;
 }
 main .features article {
   float: left;
-  margin-left: 100px;
   width: 300px;
+  margin-left: 100px;
 }
 main .features article:first-child {
   margin-left: 0;
+}
+main .features article:first-child + article a {
+  background: #00ca74;
+}
+main .features article.last a {
+  background: #efc84a;
 }
 main .features article img {
   margin-bottom: -2px;
 }
 main .features article h2 {
+  margin: 0;
+  padding: 0;
   color: #000;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
   margin: 28px 0;
+  font-weight: 700;
 }
 main .features article p {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -165,15 +186,113 @@ main .features article a {
   font-size: 16px;
   line-height: 18px;
   display: inline-block;
+  vertical-align: center;
   padding: 18px 38px;
   border-radius: 5px;
-}
-main .features article:first-child + article a {
-  background: #00ca74;
-}
-main .features article.last a {
-  background: #efc84a;
+  font-weight: 500;
 }
 main .content {
-  padding-top: 40px;
+  padding-bottom: 76px;
+  margin-bottom: 45px;
+  border-bottom: 2px solid #eeeeee;
+}
+main .content .content-left {
+  float: left;
+  width: 700px;
+  margin-top: 84px;
+}
+main .content .content-left h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+  color: #000;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+main .content .content-left p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+  color: #283136;
+  font-size: 16px;
+  line-height: 24px;
+}
+main .content .content-left h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+main .content .content-left ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+main .content .content-left ul li {
+  background: url("../img/short-line.png") no-repeat 0 10px;
+  padding-left: 36px;
+  color: #283136;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 34px;
+}
+main .content .content-left ul li:first-child {
+  margin-top: 0;
+}
+main .content .content-right {
+  float: right;
+  width: 360px;
+  margin-top: 40px;
+}
+footer .footer-social {
+  width: 300px;
+  float: left;
+  margin: 68px 0;
+  font-size: 0;
+  margin-right: 100px;
+}
+footer .footer-social a:first-child {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  background: url("../img/vk.png") no-repeat;
+  margin-right: 10px;
+}
+footer .footer-social a:first-child + a {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  background: url("../img/fb.png") no-repeat;
+  margin-right: 10px;
+}
+footer .footer-social .last {
+  display: inline-block;
+  width: 79px;
+  height: 79px;
+  background: url("../img/insta.png") no-repeat;
+  margin-right: 10px;
+}
+footer .footer-sales {
+  float: left;
+  width: 600px;
+  margin: 78px 0;
+}
+footer .footer-sales h3 {
+  margin: 0;
+  margin-bottom: 18px;
+  color: #000;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+footer .footer-sales p {
+  margin: 0;
+  color: #444444;
+  font-size: 16px;
+  line-height: 22px;
 }

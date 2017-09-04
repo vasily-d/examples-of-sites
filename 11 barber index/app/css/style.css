@@ -259,6 +259,7 @@ main .content .content-form form button {
   background: #222222;
 }
 .main-footer p,
+.main-footer b,
 .main-footer a {
   color: #fff;
   font-size: 14px;
@@ -267,10 +268,8 @@ main .content .content-form form button {
 .main-footer .footer-contacts {
   float: left;
   width: 320px;
-  margin-right: 60px;
-}
-.main-footer .footer-contacts p {
   margin: 0;
+  margin-right: 60px;
 }
 .main-footer .footer-contacts a {
   border-bottom: 2px solid #929292;
@@ -282,10 +281,12 @@ main .content .content-form form button {
   width: 180px;
   float: left;
   text-align: center;
+  margin: 0;
 }
-.main-footer .footer-social p {
+.main-footer .footer-social b {
   margin: 0;
   margin-bottom: 19px;
+  display: block;
 }
 .main-footer .footer-social a {
   display: inline-block;
@@ -300,10 +301,12 @@ main .content .content-form form button {
   float: right;
   width: 180px;
   text-align: center;
+  margin: 0;
 }
-.main-footer .footer-copyright p {
+.main-footer .footer-copyright b {
   margin: 0;
   margin-bottom: 18px;
+  display: block;
 }
 .main-footer .footer-copyright .btn {
   padding: 12px 20px;
