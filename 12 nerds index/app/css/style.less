@@ -247,12 +247,139 @@ main{
 			float: right;
 			width: 360px;
 			margin-top: 40px;
+			text-align: center;
+			
+			img{margin-bottom: 36px;} //+2
+			
+			>p{
+				margin: 0;
+				color: #000;
+				font-weight: bold;
+				font-size: 16px;
+				line-height: 24px;
+				margin-bottom: 36px;
+				text-transform: uppercase;
+			}
 
+			.prices{
+				text-align: left;
+
+				.number, .procent{
+					color: #000;
+					font-weight: bold;
+					font-size: 45px;
+					line-height: 45px;
+				}
+
+				.procent{
+					font-size: 25px;
+					margin-right: 25px;
+				}
+			}
+
+			.prices-text{
+				p{
+					margin: 0;
+					margin-top: 26px;
+					float: left;
+					width: 105px;
+					color: #283136;
+					font-size: 16px;
+					line-height: 18px;
+					margin-left: 22px;
+
+					&:first-child{margin-left: 0;}
+				}
+			}
 		}
 	}
 
 	.brands{
+		padding-bottom: 47px;
+		margin-bottom: 80px;
+		border-bottom: 2px solid #eeeeee;
 
+		.brand1{
+			float: left;
+			background: url("../img/brand1.png") no-repeat;
+			width: 209px; 
+			height: 87px;
+			margin-left: 30px;
+			opacity: 0.2;
+		}
+		.brand2{
+			float: left;
+			background: url("../img/brand2.png") no-repeat;
+			width: 209px;
+			height: 87px;
+			margin-left: 260px;
+			opacity: 0.2;
+		}
+		.brand3{
+			float: left;
+			background: url("../img/brand3.png") no-repeat; 
+			width: 209px; 
+			height: 87px;
+			margin-left: 260px;
+			opacity: 0.2;
+		}
+	}
+}
+
+.map{
+	font-size: 0;
+	position: relative;
+
+	.pointer{
+		position: absolute;
+		background: url("../img/map-nerds.png") no-repeat;
+		width: 155px;
+		height: 190px;
+		top: 82px;
+		left: 818px;
+	}
+
+	.popup{
+		position: absolute;
+		top: 54px;
+		left: 140px;
+		// width: 320px;
+		background: #fff;
+		padding: 55px 50px 0 50px;
+		text-align: left;
+
+		h2{
+			margin: 0;
+			color: #000;
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 700;
+			margin-bottom: 28px;
+		}
+
+		p{
+			margin: 0;
+			color: #666666;
+			font-size: 16px;
+			line-height: 18px;
+			margin-bottom: 36px;
+		}
+
+		button{
+			margin-bottom: 48px;
+			background: #fb565a;
+			border: none;
+			color: #fff;
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: 500;
+			text-transform: uppercase;
+			padding: 18px 44px;
+			border-radius: 5px;
+			cursor: pointer;
+
+			&:hover{background: #ff765a;}
+		}
 	}
 }
 
@@ -285,7 +412,6 @@ footer{
 			background: url("../img/insta.png") no-repeat;
 			margin-right: 10px;
 		}
-
 	}
 
 	.footer-sales{
@@ -301,7 +427,6 @@ footer{
 			font-size: 36px;
 			line-height: 36px;
 			font-weight: 700;
-
 		}
 
 		p{
@@ -312,5 +437,4 @@ footer{
 			line-height: 22px;
 		}
 	}
-
 }
