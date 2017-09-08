@@ -26,7 +26,7 @@
 				</ul>
 			</nav>
 			<div class="user-block">
-				<a href="#">Вход</a>
+				<a class="login" href="#">Вход</a>
 			</div>
 		</div>
 	</header>
@@ -132,5 +132,31 @@
 			</p>
 		</div>
 	</footer>
+
+	<div class="popup">
+		<h2>Личный кабинет</h2>
+		<p>ВВедите пожалуйста свой логин и пароль</p>
+		<form action="/" method="GET">
+			<input type="text" name="login" placeholder="ЛОГИН"><br>
+			<input type="text" name="password" placeholder="ПАРОЛЬ"><br>
+			<div class="clearfix">
+				<div>
+					<input type="checkbox" id="box" checked>
+					<label for="box">Запомните меня</label>
+				</div>
+				<a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+			</div>
+			<button type="submit">Войти</button>
+		</form>
+		<div class="close"></div>
+	</div>
+
+	<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d330190.3239636152!2d42.035948767578155!3d49.718107686785956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504811173482" width="867" height="661" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div class="close"></div>
+	</div>
+
+	<script src="js/popup.js"></script>
+	<script src="js/map.js"></script>
 </body>
 </html>

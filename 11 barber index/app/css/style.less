@@ -299,3 +299,149 @@ main{
 		}
 	}
 }
+
+.popup{
+	background: #fff;
+	color: #000;
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	margin-left: -230px;
+	display: none;
+
+	padding: 52px 80px 58px 80px;
+	background: url("../img/bg-popup.png") 0 0;
+
+	h2{
+		color: #000;
+		font-weight: 700;
+		font-size: 30px;
+		margin: 0;
+		margin-bottom: 28px;
+		text-transform: uppercase;
+	}
+
+	p{
+		margin: 0;
+		margin-bottom: 16px;
+		color: #000;
+		font-weight: 700;
+		font-size: 14;
+		text-transform: uppercase;
+	}
+
+	input[name="login"], input[name="password"]{
+		background: #f9f6f3;
+		color: #000;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 13px 40px 13px 13px;
+		box-sizing: border-box;
+		width: 296px;
+		border: 2px solid #000101;
+		margin-bottom: 9px;
+	}
+
+	input[name="login"]{
+		background: url("../img/popup-login.png") no-repeat 270px 14px;
+	}
+
+	input[name="password"]{
+		background: url("../img/popup-password.png") no-repeat 270px 14px;
+	}
+
+	input::placeholder{
+		background: #f9f6f3;
+		color: #888;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		// padding: 13px;
+	}
+
+	#box{
+		margin-top: 15px;
+		margin-bottom: 17px;
+	}
+
+	button{
+		background: #000;
+		border: none;
+		padding: 14px 0;
+		color: #fff;
+		text-transform: uppercase;
+		width: 100%;
+		font-weight: 700;
+		font-size: 14px;
+		cursor: pointer;
+
+		&:hover{background: #333;}
+	}
+
+	div{
+		color: #000;
+		font-size: 14px;
+		font-weight: 700;
+
+		div{
+			float: left;
+			width: 150px;
+
+			label{margin-left: 10px;}
+		}
+
+		a{
+			float: right;
+			margin-top: 14px;
+			color: #000;
+			font-size: 14px;
+			font-weight: 700;
+		}
+	}
+	
+	.close{
+		position: absolute;
+		top: 0;
+		right: -21px;
+		width: 20px;
+		height: 20px;
+		background: url("../img/x.png") no-repeat;
+		cursor: pointer;
+	}
+}
+
+.map{
+	position: absolute;
+	top: 578px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 867px;
+	height: 661px;
+	border: 7px solid #fff;
+	display: none;
+
+	.close{
+		position: absolute;
+		top: -7px;
+		right: -28px;
+		width: 20px;
+		height: 20px;
+		background: url("../img/x.png") no-repeat;
+		cursor: pointer;
+	}
+}
+
+.show{
+	display: block;
+}
+
+.modal-error{
+	animation: shake 0.6s;
+}
+
+@keyframes shake{
+	0% 100%	{tramsform: translateX(0);}
+	10% 30% 50% 70% 90%	{tramsform: translateX(-10px);}
+	20% 40% 60% 80%	{tramsform: translateX(10px);}
+}
