@@ -7,4 +7,4 @@ app/*.psd
 app/*.sublime*
 app/Thumbs.db
 dist/
-node_modules/
+/node_modules/*
