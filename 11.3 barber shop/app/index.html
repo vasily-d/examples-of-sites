@@ -1,18 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Barbershop item</title>
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<![endif]-->
-
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	
+	<header class="main-header">
+		<div class="wrapper clearfix">
+			<nav class="main-nav">
+				<div class="logo">
+					<a href="/"><img src="img/logo.png" alt="logo" width="111" height="24"></a>
+				</div>
+				<!-- или a img -->
+
+				<ul class="clearfix">
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Новости</a></li>
+					<li class="active"><a>Прайс-лист</a></li>
+					<li><a href="#">Магазин</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="wrapper clearfix">
+			<div class="top-main">
+				<h2>СРЕДСТВА ДЛЯ УХОДА</h2>
+				<ul>
+					<li><a href="#">ГЛАВНАЯ</a></li>
+					<li><a href="#">МАГАЗИН</a></li>
+					<li><a href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
+				</ul>
+			</div>
+			
+			<aside>
+				<form action="/" method="get">
+					<h3>ПРОИЗВОДИТЕЛИ:</h3>
+					<input type="checkbox" name="checkbox1" id="checkbox1" checked>
+					<label for="checkbox1">Baxter of California</label><br>
+					<input type="checkbox" name="checkbox1" id="checkbox2">
+					<label for="checkbox2">Mr Natty</label><br>
+					<input type="checkbox" name="checkbox1" id="checkbox3" checked>
+					<label for="checkbox3">Suavecito</label><br>
+					<input type="checkbox" name="checkbox1" id="checkbox4">
+					<label for="checkbox4">Malin+Goetz</label><br>
+					<input type="checkbox" name="checkbox1" id="checkbox5">
+					<label for="checkbox5">Murray’s</label><br>
+					<input type="checkbox" name="checkbox1" id="checkbox6" checked>
+					<label for="checkbox6">American Crew</label><br>
+				</form>
+				<form action="/" method="get">
+					<input type="radio" name="radioAll" id="radio1">
+					<label for="radio1">Бритвенные принадлежности</label><br>
+					<input type="radio" name="radioAll" id="radio2">
+					<label for="radio2">Средства для ухода</label><br>
+					<input type="radio" name="radioAll" id="radio3">
+					<label for="radio3">Аксессуары</label><br>
+					<a href="#">Показать</a>
+				</form>
+			</aside>
+			<section>
+				<div class="items">
+					<article>
+						1
+					</article>
+					<article>
+						2
+					</article>
+					<article>
+						3
+					</article>
+					<article>
+						4
+					</article>
+					<article>
+						5
+					</article>
+					<article>
+						6
+					</article>
+				</div>
+				<div class="pagination">
+					<ul>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer class="main-footer">
+		<div class="wrapper clearfix">
+			<p class="footer-contacts">
+				БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+				АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+				<a href="#">КАК НАС НАЙТИ?</a><br>
+				ТЕЛЕФОН: +7 (495) 666-02-66
+			</p>
+			
+			<p class="footer-social">
+				<b>Давай дружить</b>
+				<a href="https://vk.com/"><img src="img/vk.jpg" alt="vk" width="43" height="43"></a>
+				<a href="https://ru-ru.facebook.com/"><img src="img/fb.jpg" alt="fb" width="43" height="43"></a>
+				<a href="https://www.instagram.com/?hl=ru"><img src="img/inst.jpg" alt="insta" width="43" height="43"></a>
+			</p>
+
+			<p class="footer-copyright">
+				<b>Разработано:</b>
+				<a class="btn" href="#">Сайт</a>
+			</p>
+		</div>
+	</footer>
 </body>
 </html>

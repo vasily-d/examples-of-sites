@@ -1,1 +1,166 @@
 @import "config.less";
+
+.wrapper{
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.btn{
+	// как и теги a,input не наследует свойства родителя
+	display: inline-block;
+	background: #000;
+	color: #fff;
+	padding: 15px 32px;
+	font-size: 14px;
+	line-height: 24px;
+	border: none;
+	cursor: pointer;
+	font-family: "PT Sans Narrow", "Arial", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: center;
+
+	&:hover{background: #663d15;}
+	&:active{background: #163d15;}
+}
+
+.main-header{
+	background: #000;
+
+	.logo{
+		float: left;
+		width: 111px;
+		height: 24px;
+		font-size: 0;
+		padding-top: 23px;
+		padding-left: 20px;
+
+		a{display: block;}
+	}
+
+	.main-nav{
+		float: left;
+		margin-left: 18px;
+		width: 560px;
+
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li{
+				float: left;
+
+				a{
+					color: #fff;
+					font-size: 16px;
+					line-height: 20px;
+					display: block;
+					padding: 25px 20px;
+
+					&:hover{
+						background: #242424;
+						border-bottom: 5px solid #fff;
+						padding-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.user-block{
+		float: right;
+		max-width: 140px;
+
+		// поменять на спрайт
+		background: url("../img/login.png") no-repeat 0 26px;
+
+		a{
+			display: block;
+			padding: 25px 20px;
+			padding-left: 32px;
+			color: #fff;
+			font-size: 16px;
+			line-height: 20px;
+
+			&:hover{color: #777;}
+		}
+	}
+}
+
+main{
+	background: url("../img/bg-content.jpg");
+
+	.top-main{
+		h2{
+			margin: 0;
+		}
+	}
+
+	aside{
+		float: left;	
+	}
+
+	section{
+		float: right;
+	}
+}
+
+.main-footer{
+	padding: 40px 0 60px 0;
+	background: #222222;
+	
+	p, b, a{
+		color: #fff;
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.footer-contacts{
+		float: left;
+		width: 320px;
+		margin: 0;
+		margin-right: 60px;
+
+		a{
+			border-bottom: 2px solid #929292;
+
+			&:hover{border-bottom: none;}
+		}
+	}
+
+	.footer-social{
+		width: 180px;
+		float: left;
+		text-align: center;
+		margin: 0;
+
+		b{margin: 0; margin-bottom: 19px; display: block;}
+
+		a{
+			display: inline-block;
+			vertical-align: top;
+			width: 43px;
+			height: 43px;
+			
+			&:hover{outline: 2px solid #fff;}
+		}
+	}
+
+	.footer-copyright{
+		float: right;
+		width: 180px;
+		text-align: center;
+		margin: 0;
+
+		b{margin: 0; margin-bottom: 18px; display: block;}
+
+		.btn{
+			padding: 12px 20px;
+			
+			&:hover{background: #fff; color:#000;}
+		}
+	}
+}

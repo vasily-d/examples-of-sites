@@ -36,5 +36,6 @@ gulp.task('default', ['browserSync', 'less'], function (){
   //gulp.watch('app/css/**/*.css', browserSync.reload); 
   
   // Обновляем браузер при любых изменениях в HTML или JS
+  gulp.watch('app/js/*.js', browserSync.reload);
   gulp.watch('app/*.html', browserSync.reload);
 });

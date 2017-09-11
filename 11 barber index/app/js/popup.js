@@ -1,10 +1,11 @@
 var elementLogin = document.querySelector(".login");
-var elementPopup = document.querySelector(".popup");
-var elementClosePopup = document.querySelector(".popup .close");
+var elementPopup = document.querySelector(".modal-content");
+var elementClosePopup = document.querySelector(".modal-content .close");
 var elementLoginInPopup = elementPopup.querySelector("[name=login]"); 
 var elementPasswordInPopup = elementPopup.querySelector("[name=password]"); 
 var form = elementPopup.querySelector("form");
 var storage = localStorage.getItem("login"); //null ?
+var modalOverlay = document.querySelector('.modal-overlay');
 
 // событие на клик по логину в header
 elementLogin.addEventListener("click", function(event){
@@ -12,6 +13,7 @@ elementLogin.addEventListener("click", function(event){
 
 	//elementClosePopup.style.display = "block";
 	elementPopup.classList.add("show");
+	modalOverlay.style.display = 'block';
 
 	// focus на login
 	elementLoginInPopup.focus();
@@ -31,6 +33,7 @@ elementClosePopup.addEventListener("click", function(event){
 	event.preventDefault();
 	elementPopup.classList.remove("show");
 	elementPopup.classList.remove("modal-error");
+	modalOverlay.style.display = 'none';
 });
 
 // событие на отправку формы
@@ -54,7 +57,7 @@ window.addEventListener("keydown", function(event){
 		if (elementPopup.classList.contains("show")){
 			elementPopup.classList.remove("show");
 			elementPopup.classList.remove("modal-error");
-
+			modalOverlay.style.display = 'none';
 		}
 	}
 });

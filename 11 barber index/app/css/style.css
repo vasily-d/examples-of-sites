@@ -315,18 +315,21 @@ main .content .content-form form button {
   background: #fff;
   color: #000;
 }
-.popup {
+.modal-content {
   background: #fff;
   color: #000;
+  width: 300px;
   position: absolute;
   top: 120px;
   left: 50%;
   margin-left: -230px;
   display: none;
-  padding: 52px 80px 58px 80px;
+  padding: 50px 80px;
   background: url("../img/bg-popup.png") 0 0;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  z-index: 20;
 }
-.popup h2 {
+.modal-content h2 {
   color: #000;
   font-weight: 700;
   font-size: 30px;
@@ -334,7 +337,7 @@ main .content .content-form form button {
   margin-bottom: 28px;
   text-transform: uppercase;
 }
-.popup p {
+.modal-content p {
   margin: 0;
   margin-bottom: 16px;
   color: #000;
@@ -342,8 +345,8 @@ main .content .content-form form button {
   font-size: 14;
   text-transform: uppercase;
 }
-.popup input[name="login"],
-.popup input[name="password"] {
+.modal-content input[name="login"],
+.modal-content input[name="password"] {
   background: #f9f6f3;
   color: #000;
   font-size: 14px;
@@ -355,24 +358,24 @@ main .content .content-form form button {
   border: 2px solid #000101;
   margin-bottom: 9px;
 }
-.popup input[name="login"] {
+.modal-content input[name="login"] {
   background: url("../img/popup-login.png") no-repeat 270px 14px;
 }
-.popup input[name="password"] {
+.modal-content input[name="password"] {
   background: url("../img/popup-password.png") no-repeat 270px 14px;
 }
-.popup input::placeholder {
+.modal-content input::placeholder {
   background: #f9f6f3;
   color: #888;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
-.popup #box {
+.modal-content #box {
   margin-top: 15px;
   margin-bottom: 17px;
 }
-.popup button {
+.modal-content button {
   background: #000;
   border: none;
   padding: 14px 0;
@@ -383,46 +386,52 @@ main .content .content-form form button {
   font-size: 14px;
   cursor: pointer;
 }
-.popup button:hover {
+.modal-content button:hover {
   background: #333;
 }
-.popup div {
+.modal-content div {
   color: #000;
   font-size: 14px;
   font-weight: 700;
 }
-.popup div div {
+.modal-content div div {
   float: left;
   width: 150px;
 }
-.popup div div label {
+.modal-content div div label {
   margin-left: 10px;
 }
-.popup div a {
+.modal-content div a {
   float: right;
   margin-top: 14px;
   color: #000;
   font-size: 14px;
   font-weight: 700;
 }
-.popup .close {
+.modal-content .close {
   position: absolute;
   top: 0;
-  right: -21px;
-  width: 20px;
-  height: 20px;
+  right: -34px;
+  width: 21px;
+  height: 21px;
   background: url("../img/x.png") no-repeat;
+  border: 0;
   cursor: pointer;
 }
+.modal-content .close:hover {
+  opacity: 0.4;
+  background: url("../img/x.png") no-repeat;
+}
 .map {
-  position: absolute;
-  top: 578px;
+  position: fixed;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 867px;
-  height: 661px;
+  height: 461px;
   border: 7px solid #fff;
   display: none;
+  z-index: 20;
 }
 .map .close {
   position: absolute;
@@ -432,6 +441,16 @@ main .content .content-form form button {
   height: 20px;
   background: url("../img/x.png") no-repeat;
   cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 .show {
   display: block;
