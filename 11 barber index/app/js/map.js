@@ -21,6 +21,7 @@ window.addEventListener('keydown', function(event){
 	if (event.keyCode == 27){
 		if (elementPopupMap.classList.contains('show')){
 			elementPopupMap.classList.remove('show');
+			modalOverlay.style.display = 'none';
 		}
 	}
 });
