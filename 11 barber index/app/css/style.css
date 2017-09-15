@@ -1,7 +1,7 @@
 * {
   outline: 1px solid grey;
 }
-.clearfix::after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -91,8 +91,8 @@ body a {
   width: 300px;
   margin-bottom: 10px;
 }
-.modal-content .login-form input[name="login"]::placeholder,
-.modal-content .login-form input[name="password"]::placeholder {
+.modal-content .login-form input[name="login"]:placeholder,
+.modal-content .login-form input[name="password"]:placeholder {
   background: #f9f6f3;
   color: #888;
   font-size: 14px;
@@ -221,7 +221,7 @@ body a {
   position: relative;
   background: none;
 }
-.main-header .main-nav ul li.active::after {
+.main-header .main-nav ul li.active:after {
   content: "";
   position: absolute;
   right: 20px;
@@ -239,6 +239,8 @@ body a {
 }
 .main-header .main-nav ul li a:hover {
   background: #242424;
+  border-bottom: 5px solid #fff;
+  padding-bottom: 20px;
 }
 .main-header .user-block {
   float: right;
@@ -285,7 +287,7 @@ main .features .features-item b {
   position: relative;
   padding-bottom: 35px;
 }
-main .features .features-item b::after {
+main .features .features-item b:after {
   content: "";
   display: block;
   width: 20px;

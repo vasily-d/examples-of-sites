@@ -25,7 +25,7 @@
 					background: none;
 					// cursor: pointer;
 
-					&::after{
+					&:after{
 						content: "";
 						position: absolute;
 						right: 20px;
@@ -46,7 +46,12 @@
 					display: block;
 					padding: 25px 20px;
 
-					&:hover{background: #242424;}
+					&:hover{
+						background: #242424;
+						
+						border-bottom: 5px solid #fff;
+						padding-bottom: 20px;
+					}
 				}
 			}
 		}
@@ -109,7 +114,7 @@ main{
 				position: relative;
 				padding-bottom: 35px;
 
-				&::after{
+				&:after{
 					content: "";
 					display: block;
 					width: 20px;

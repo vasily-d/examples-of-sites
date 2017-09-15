@@ -1,49 +1,25 @@
 @import "global.less";
 
-.wrapper{
-	width: 940px;
-	margin: 0 auto;
-	padding: 0 10px;
-}
-
-.btn{
-	// как и теги a,input не наследует свойства родителя
-	display: inline-block;
-	background: #000;
-	color: #fff;
-	padding: 15px 32px;
-	font-size: 14px;
-	line-height: 24px;
-	border: none;
-	cursor: pointer;
-	font-family: "PT Sans Narrow", "Arial", sans-serif;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align: center;
-	vertical-align: center;
-
-	&:hover{background: #663d15;}
-	&:active{background: #163d15;}
-}
-
+// HEADER
 .main-header{
 	background: #000;
-
-	.logo{
-		float: left;
-		width: 111px;
-		height: 24px;
-		font-size: 0;
-		padding-top: 23px;
-		padding-left: 20px;
-
-		a{display: block;}
-	}
 
 	.main-nav{
 		float: left;
 		margin-left: 18px;
-		width: 560px;
+		width: 720px;
+
+		.logo{
+			float: left;
+			width: 111px;
+			height: 24px;
+			margin-top: 22px;
+			margin-right: 20px;
+
+			font-size: 0;
+
+			a{display: block;}
+		}
 
 		ul{
 			margin: 0;
@@ -53,18 +29,34 @@
 			li{
 				float: left;
 
+				&.active{
+					position: relative;
+
+					background: none;
+					// cursor: pointer;
+
+					&::after{
+						content: "";
+						position: absolute;
+						right: 20px;
+						bottom: 0;
+						left: 20px;
+						
+						height: 5px;
+
+						background: #fff;
+					}
+				}
+
 				a{
 					color: #fff;
 					font-size: 16px;
 					line-height: 20px;
+
 					display: block;
 					padding: 25px 20px;
 
-					&:hover{
-						background: #242424;
-						border-bottom: 5px solid #fff;
-						padding-bottom: 20px;
-					}
+					&:hover{background: #242424;}
 				}
 			}
 		}
@@ -74,13 +66,13 @@
 		float: right;
 		max-width: 140px;
 
-		// поменять на спрайт
 		background: url("../img/login.png") no-repeat 0 26px;
 
 		a{
 			display: block;
 			padding: 25px 20px;
 			padding-left: 32px;
+
 			color: #fff;
 			font-size: 16px;
 			line-height: 20px;
@@ -90,199 +82,180 @@
 	}
 }
 
-main{
-	background: url("../img/bg-content.jpg");
-
+// MAIN
+main{	
 	.top-main{
-		padding-top: 58px;
+		margin: 58px 0;
 
 		h1{
 			margin: 0;
+			margin-bottom: 24px;
+
+			font-size: 30px;
+			line-height: 42px;
 		}
 
 		ul{
 			margin: 0;
+			padding: 0;
+			
+			li{
+				float: left;
+				padding-right: 34px;
+
+				position: relative;
+				
+				&::after{
+					content: "";
+					width: 10px;
+					height: 10px;
+
+					background: #000;
+
+					position: absolute;
+					top: 7px;
+					right: 12px;
+
+					transform: rotate(45deg);
+				}
+
+				&:last-child::after{display: none;}
+
+				&.current a{color: #aba9a7;}
+
+				a{
+					display: block;
+
+					color: #000;
+					font-weight: 700;
+					font-size: 14px;
+					line-height: 24px;
+					text-transform: uppercase;
+				}
+			}
 		}
 	}
 
 	.bottom-main{
-		padding-bottom: 49px;
-
-		section{
+		margin-bottom: 49px;
+		
+		.slider{
 			float: left;
-			width: 460px;
+			width: 480px;
+
+			img{box-shadow: 1px 1px 10px 1px #000;}
+
+			.bottom-slider{
+				margin-top: 21px;
+
+				img{
+					margin-left: 17px;
+					
+					&:first-child{margin-left: 0;}
+				}
+			}
 		}
 
-		article{
+		.item{
 			float: right;
 			width: 390px;
+			padding-top: 24px;
+
+			.item-status{
+				font-size: 14px;
+				line-height: 24px;
+				margin-bottom: 34px;
+
+				span:first-child{float: left;}
+
+				span+span{
+					float: right;
+
+					&.current{color: #aeaeae;}
+				}
+			}
+
+			.item-description{
+				margin: 0;
+				padding: 0;
+				margin-bottom: 40px;
+
+				font-size: 14px;
+				line-height: 24px;
+			}
+			
+			.item-btn{
+				width: 220px;
+				margin-bottom: 62px;
+
+				.price{
+					float: left;
+					padding: 14px 25px;
+
+					font-size: 14px;
+					line-height: 24px;
+
+					background: #e5e5e5;
+				}
+
+				.btn-buy{
+					float: left;
+					padding: 14px 18px;
+					display: block;
+
+					font-size: 14px;
+					line-height: 24px;
+					color: #fff;
+					font-weight: bold;
+
+					background: #000;
+				}
+			}
+			
+			h2{
+				margin: 0;
+
+				font-style: 24px;
+				line-height: 30px;
+
+				margin-bottom: 32px;
+			}
+
+			.item-list{
+				margin: 0;
+				padding: 0;
+
+				li{
+					font-size: 14px;
+					line-height: 24px;
+
+					margin-top: 10px;
+					padding-left: 20px;
+
+					position: relative;
+
+					&::after{
+						content: "";
+						position: absolute;
+						top: 8px;
+						left: 0;
+
+						width: 8px;
+						height: 8px;
+						background: #000;
+						transform: rotate(45deg);
+					}
+
+					&:first-child{margin-top: 0;}
+				}
+			}
 		}
 	}
-	
-
-	// .logo{
-	// 	width: 368px;
-	// 	height: 152px;
-	// 	margin: 0 auto;
-	// 	font-size: 0;
-	// 	margin-bottom: 80px;
-	// }
-	
-	// .features{
-	// 	margin-bottom: 80px;
-		
-	// 	.features-item{
-	// 		float: left;
-	// 		width: 300px;
-	// 		text-align: center;
-	// 		margin-left: 20px;
-
-	// 		&:first-child{margin-left: 0;}
-
-	// 		b{
-	// 			display: block;
-	// 			font-size: 30px;
-	// 			line-height: 42px;
-	// 			color: #f7f4f1;
-	// 			margin: 0;
-	// 			margin-bottom: 30px;
-				
-	// 			// ромбик
-	// 			position: relative;
-	// 			padding-bottom: 35px;
-
-	// 			&::after{
-	// 				content: "";
-	// 				display: block;
-	// 				width: 20px;
-	// 				height: 20px;
-	// 				background: #fff;
-	// 				position: absolute;
-	// 				bottom: 0;
-	// 				left: 50%;
-	// 				margin-left: -10px;
-	// 				transform: rotate(45deg);
-	// 			}
-	// 		}
-
-	// 		p{
-	// 			margin: 0;
-	// 			color: #000;
-	// 			font-size: 14px;
-	// 			line-height: 24px;
-	// 			color: #f7f4f1;
-	// 		}
-	// 	}
-	// }
-
-	// .content{
-	// 	padding: 50px 80px;
-	// 	margin-bottom: 35px;
-	// 	color: #000;
-	// 	background: url("../img/bg-line.png") no-repeat center, #f8f5f2 url("../img/bg-content.jpg") 0 0;
-
-	// 	h2{
-	// 		margin: 0;
-	// 		font-size: 30px;
-	// 		line-height: 42px;
-	// 		margin-bottom: 25px; 
-	// 	}
-
-	// 	p{
-	// 		margin: 0;
-	// 		font-size: 14px;
-	// 		line-height: 24px;
-	// 		margin-bottom: 25px;
-	// 	}
-
-	// 	.content-news{
-	// 		float: left;
-	// 		width: 380px;
-
-	// 		p{margin: 0; margin-bottom: 14px;}
-
-	// 		time{
-	// 			color: #000;
-	// 			font-size: 14px;
-	// 			line-height: 24px;
-	// 			text-transform: none;
-	// 		}
-
-	// 		ul{
-	// 			margin: 0;
-	// 			padding: 0;
-	// 			list-style: none;
-				
-	// 			li{margin-bottom: 25px;}
-	// 		}
-	// 	}
-
-	// 	.content-gallery{
-	// 		float: right;
-	// 		width: 300px;
-
-	// 		h2{margin: 0; margin-bottom: 27px;}
-
-	// 		.gallery{
-	// 			font-size: 0;
-	// 			overflow: hidden;
-				
-	// 			img{border: 7px solid #fff; margin-bottom: 38px;}
-				
-	// 			.gallery-prev{
-	// 				float: left;
-	// 				padding: 11px 48px;	
-	// 			}
-	// 			.gallery-next{
-	// 				float: right;
-	// 				padding: 11px 48px;	
-	// 			}
-	// 		}
-	// 	}
-
-	// 	.content-contact{
-	// 		float: left;
-	// 		width: 380px;
-
-	// 		.btn-way{float: left;}
-	// 		.btn-feedback{float: right;}
-	// 	}
-
-	// 	.content-form{
-	// 		float: right;
-	// 		width: 300px;
-
-	// 		form{
-	// 			overflow: hidden;
-
-	// 			input{
-	// 				margin-bottom: 20px;
-	// 				border: 2px solid #000101;
-	// 				padding: 13px;
-	// 				color: #000;
-	// 				font-size: 14px;
-	// 				line-height: 24px;
-	// 				width: 110px;
-	// 				font-family: "PT Sans Narrow", "Arial", sans-serif;
-	// 				font-weight: bold;
-	// 				text-transform: uppercase;
-	// 			}
-
-	// 			input[name="data"]{float: left;}
-	// 			input[name="time"]{float: right;}
-	// 			input[name="name"]{float: left;}
-	// 			input[name="tel"]{float: right;}
-
-	// 			input:focus{border: 2px solid #663d15;}
-
-	// 			button{width: 100%; clear: both;}
-	// 		}
-	// 	}
-	// }
 }
 
 .main-footer{
 	padding: 40px 0 60px 0;
+
 	background: #222222;
 	
 	p, b, a{
@@ -307,10 +280,15 @@ main{
 	.footer-social{
 		width: 180px;
 		float: left;
-		text-align: center;
 		margin: 0;
 
-		b{margin: 0; margin-bottom: 19px; display: block;}
+		text-align: center;
+
+		b{
+			margin: 0;
+			margin-bottom: 19px; 
+			display: block;
+		}
 
 		a{
 			display: inline-block;
@@ -325,15 +303,23 @@ main{
 	.footer-copyright{
 		float: right;
 		width: 180px;
-		text-align: center;
 		margin: 0;
 
-		b{margin: 0; margin-bottom: 18px; display: block;}
+		text-align: center;
+
+		b{
+			margin: 0;
+			margin-bottom: 18px;
+			display: block;
+		}
 
 		.btn{
 			padding: 12px 20px;
 			
-			&:hover{background: #fff; color:#000;}
+			&:hover{
+				background: #fff;
+				color:#000;
+			}
 		}
 	}
 }

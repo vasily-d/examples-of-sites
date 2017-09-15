@@ -1,7 +1,7 @@
 * {
   outline: 1px solid grey;
 }
-.clearfix::after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
@@ -91,8 +91,8 @@ body a {
   width: 300px;
   margin-bottom: 10px;
 }
-.modal-content .login-form input[name="login"]::placeholder,
-.modal-content .login-form input[name="password"]::placeholder {
+.modal-content .login-form input[name="login"]:placeholder,
+.modal-content .login-form input[name="password"]:placeholder {
   background: #f9f6f3;
   color: #888;
   font-size: 14px;

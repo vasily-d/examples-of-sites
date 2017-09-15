@@ -1,3 +1,9 @@
+@import "../lib/normalize.css";
+@import "../lib/unslider.css";
+@import "../lib/unslider-dots.css";
+* {
+  outline: 1px solid black;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -7,409 +13,65 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", "Arial", sans-serif;
+  color: #000;
+  background: #fff;
 }
 body img {
   max-width: 100%;
   height: auto;
 }
+body ul {
+  list-style: none;
+}
 body a {
   text-decoration: none;
 }
-.wrapper {
+body .wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-header {
-  background: #eeeeee;
+.main-header {
+  background: #eee;
 }
-header .logo {
+.main-header .main-logo {
   float: left;
   margin: 50px 0 18px 0;
   font-size: 0;
 }
-header nav {
+.main-header .main-nav {
   float: left;
-  margin-top: 76px;
-  margin-left: 200px;
+  margin: 76px 0 0 200px;
 }
-header nav ul {
+.main-header .main-nav ul {
   margin: 0;
   padding: 0;
-  list-style: none;
 }
-header nav ul li {
+.main-header .main-nav ul li {
   float: left;
   margin-left: 45px;
 }
-header nav ul li:first-child {
+.main-header .main-nav ul li:first-child {
   margin-left: 0;
 }
-header nav ul li a {
+.main-header .main-nav ul li a {
+  display: block;
   color: #000;
   font-size: 16px;
   line-height: 30px;
-  display: block;
   text-transform: uppercase;
   font-weight: 500;
 }
-header nav ul li a:hover {
-  color: #777;
-}
-header .basket {
+.main-header .basket {
   float: right;
   margin-top: 76px;
 }
-header .basket a {
+.main-header .basket a {
   background: url("../img/basket.png") no-repeat 0 2px;
   color: #000;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 500;
   padding-left: 24px;
-  font-weight: 500;
-}
-header .basket a:hover {
-  color: #777;
-}
-.slider {
-  background: #eeeeee;
-  margin-bottom: 60px;
-}
-.slider .wrapper ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.slider .wrapper ul li {
-  position: relative;
-  width: 1200px;
-  height: 429px;
-}
-.slider .wrapper ul li:first-child {
-  background: url("../img/slider.png") no-repeat 0 0;
-}
-.slider .wrapper ul li:first-child + li {
-  background: url("../img/slider2.png") no-repeat 0 0;
-}
-.slider .wrapper ul li.last {
-  background: url("../img/slider3.png") no-repeat 0 0;
-}
-.slider .wrapper ul li .box-slider {
-  width: 516px;
-  position: absolute;
-  top: 74px;
-  left: 0;
-}
-.slider .wrapper ul li .box-slider h2 {
-  margin: 0;
-  padding: 0;
-  color: #000;
-  font-size: 55px;
-  line-height: 55px;
-  margin-bottom: 38px;
-  font-weight: 500;
-}
-.slider .wrapper ul li .box-slider p {
-  margin: 0;
-  padding: 0;
-  color: #283136;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 44px;
-}
-.slider .wrapper ul li .box-slider a {
-  background: #fb565a;
-  font-size: 16px;
-  line-height: 18px;
-  color: #fff;
-  padding: 18px 52px;
-  border-radius: 5px;
-  display: inline-block;
-  font-weight: 500;
-}
-.unslider-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  top: -84px;
-}
-main {
-  background: #fff;
-}
-main .features {
-  padding-bottom: 80px;
-  border-bottom: 2px solid #eeeeee;
-}
-main .features article {
-  float: left;
-  width: 300px;
-  margin-left: 100px;
-}
-main .features article:first-child {
-  margin-left: 0;
-}
-main .features article:first-child + article a {
-  background: #00ca74;
-}
-main .features article.last a {
-  background: #efc84a;
-}
-main .features article img {
-  margin-bottom: -2px;
-}
-main .features article h2 {
-  margin: 0;
-  padding: 0;
-  color: #000;
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
-  margin: 28px 0;
-  font-weight: 700;
-}
-main .features article p {
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  line-height: 24px;
-  color: #283136;
-  margin-bottom: 36px;
-}
-main .features article a {
-  background: #fb565a;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 18px;
-  display: inline-block;
-  vertical-align: center;
-  padding: 18px 38px;
-  border-radius: 5px;
-  font-weight: 500;
-}
-main .content {
-  padding-bottom: 76px;
-  margin-bottom: 45px;
-  border-bottom: 2px solid #eeeeee;
-}
-main .content .content-left {
-  float: left;
-  width: 700px;
-  margin-top: 84px;
-}
-main .content .content-left h2 {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 42px;
-  color: #000;
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 500;
-}
-main .content .content-left p {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 42px;
-  color: #283136;
-  font-size: 16px;
-  line-height: 24px;
-}
-main .content .content-left h3 {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 34px;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-}
-main .content .content-left ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-main .content .content-left ul li {
-  background: url("../img/short-line.png") no-repeat 0 10px;
-  padding-left: 36px;
-  color: #283136;
-  font-size: 16px;
-  line-height: 24px;
-  margin-top: 34px;
-}
-main .content .content-left ul li:first-child {
-  margin-top: 0;
-}
-main .content .content-right {
-  float: right;
-  width: 360px;
-  margin-top: 40px;
-  text-align: center;
-}
-main .content .content-right img {
-  margin-bottom: 36px;
-}
-main .content .content-right > p {
-  margin: 0;
-  color: #000;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 36px;
-  text-transform: uppercase;
-}
-main .content .content-right .prices {
-  text-align: left;
-}
-main .content .content-right .prices .number,
-main .content .content-right .prices .procent {
-  color: #000;
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 45px;
-}
-main .content .content-right .prices .procent {
-  font-size: 25px;
-  margin-right: 25px;
-}
-main .content .content-right .prices-text p {
-  margin: 0;
-  margin-top: 26px;
-  float: left;
-  width: 105px;
-  color: #283136;
-  font-size: 16px;
-  line-height: 18px;
-  margin-left: 22px;
-}
-main .content .content-right .prices-text p:first-child {
-  margin-left: 0;
-}
-main .brands {
-  padding-bottom: 47px;
-  margin-bottom: 80px;
-  border-bottom: 2px solid #eeeeee;
-}
-main .brands .brand1 {
-  float: left;
-  background: url("../img/brand1.png") no-repeat;
-  width: 209px;
-  height: 87px;
-  margin-left: 30px;
-  opacity: 0.2;
-}
-main .brands .brand2 {
-  float: left;
-  background: url("../img/brand2.png") no-repeat;
-  width: 209px;
-  height: 87px;
-  margin-left: 260px;
-  opacity: 0.2;
-}
-main .brands .brand3 {
-  float: left;
-  background: url("../img/brand3.png") no-repeat;
-  width: 209px;
-  height: 87px;
-  margin-left: 260px;
-  opacity: 0.2;
-}
-.map {
-  font-size: 0;
-  position: relative;
-}
-.map .pointer {
-  position: absolute;
-  background: url("../img/map-nerds.png") no-repeat;
-  width: 155px;
-  height: 190px;
-  top: 82px;
-  left: 818px;
-}
-.map .popup {
-  position: absolute;
-  top: 54px;
-  left: 140px;
-  background: #fff;
-  padding: 55px 50px 0 50px;
-  text-align: left;
-}
-.map .popup h2 {
-  margin: 0;
-  color: #000;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  margin-bottom: 28px;
-}
-.map .popup p {
-  margin: 0;
-  color: #666666;
-  font-size: 16px;
-  line-height: 18px;
-  margin-bottom: 36px;
-}
-.map .popup button {
-  margin-bottom: 48px;
-  background: #fb565a;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 18px 44px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.map .popup button:hover {
-  background: #ff765a;
-}
-footer .footer-social {
-  width: 300px;
-  float: left;
-  margin: 68px 0;
-  font-size: 0;
-  margin-right: 100px;
-}
-footer .footer-social a:first-child {
-  display: inline-block;
-  width: 79px;
-  height: 79px;
-  background: url("../img/vk.png") no-repeat;
-  margin-right: 10px;
-}
-footer .footer-social a:first-child + a {
-  display: inline-block;
-  width: 79px;
-  height: 79px;
-  background: url("../img/fb.png") no-repeat;
-  margin-right: 10px;
-}
-footer .footer-social .last {
-  display: inline-block;
-  width: 79px;
-  height: 79px;
-  background: url("../img/insta.png") no-repeat;
-  margin-right: 10px;
-}
-footer .footer-sales {
-  float: left;
-  width: 600px;
-  margin: 78px 0;
-}
-footer .footer-sales h3 {
-  margin: 0;
-  margin-bottom: 18px;
-  color: #000;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
-}
-footer .footer-sales p {
-  margin: 0;
-  color: #444444;
-  font-size: 16px;
-  line-height: 22px;
 }

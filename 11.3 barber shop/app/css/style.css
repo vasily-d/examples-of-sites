@@ -1,6 +1,3 @@
-* {
-  outline: 1px solid grey;
-}
 .clearfix:after {
   content: "";
   display: table;
@@ -10,9 +7,9 @@ body {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: bold;
-  background: #000 url("../img/bg.jpg") no-repeat 0 0;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  background: #000 url("../img/bg-content.jpg");
   color: #000;
 }
 body img {
@@ -32,18 +29,18 @@ body a {
 }
 .btn {
   display: inline-block;
-  background: #000;
-  color: #fff;
   padding: 15px 32px;
   font-size: 14px;
   line-height: 24px;
-  border: none;
-  cursor: pointer;
+  color: #fff;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
   vertical-align: center;
+  background: #000;
+  border: none;
+  cursor: pointer;
 }
 .btn:hover {
   background: #663d15;
@@ -51,32 +48,180 @@ body a {
 .btn:active {
   background: #163d15;
 }
+.modal-content {
+  background: #fff;
+  background: url("../img/bg-popup.png") 0 0;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  color: #000;
+  width: 300px;
+  margin-left: -230px;
+  display: none;
+  padding: 50px 80px;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  z-index: 20;
+}
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 28px;
+  color: #000;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.modal-content p {
+  margin: 0;
+  margin-bottom: 16px;
+  color: #000;
+  font-weight: 700;
+  font-size: 14;
+  text-transform: uppercase;
+}
+.modal-content .login-form input[name="login"],
+.modal-content .login-form input[name="password"] {
+  background: #f9f6f3;
+  border: 2px solid #000101;
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 13px 40px 13px 13px;
+  box-sizing: border-box;
+  width: 300px;
+  margin-bottom: 10px;
+}
+.modal-content .login-form input[name="login"]::placeholder,
+.modal-content .login-form input[name="password"]::placeholder {
+  background: #f9f6f3;
+  color: #888;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.modal-content .login-form input[name="login"] {
+  background: url("../img/popup-login.png") no-repeat 270px 14px;
+}
+.modal-content .login-form input[name="password"] {
+  background: url("../img/popup-password.png") no-repeat 270px 14px;
+  margin-bottom: 15px;
+}
+.modal-content .login-form .login-checkbox {
+  float: left;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+.modal-content .login-form .login-checkbox .box {
+  margin-bottom: 17px;
+}
+.modal-content .login-form .restore {
+  float: right;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.modal-content .login-form .restore:hover {
+  text-decoration: none;
+}
+.modal-content .login-form button {
+  background: #000;
+  border: none;
+  cursor: pointer;
+  padding: 14px 0;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+.modal-content .login-form button:hover {
+  background: #333;
+}
+.modal-content .close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  width: 21px;
+  height: 21px;
+  background: url("../img/x.png") no-repeat;
+  border: 0;
+  cursor: pointer;
+}
+.modal-content .close:hover {
+  opacity: 0.4;
+  background: url("../img/x.png") no-repeat;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.show {
+  display: block;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+@keyframes shake {
+  0% 100% {
+    tramsform: translateX(0);
+  }
+  10% 30% 50% 70% 90% {
+    tramsform: translateX(-10px);
+  }
+  20% 40% 60% 80% {
+    tramsform: translateX(10px);
+  }
+}
 .main-header {
   background: #000;
-}
-.main-header .logo {
-  float: left;
-  width: 111px;
-  height: 24px;
-  font-size: 0;
-  padding-top: 23px;
-  padding-left: 20px;
-}
-.main-header .logo a {
-  display: block;
+  margin-bottom: 56px;
+  overflow: hidden;
 }
 .main-header .main-nav {
   float: left;
   margin-left: 18px;
-  width: 560px;
+  width: 810px;
+}
+.main-header .main-nav .logo {
+  float: left;
+  width: 111px;
+  height: 24px;
+  margin-top: 22px;
+  margin-right: 20px;
+  font-size: 0;
+}
+.main-header .main-nav .logo a {
+  display: block;
 }
 .main-header .main-nav ul {
+  float: left;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .main-header .main-nav ul li {
   float: left;
+}
+.main-header .main-nav ul li.active {
+  position: relative;
+  background: none;
+}
+.main-header .main-nav ul li.active:after {
+  content: "";
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 5px;
+  background: #fff;
 }
 .main-header .main-nav ul li a {
   color: #fff;
@@ -87,8 +232,6 @@ body a {
 }
 .main-header .main-nav ul li a:hover {
   background: #242424;
-  border-bottom: 5px solid #fff;
-  padding-bottom: 20px;
 }
 .main-header .user-block {
   float: right;
@@ -107,20 +250,174 @@ body a {
   color: #777;
 }
 main {
-  background: url("../img/bg-content.jpg");
+  padding-bottom: 50px;
 }
 main .top-main h2 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 30px;
+  line-height: 42px;
+}
+main .top-main ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 52px;
+}
+main .top-main ul li {
+  float: left;
+  position: relative;
+  padding-right: 35px;
+}
+main .top-main ul li:last-child:after {
+  display: none;
+}
+main .top-main ul li:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  transform: rotate(45deg);
+}
+main .top-main ul li a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+main .top-main ul li.current a {
+  color: #c5c2c0;
+}
+main .filter-items {
+  float: left;
+  width: 240px;
+}
+main .filter-items h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 34px;
+}
+main .filter-items .brands-items {
+  margin-bottom: 55px;
+}
+main .filter-items .brands-items input {
+  margin-bottom: 20px;
+}
+main .filter-items .brands-items input[name="checkbox6"] {
+  margin-bottom: 0;
+}
+main .filter-items .brands-items label {
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 18px;
+}
+main .filter-items .type-items input {
+  margin-bottom: 24px;
+}
+main .filter-items .type-items label {
+  font-size: 14px;
+  line-height: 18px;
+}
+main .filter-items .type-items button {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  width: 112px;
+  padding: 14px 0;
+  border: none;
+  background: #000;
+  cursor: pointer;
+  color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+}
+main .filter-items .type-items button:hover {
+  background: #663d15;
+}
+main .description-items {
+  margin-left: 240px;
+}
+main .description-items .items article {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: left;
+  background: #fff;
+  box-shadow: 0px 0px 10px #000;
+}
+main .description-items .items article:nth-child(3n) {
+  margin-right: 0;
+}
+main .description-items .items article .item-img {
+  font-size: 0;
+}
+main .description-items .items article p {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 18px 0;
+  padding: 0 16px;
+}
+main .description-items .items article .item-price {
+  padding: 0 16px;
+}
+main .description-items .items article .item-price span {
+  float: left;
+  width: 110px;
+  background: #e5e5e5;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 14px 0;
+  text-align: center;
+}
+main .description-items .items article .item-price a {
+  float: left;
+  width: 78px;
+  padding: 14px 0;
+  margin-bottom: 16px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+main .description-items .items article .item-price a:hover {
+  background: #663d15;
+}
+main .description-items .pagination-items ul {
+  padding: 0;
   margin: 0;
 }
-main aside {
+main .description-items .pagination-items ul li {
   float: left;
+  margin-right: 7px;
 }
-main section {
-  float: right;
+main .description-items .pagination-items ul li.current a {
+  background: #fff;
+  color: #000;
+}
+main .description-items .pagination-items ul li a {
+  display: block;
+  width: 43px;
+  padding: 16px 0;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+main .description-items .pagination-items ul li a:hover {
+  background: #663d15;
 }
 .main-footer {
   padding: 40px 0 60px 0;
   background: #222222;
+  box-shadow: 0 5px 30px 0 #000 inset;
 }
 .main-footer p,
 .main-footer b,
@@ -164,8 +461,8 @@ main section {
 .main-footer .footer-copyright {
   float: right;
   width: 180px;
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 .main-footer .footer-copyright b {
   margin: 0;
