@@ -1,18 +1,22 @@
 .main-header{
 	background: #eee;
 
-	.main-logo{
+	.header-logo{
 		float: left;
 		margin: 50px 0 18px 0;
 
 		font-size: 0;
 
 		&:hover{
-			//3x
+			opacity: 0.8;
+		}        
+
+		&:active{
+			opacity: 0.3;
 		}
 	}
 
-	.main-nav{
+	.header-nav{
 		float: left;
 		margin: 76px 0 0 200px;
 
@@ -36,15 +40,18 @@
 					font-weight: 500;
 
 					&:hover{
-						//3x
+						color: #fb565a;
+					}
 
+					&:active{
+						opacity: 0.3;
 					}
 				}
 			}
 		}
 	}
 
-	.basket{
+	.header-basket{
 		float: right;
 		margin-top: 76px;
 
@@ -60,9 +67,11 @@
 			padding-left: 24px;
 
 			&:hover{
-				//3x
+				color: #fb565a;
+			}
 
-
+			&:active span{
+				opacity: 0.3;
 			}
 		}
 	}
