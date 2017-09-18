@@ -234,4 +234,167 @@ main{
 			background: url("../img/brand3.png") no-repeat; 
 		}
 	}
+
+	// SECOND PAGE
+	.filter-templates{
+		width: 300px;
+		float: left;
+
+		h2{
+			margin: 0;
+			margin-bottom: 50px;
+
+			color: #000;
+			font-size: 18px;
+			line-height: 30px;
+			text-transform: uppercase;
+		}
+		
+		.box-range{
+			margin-bottom: 14px;
+		}
+
+		.screen-range{
+			margin-bottom: 62px;
+		}
+
+		.screen-range+h2{
+			margin-bottom: 16px;
+		}
+
+		.last{
+			margin: 48px 0 20px 0;
+		}
+
+		button[type="button"]{
+			width: 260px;
+			margin-top: 48px;
+			padding: 16px 0;
+
+			background: #eee;
+			border: none;
+			cursor: pointer;
+
+			font-size: 16px;
+			line-height: 18px;
+			color: #000;
+			font-weight: 700;
+
+			
+		}
+	}
+
+	.list-templates{
+		width: 800px;
+		float: right;
+
+		.sort{
+			text-transform: uppercase;
+			margin-bottom: 56px;
+
+			h2{
+				float: left;
+				margin: 0;
+				padding: 0;
+				margin-left: 40px;
+
+				font-size: 18px;
+				line-height: 18px;
+				font-weight: 700;
+			}
+
+			ul{
+				float: right;
+				margin: 0;
+				padding: 0;
+
+				li{
+					float: left;
+					margin-right: 20px;
+
+					&:last-child{
+						margin-right: 0;
+						padding-right: 86px;
+
+						// background: url('../../img/sort-down.png') no-repeat right 5px, url('../../img/sort-up.png') no-repeat 150px 5px;
+					}
+
+					&::after{
+						background: url('../../img/sort-down.png') no-repeat;
+						
+						height: 9px;
+						width: 9px;
+
+						background: url('../../img/sort-up.png') no-repeat;
+
+						height: 9px;
+						width: 9px;
+						///////////////////
+					}
+					
+					a{
+						color: #b7b7b7;
+						font-size: 14px;
+						line-height: 18px;
+					}
+
+					&.current a{color: #000;}
+				}
+			}
+		}
+
+		.sites{
+			margin-bottom: 20px;
+
+			div{
+				float: left;
+
+				font-size: 0;
+				
+				margin-bottom: 40px;
+				margin-left: 40px;				
+			}
+		}
+
+		.pagination{
+			margin-left: 40px;
+			margin-bottom: 60px;
+
+			ul{
+				margin: 0;
+				padding: 0;
+
+				li{
+					float: left;
+					margin-left: 11px;
+
+					&:first-child{
+						margin-left: 0;
+					}
+
+					&.current-li a{
+						background: #fff;
+						border: 3px solid #dbdbdb;
+						padding: 14px 17px;
+					}
+
+					a{
+						color: #000;
+						font-size: 16px;
+						line-height: 18px;
+						font-weight: 500;
+						text-transform: uppercase;
+						
+						display: block;
+						padding: 17px 20px;
+
+						background: #eeeeee;
+
+						&:hover{background: #dfdfdf;}
+						&:active{background: #d5d5d5;}
+					}
+				}
+			}
+		}
+	}
 }
