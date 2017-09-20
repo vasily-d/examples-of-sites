@@ -235,7 +235,7 @@ main{
 		}
 	}
 
-	// SECOND PAGE
+	// PAGE CATALOG START ///////////////////////////////////////////////////////////
 	.filter-templates{
 		width: 300px;
 		float: left;
@@ -252,14 +252,45 @@ main{
 		
 		.box-range{
 			margin-bottom: 14px;
+			width: 260px;
+			height: 80px;
+			padding-top: 30px;
+			box-sizing: border-box;
+
+			background: #eee;
+			border-radius: 5px;
+
+			text-align: center;
 		}
 
 		.screen-range{
 			margin-bottom: 62px;
+
+			color: #283136;
+			font-size: 16px;
+			line-height: 22px;
+
+			span{
+				display: inline-block;
+				width: 80px;
+				padding: 10px 0;
+				margin-left: 10px;
+
+				text-align: center;
+
+				background: #eee;
+				border-radius: 5px;
+
+				&:first-child{margin-right: 36px;}
+			}
 		}
 
 		.screen-range+h2{
 			margin-bottom: 16px;
+		}
+
+		input{
+			margin-bottom: 25px;
 		}
 
 		.last{
@@ -274,13 +305,20 @@ main{
 			background: #eee;
 			border: none;
 			cursor: pointer;
+			border-radius: 5px;
 
 			font-size: 16px;
 			line-height: 18px;
 			color: #000;
 			font-weight: 700;
 
-			
+			&:hover{
+				background: #dfdfdf;
+			}
+
+			&:active{
+				background: #d5d5d5;
+			}
 		}
 	}
 
@@ -308,9 +346,13 @@ main{
 				margin: 0;
 				padding: 0;
 
+				position: relative;
+
 				li{
 					float: left;
 					margin-right: 20px;
+
+					&.current a{opacity: 1;}
 
 					&:last-child{
 						margin-right: 0;
@@ -318,27 +360,64 @@ main{
 
 						// background: url('../../img/sort-down.png') no-repeat right 5px, url('../../img/sort-up.png') no-repeat 150px 5px;
 					}
-
-					&::after{
-						background: url('../../img/sort-down.png') no-repeat;
-						
-						height: 9px;
-						width: 9px;
-
-						background: url('../../img/sort-up.png') no-repeat;
-
-						height: 9px;
-						width: 9px;
-						///////////////////
-					}
 					
 					a{
-						color: #b7b7b7;
+						color: #000;
 						font-size: 14px;
 						line-height: 18px;
-					}
 
-					&.current a{color: #000;}
+						opacity: 0.3;
+
+						&:hover{opacity: 0.6;}
+
+						&:active{opacity: 1;}
+					}
+				}
+
+				&:before{
+					content: '';
+					display: block;
+					width: 9px;
+					height: 9px;
+
+					position: absolute;
+					top: 5px;
+					right: 18px;
+					
+					background: url('../../img/sort-down.png') no-repeat;
+					cursor: pointer;
+					opacity: 0.2;
+				}
+
+				&:hover:before{
+					opacity: 0.4;
+				}
+
+				&:active:before{
+					opacity: 1;
+				}
+
+				&:after{
+					content: '';
+					display: block;
+					width: 9px;
+					height: 9px;
+
+					position: absolute;
+					top: 5px;
+					right: 0;
+					
+					background: url('../../img/sort-up.png') no-repeat;
+					cursor: pointer;
+					opacity: 0.2;			
+				}
+
+				&:hover:after{
+					opacity: 0.4;
+				}
+
+				&:active:after{
+					opacity: 1;
 				}
 			}
 		}
@@ -397,4 +476,5 @@ main{
 			}
 		}
 	}
+	// PAGE CATALOG END ///////////////////////////////////////////////////////////
 }

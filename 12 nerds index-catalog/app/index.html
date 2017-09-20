@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>nerds</title>
 	
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -18,9 +18,9 @@
 			<a class="header-logo" href="/"><img src="img/logo.png" alt="logo"></a>
 			<nav class="header-nav">
 				<ul class="clearfix">
-					<li><a href="#">Студия</a></li>
+					<li class="current"><a href="#">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
-					<li><a href="#">Магазин</a></li>
+					<li><a href="catalog.html">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
@@ -29,35 +29,69 @@
 			</div>
 		</div>
 	</header>
-
-	<div class="slider">
-		<div class="wrapper">
-			<ul>
-				<li>
-					<div class="box-slider">
-						<h2>Долго, дорого, скрупулезно</h2>
+	
+	<div class="box-slider">
+		<div class="slider">
+			<!-- классический вариант слайдера -->
+			<div class="slider-controls">
+				<i class="active"></i>
+				<i></i>
+				<i></i>
+			</div>
+			<div class="slides">
+				<div class="slide">
+					<div class="slide-text">
+						<div class="slide-title">Долго, дорого, скрупулезно</div>
 						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-						<a href="#">Узнать больше</a>
+						<a class="btn" href="#">Узнать больше</a>
 					</div>
-				</li>
-				<li>
-					<div class="box-slider">
-						<h2>Любим математику как никто другой</h2>
+				</div>
+				<div class="slide">
+					<div class="slide-text">
+						<div class="slide-title">Любим математику как никто другой</div>
 						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-						<a href="#">Узнать больше</a>
+						<a class="btn" href="#">Узнать больше</a>
 					</div>
-				</li>
-				<li class="last">
-					<div class="box-slider">
-						<h2>Только ночь, только хардкор</h2>
+				</div>
+				<div class="slide">
+					<div class="slide-text">
+						<div class="slide-title">Только ночь, только хардкор</div>
 						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-						<a href="#">Узнать больше</a>
+						<a class="btn" href="#">Узнать больше</a>
 					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+				</div>	
+			</div>
+			
 
+			<!-- другой вариант слайдера -->
+			<!-- <div class="wrapper">
+				<ul>
+					<li>
+						<div class="box-slider">
+							<h2>Долго, дорого, скрупулезно</h2>
+							<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+							<a href="#">Узнать больше</a>
+						</div>
+					</li>
+					<li>
+						<div class="box-slider">
+							<h2>Любим математику как никто другой</h2>
+							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+							<a href="#">Узнать больше</a>
+						</div>
+					</li>
+					<li class="last">
+						<div class="box-slider">
+							<h2>Только ночь, только хардкор</h2>
+							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+							<a href="#">Узнать больше</a>
+						</div>
+					</li>
+				</ul>
+			</div> -->
+		</div>	
+	</div>
+	
 	<main class="wrapper">
 		<div class="main-features clearfix">
 			<article>
@@ -132,9 +166,9 @@
 
 	<footer class="main-footer wrapper clearfix">
 		<div class="footer-social">
-			<a href="https://vk.com/"></a>
-			<a href="https://ru-ru.facebook.com/"></a>
-			<a class="last" href="https://www.instagram.com/?hl=ru"></a>
+			<a href="https://vk.com/" target="_blank"></a>
+			<a href="https://ru-ru.facebook.com/" target="_blank"></a>
+			<a class="last" href="https://www.instagram.com/?hl=ru" target="_blank"></a>
 		</div>
 		<div class="footer-sales">
 			<h3>Давайте дружить, это выгодно!</h3>
@@ -142,7 +176,7 @@
 		</div>
 	</footer>
 
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="lib/unslider-min.js"></script>
 	<script>
 		jQuery(document).ready(function($) {
@@ -151,6 +185,6 @@
 				arrows:false
 			});
 		});
-	</script>
+	</script> -->
 </body>
 </html>
