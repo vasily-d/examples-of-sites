@@ -34,9 +34,9 @@
 		<div class="slider">
 			<!-- классический вариант слайдера -->
 			<div class="slider-controls">
-				<i class="active"></i>
-				<i></i>
-				<i></i>
+				<i class="active" data-id="1"></i>
+				<i data-id="2"></i>
+				<i data-id="3"></i>
 			</div>
 			<div class="slides">
 				<div class="slide">
@@ -62,7 +62,6 @@
 				</div>	
 			</div>
 			
-
 			<!-- другой вариант слайдера -->
 			<!-- <div class="wrapper">
 				<ul>
@@ -186,5 +185,89 @@
 			});
 		});
 	</script> -->
+
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script>
+		function Slider(time) {
+			// variables
+			this.time = time || 1000; // by default
+
+			// добавить иключение из остановки слайдера когда кликнули на controls!
+			this.btnStopSlider = document.querySelector('.box-slider .slider .slides');
+			
+			this.slides = document.querySelectorAll('.box-slider .slider .slides .slide');
+			this.btnsControl = document.querySelectorAll('.box-slider .slider .slider-controls i');
+			this.currentSlide = document.querySelectorAll('.box-slider .slider .slides .slide');
+			var flagTimer = false;	// timer off
+			var that = this;
+
+			// events
+			this.btnStopSlider.addEventListener('click', function(e) {
+				if(!flagTimer) {
+					flagTimer = !flagTimer;
+					clearInterval(that.timer);
+				}
+				else {
+					flagTimer = !flagTimer;
+					that.run();
+				}
+			});
+
+			for(var i = 0; i < that.btnsControl.length; i++) {
+				that.btnsControl[i].addEventListener('click', function(e) {
+
+					// удаление всех классов active
+					for(var i = 0; i < that.btnsControl.length; i++) {
+						that.btnsControl[i].classList.remove('active');
+					}
+
+					// постановка класса active
+					this.classList.add('active');
+
+					// изменнеие слайдера
+					for(var i = 0; i < that.currentSlide.length; i++) {
+						that.currentSlide[i].style.display = 'none';
+					}
+					that.currentSlide[this.getAttribute('data-id')-1].style.display = 'block';
+				});
+			}
+
+			// functions
+			this.run = function() {
+				var count = 0;
+
+				// запуск слайдера по таймеру
+				that.timer = setInterval(function() {
+					that.flagTimer = true;
+					
+					// переключение слайдера по таймеру
+					if(count < 3) {
+						console.log(count);
+
+						for(var i = 0; i < that.currentSlide.length; i++) {
+							that.currentSlide[i].style.display = 'none';
+						}
+						that.currentSlide[count].style.display = 'block';
+
+						count++;
+					}
+					else {
+						count = 0;
+
+						for(var i = 0; i < that.currentSlide.length; i++) {
+							that.currentSlide[i].style.display = 'none';
+						}
+						that.currentSlide[count].style.display = 'block';
+
+						count++;
+					}
+
+				}, that.time);
+			};
+		};
+
+		var mySlider = new Slider(1500);
+		mySlider.run();
+	</script>
 </body>
 </html>
