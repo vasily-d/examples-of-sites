@@ -16,5 +16,5 @@ examples of sites
 11.1 barber items
 11.2 barber price
 11.3 barber shop
-12 nerds index
-12.1 nerds catalog
+12 nerds index-catalog
+13 hosting
