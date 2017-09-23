@@ -1,4 +1,4 @@
-examples of sites
+examples of sites:
 
 0 template
 
