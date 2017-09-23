@@ -5,7 +5,12 @@
 		float: left;
 		margin: 20px 0;
 
-		a{font-size: 0;}
+		a{
+			font-size: 0;
+			
+			&:hover{opacity: 0.7;}
+			&:active{opacity: 0.5;}
+		}
 	}
 
 	.header-nav{
@@ -43,7 +48,8 @@
 		left: 0;
 		right: 0;
 		z-index: 10;
-		background: grey;
+
+		background: #000;
 	}
 
 	.header-login{
@@ -57,8 +63,8 @@
 
 		border: 1px solid #f50;
 
-		&:hover{color: #aaa;}
-		&:active{color: #555;}
+		&:hover{background: #e84c3d;}
+		&:active{background: #ff4c3d;}
 	}
 
 	.header-intro{

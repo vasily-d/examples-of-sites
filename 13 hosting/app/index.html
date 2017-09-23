@@ -25,12 +25,12 @@
 					<li><a href="#">Hosting</a></li>
 					<li><a href="#">Domains</a></li>
 					<li><a href="#">Features</a></li>
-					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Plans</a></li>
 					<li><a href="#">Contacts</a></li>
 				</ul>
 			</nav>
 
-			<a class="header-login" href="#">login</a>
+			<a class="header-login js-login" href="#">login</a>
 		</div>
 
 		<div class="header-intro wrap">
@@ -42,7 +42,7 @@
 	</header>
 
 	<!-- Benefits -->
-	<div class="benefits">
+	<div class="benefits js-hosting">
 		<div class="wrap">
 			<div class="benefits-item uptime">
 				<h3>99,9% UPtime guarantee</h3>
@@ -63,7 +63,7 @@
 	</div>
 	
 	<!-- Search -->
-	<div class="search wrap">
+	<div class="search js-domains wrap">
 		<h2>Search Domain</h2>
 		<p>Save big on domain options like .com, .co, .biz, .net, .org and grab new domains like .xyz,<br>.club, .guru, .email, .link, .today, and more!</p>
 		
@@ -91,7 +91,7 @@
 	</div>
 
 	<!-- Features -->
-	<div class="features wrap">
+	<div class="features js-features wrap">
 		<h2>Features</h2>
 
 		<div class="features-list">
@@ -121,36 +121,123 @@
 			</div>
 		</div>
 	</div>
-	
-
-
-
-
 
 	<!-- Plans -->
-	<div class="wrap">
-		<h2 class="js-plan">Pick your plan</h2>
-		<p>Upgrade, downgrade or cancel anytime.</p>
+	<div class="js-plans wrap">
+		<h2 class="plans-title js-plan">Pick your plan</h2>
+		<p class="plans-text">Upgrade, downgrade or cancel anytime.</p>
 
-		block 1
-	</div>
+		<div class="plans">
+			<div class="plans-item">
+				<header class="plans-header">
+					<h3>personal</h3>
+					<p>Perfect Pack for Small Business</p>
+				</header>
+				<div class="plans-price">
+					<sup>$</sup>25<span>/ mo</span>
+				</div>
+				<ul class="plans-list">
+				    <li class="plans-list-item"><b>3 Gb</b> of storage</li>
+				    <li class="plans-list-item"><b>10</b> repositories</li>
+				    <li class="plans-list-item"><b>10</b> parked domains</li>
+				    <li class="plans-list-item"><b>25 FTP</b> accounts</li>
+				</ul>
+				<a class="btn-order-now" href="#">order now</a>
+			</div>
 
-	<!-- Testimonials -->
-	<div class="wrap">
-		block 2
+			<div class="plans-item-active">
+				<header class="plans-header">
+					<h3>business</h3>
+					<p>Perfect Pack for Business</p>
+				</header>
+				<div class="plans-price">
+					<sup>$</sup>45<span>/ mo</span>
+				</div>
+				<ul class="plans-list">
+				    <li class="plans-list-item"><b>3 Gb</b> of storage</li>
+				    <li class="plans-list-item"><b>10</b> repositories</li>
+				    <li class="plans-list-item"><b>10</b> parked domains</li>
+				    <li class="plans-list-item"><b>25 FTP</b> accounts</li>
+				</ul>
+				<a class="btn-order-now" href="#">order now</a>
+			</div>
+
+			<div class="plans-item">
+				<header class="plans-header">
+					<h3>corporation</h3>
+					<p>Perfect Pack for corporations</p>
+				</header>
+				<div class="plans-price">
+					<sup>$</sup>65<span>/ mo</span>
+				</div>
+				<ul class="plans-list">
+				    <li class="plans-list-item"><b>3 Gb</b> of storage</li>
+				    <li class="plans-list-item"><b>10</b> repositories</li>
+				    <li class="plans-list-item"><b>10</b> parked domains</li>
+				    <li class="plans-list-item"><b>25 FTP</b> accounts</li>
+				</ul>
+				<a class="btn-order-now" href="#">order now</a>
+			</div>
+		</div>
+
+		<p>If you need help finding a plan that’s right for you,<br> just <a href="#" class="link link_red">chat with a live person</a>.</p>
 	</div>
 
 	<!-- Company Blog -->
 	<div class="wrap">
-		block 3
+		<h2 class="company-title">Company Blog</h2>
+		
+		<div class="post-list">
+			<article>
+				<div class="post-left">
+					<h3><a href="#">How does the Internet Create Potential</a></h3>
+					<div class="post-info">
+					    <time datetime="31.01.2016" pubdate="">31 January, 2016</time>
+					    <p class="comments">6 comments</p>
+					    <div class="post-info-item"><i class="heart-icon"></i>12</div>
+					</div>
+					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <a href="#">Read More</a></p>
+				</div>
+				<div class="post-right">
+					<a href="#"><img src="img/image1.jpg" alt="post1"></a>
+				</div>
+			</article>
+
+			<article>
+				<div class="post-left">
+					<h3><a href="#">How does the Internet Create Potential</a></h3>
+					<div class="post-info">
+					    <time datetime="31.01.2016" pubdate="">31 January, 2016</time>
+					    <p class="comments">6 comments</p>
+					    <div class="post-info-item"><i class="heart-icon"></i>22</div>
+					</div>
+					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <a href="#">Read More</a></p>
+				</div>
+				<div class="post-right">
+					<a href="#"><img src="img/image2.jpg" alt="post2"></a>
+				</div>
+			</article>
+
+			<article>
+				<div class="post-left">
+					<h3><a href="#">How does the Internet Create Potential</a></h3>
+					<div class="post-info">
+					    <time datetime="31.01.2016" pubdate="">31 January, 2016</time>
+					    <p class="comments">6 comments</p>
+					    <div class="post-info-item"><i class="heart-icon"></i>6</div>
+					</div>
+					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <a href="#">Read More</a></p>
+				</div>
+				<div class="post-right">
+					<a href="#"><img src="img/image3.jpg" alt="post3"></a>
+				</div>
+			</article>
+		</div>
 	</div>
 	
-
-
-
-
 	<!-- Map -->
-	<div class="map">
+	<div class="map js-contacts">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2504937.3536440507!2d41.413847937500016!3d52.18473033461968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506171862753" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		<div class="wrap">
 			<h3>We are interested <br>in long-term cooperation</h3>	
 			<address>
@@ -159,30 +246,30 @@
 			</address>
 			
 			<div>
-			    <div class="work-days">Mon – Fri , 8 am – 5 pm</div>
-			    <div>800-638-9996, 518-292-4500, <a href="#">info@somecompany.com</a></div>
+			    <p class="work-days">Mon – Fri , 8 am – 5 pm</p>
+			    <p class="tel">800-638-9996, 518-292-4500, <a href="#">info@somecompany.com</a></p>
 			</div>
 		</div>
 	</div>
 	
 	<!-- Subscribe social -->
 	<div class="subscribe-social">
-		<div class="wrap">
+		<div class="wrap clearfix">
 			<div class="social">
 				<div class="social-title">follow us on</div>
 				<div class="social-list">
-					<a class="social-item tw" href="#">twitter</a>
-					<a class="social-item fb" href="#">facebook</a>
-					<a class="social-item ln" href="#">linkedin</a>
-					<a class="social-item in" href="#">instagram</a>
+					<a class="social-item tw" href="https://twitter.com/?lang=ru" target="_blank">twitter</a>
+					<a class="social-item fb" href="https://ru-ru.facebook.com/" target="_blank">facebook</a>
+					<a class="social-item ln" href="https://ru.linkedin.com/" target="_blank">linkedin</a>
+					<a class="social-item in" href="https://www.instagram.com/?hl=ru" target="_blank">instagram</a>
 				</div>
 			</div>
 
 			<div class="subscribe">
 				<label for="subscribe-email">subscribe</label>
 				<form action="/" method="get">
-					<input type="email" name="email" id="subscribe-email">
-					<button class="btn">send</button>
+					<input type="email" name="email" id="subscribe-email" placeholder="email...">
+					<button>send</button>
 				</form>
 			</div>
 		</div>
@@ -228,11 +315,20 @@
 		</div>
 
 		<div class="footer-block">
-			<a href="#">(044) 383 4389</a>
-			<a href="#">support@cloudhost.com</a>
-			<p>Copyright © 2015 Cloud Host.All rights reserved.</p>
+			<a class="phone" href="#">(044) 383 4389</a><br>
+			<a class="email" href="#"><br>support@cloudhost.com</a>
+			<p class="copyright">Copyright © 2015 Cloud Host. All rights reserved.</p>
 		</div>
 	</footer>
+
+
+	
+	<div class="modal">
+		<h2>Modal Title</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates itaque quae cupiditate labore ea libero sequi debitis eveniet, voluptatum ratione, corrupti culpa accusantium molestias quasi repellendus autem laboriosam expedita.</p>
+		<a href="#">Close</a>
+	</div>
+	<div class="overlay"></div>
 
 	<script src="lib/jquery-3.2.1.min.js"></script>
 	<script src="js/custom.js"></script>
