@@ -33,8 +33,8 @@ $(function(){
 			if(currentPosition >= positionTo) {
 				// показ меню с fixed
 				nav.addClass('nav-fixed');
-				nav.css('paddingLeft', offset);
-				nav.css('paddingRight', offset);
+				// nav.css('paddingLeft', offset);
+				// nav.css('paddingRight', offset);
 				header.css('padding-top', navHeight);
 			}
 			else {
@@ -98,6 +98,11 @@ $(function(){
 	(function(){
 		// modal and overlay control
 
+		// динамическое получение width
+		var modalWidth = $('.modal').innerWidth();
+		$('.modal').css('marginLeft', '-'+parseInt(modalWidth/2)+'px');
+		// console.log(parseInt(modalWidth/2));
+
 		// event click to login
 		$('.js-login').on('click', function(e) {
 			e.preventDefault();
@@ -107,6 +112,7 @@ $(function(){
 
 			// показ overlay и modal
 			overlay.fadeIn(500);
+			// $('body').append('<div class="overlay"></div>');
 			modal.fadeIn(500);
 
 			// убрать scroll у body на время modal
@@ -117,10 +123,65 @@ $(function(){
 				e.preventDefault();
 
 				overlay.fadeOut(200);
-				modal.fadeOut(200);
-
-				$('html, body').removeClass('hideScroll');
+				// $('.overlay').remove();
+				modal.fadeOut(200, function() {
+					// callback
+					$('html, body').removeClass('hideScroll');
+				});
 			});
 		});
 	})();
+
+	(function(){
+		// accordeon in questions
+		var faqContent = $('.faq-content');
+
+		// toggle when click to questions (this)
+		$('.js-question').on('click', function(e) {
+			e.preventDefault();
+			
+			// проверка что данный question еще не открыт через css display = none
+			if( $(this).next().css('display') == 'none') {
+				// закрыть все остальные question
+				faqContent.slideUp();
+			}
+			
+
+			// открытыть текущий question
+			$(this).next().slideToggle();  //toggleClass('show-question');
+		});
+	})();
+
+	(function(){
+		// mini-popup span
+		var minipopup = $('.js-minipopup');
+
+		$('.js-linkpopup').hover(function(){
+			minipopup.fadeToggle();
+		});
+	})();
+
+
+	(function(){
+		// show/hide read more in tag a
+
+		// find all link read more
+		var readMoreLinks = $('.js-read-more');
+
+		readMoreLinks.on('click', function(e) {
+			e.preventDefault();
+
+			$(this).parent().find('span').slideToggle(100);
+
+			// меняем надпись на hide и обратно
+			if($(this).text() == 'Read More') {
+				$(this).text(' Hide');
+			}
+			else {
+				$(this).text('Read More');
+			}
+		});
+	})();
+
+
 });

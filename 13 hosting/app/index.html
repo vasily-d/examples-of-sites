@@ -43,7 +43,7 @@
 
 	<!-- Benefits -->
 	<div class="benefits js-hosting">
-		<div class="wrap">
+		<div class="wrap clearfix">
 			<div class="benefits-item uptime">
 				<h3>99,9% UPtime guarantee</h3>
 				<p>Disk space in all packages has been increased by ten times!</p>
@@ -70,11 +70,11 @@
 		<div class="search-form">
 			<form action="/" method="get">
 				<input class="search-input" type="text" name="search-site" placeholder="http://website.com">
-				<button class="btn search-btn" type="submit">find domain</button>
+				<button class="search-btn" type="submit">find domain</button>
 			</form>
 		</div>
 
-		<div class="search-description">
+		<div class="search-description clearfix">
 			<div class="search-item find">
 				<h3>find domain</h3>
 				<p>Etiam efficitur, risus sit amet sodales laoreet, sem mauris interdum lectus, nec luctus est.</p>
@@ -91,48 +91,51 @@
 	</div>
 
 	<!-- Features -->
-	<div class="features js-features wrap">
-		<h2>Features</h2>
+	<div class="features js-features">
+		<div class="wrap">
+			<h2>Features</h2>
 
-		<div class="features-list">
-			<div class="features-item love">
-			    <h3>Made with love</h3>
-			    <p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
-			</div>
-			<div class="features-item database">
-			    <h3>Databases</h3>
-			    <p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
-			</div>
-			<div class="features-item vps">
-			    <h3>VPS server</h3>
-			    <p>Phasellus aliquam arcu quis lectus aliquam, sed dignissim ligula efficitur.</p>
-			</div>
-			<div class="ffeatures-item secure">
-			    <h3>Fully secured</h3>
-			    <p>Phasellus aliquam arcu quis lectus aliquam efficitur.</p>
-			</div>
-			<div class="features-item backup">
-			    <h3>Daily backups</h3>
-			    <p>Aliquam nisl lectus, rhoncus nec ex vestibulum. </p>
-			</div>
-			<div class="features-item cloud">
-			    <h3>Cloud hosted</h3>
-			    <p>Etiam sagittis tellus at lacus cursus, non molestie nulla.</p>
+			<div class="features-list">
+				<div class="features-item love">
+				    <h3>Made with love</h3>
+				    <p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
+				</div>
+				<div class="features-item database">
+				    <h3>Databases</h3>
+				    <p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
+				</div>
+				<div class="features-item vps">
+				    <h3>VPS server</h3>
+				    <p>Phasellus aliquam arcu quis lectus aliquam, sed dignissim ligula efficitur.</p>
+				</div>
+				<div class="features-item secure">
+				    <h3>Fully secured</h3>
+				    <p>Phasellus aliquam arcu quis lectus aliquam efficitur.</p>
+				</div>
+				<div class="features-item backup">
+				    <h3>Daily backups</h3>
+				    <p>Aliquam nisl lectus, rhoncus nec ex vestibulum. </p>
+				</div>
+				<div class="features-item cloud">
+				    <h3>Cloud hosted</h3>
+				    <p>Etiam sagittis tellus at lacus cursus, non molestie nulla.</p>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Plans -->
-	<div class="js-plans wrap">
+	<div class="plans js-plans wrap">
 		<h2 class="plans-title js-plan">Pick your plan</h2>
 		<p class="plans-text">Upgrade, downgrade or cancel anytime.</p>
 
-		<div class="plans">
+		<!-- <div class="plans-list">
 			<div class="plans-item">
 				<header class="plans-header">
 					<h3>personal</h3>
 					<p>Perfect Pack for Small Business</p>
 				</header>
+
 				<div class="plans-price">
 					<sup>$</sup>25<span>/ mo</span>
 				</div>
@@ -178,60 +181,79 @@
 				</ul>
 				<a class="btn-order-now" href="#">order now</a>
 			</div>
-		</div>
+		</div> -->
 
-		<p>If you need help finding a plan that’s right for you,<br> just <a href="#" class="link link_red">chat with a live person</a>.</p>
+		<p>If you need help finding a plan that’s right for you,<br> just <a href="#" class="link js-linkpopup">chat with a live person <span class="mini-popup js-minipopup">some text for span</span></a>.</p>
 	</div>
 
 	<!-- Company Blog -->
-	<div class="wrap">
+	<div class="company wrap">
 		<h2 class="company-title">Company Blog</h2>
 		
 		<div class="post-list">
-			<article>
+			<article class="clearfix">
 				<div class="post-left">
 					<h3><a href="#">How does the Internet Create Potential</a></h3>
 					<div class="post-info">
 					    <time datetime="31.01.2016" pubdate="">31 January, 2016</time>
 					    <p class="comments">6 comments</p>
-					    <div class="post-info-item"><i class="heart-icon"></i>12</div>
 					</div>
-					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <a href="#">Read More</a></p>
+					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo. <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis magni aliquid molestias quae consequatur dolores natus, quia, odit necessitatibus eos sit doloremque earum eligendi aliquam, vitae beatae repellendus eius accusamus!</span><a class="js-read-more" href="#">Read More</a></p>
 				</div>
 				<div class="post-right">
 					<a href="#"><img src="img/image1.jpg" alt="post1"></a>
 				</div>
 			</article>
 
-			<article>
+			<article class="clearfix">
 				<div class="post-left">
 					<h3><a href="#">How does the Internet Create Potential</a></h3>
 					<div class="post-info">
-					    <time datetime="31.01.2016" pubdate="">31 January, 2016</time>
-					    <p class="comments">6 comments</p>
-					    <div class="post-info-item"><i class="heart-icon"></i>22</div>
+					    <time class="post-info-item" datetime="31.01.2016" pubdate="">31 January, 2016</time>
+					    <p class="post-info-item">6 comments</p>
 					</div>
-					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <a href="#">Read More</a></p>
+					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo. <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit iste error neque, enim reprehenderit provident, alias, sequi eveniet hic laborum exercitationem voluptatum atque magnam assumenda nemo maxime! Ratione, saepe.</span><a class="js-read-more" href="#">Read More</a></p>
 				</div>
 				<div class="post-right">
 					<a href="#"><img src="img/image2.jpg" alt="post2"></a>
 				</div>
 			</article>
 
-			<article>
+			<article class="clearfix">
 				<div class="post-left">
 					<h3><a href="#">How does the Internet Create Potential</a></h3>
 					<div class="post-info">
 					    <time datetime="31.01.2016" pubdate="">31 January, 2016</time>
 					    <p class="comments">6 comments</p>
-					    <div class="post-info-item"><i class="heart-icon"></i>6</div>
 					</div>
-					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo... <a href="#">Read More</a></p>
+					<p>Etiam tempor vehicula dui, sit amet accumsan nisi vehicula ac. Fusce finibus lacus lobortis, imperdiet justo et, placerat sapien. Nullam velit turpis, suscipit vitae commodo. <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea laboriosam, quaerat dicta repellat, repellendus, nihil iure aperiam, atque in voluptatem sint! Distinctio perferendis, accusamus consequuntur inventore aperiam corrupti iure, quisquam.</span><a class="js-read-more" href="#">Read More</a></p>
 				</div>
 				<div class="post-right">
 					<a href="#"><img src="img/image3.jpg" alt="post3"></a>
 				</div>
 			</article>
+		</div>
+	</div>
+
+	<!-- faq -->
+	<div class="faq-list wrap">
+		<div class="faq-item">
+			<a class="js-question" href="#">Question 1</a>
+			<div class="faq-content">
+				1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quia quas nihil, maxime eum est cum dolorum dolor quibusdam eveniet. Omnis accusamus repellendus, laudantium iure itaque. Quod quaerat, aperiam ab.
+			</div>
+		</div>
+		<div class="faq-item">
+			<a class="js-question" href="#">Question 2</a>
+			<div class="faq-content">
+				2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quia quas nihil, maxime eum est cum dolorum dolor quibusdam eveniet. Omnis accusamus repellendus, laudantium iure itaque. Quod quaerat, aperiam ab.
+			</div>
+		</div>
+		<div class="faq-item">
+			<a class="js-question" href="#">Question 3</a>
+			<div class="faq-content">
+				3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quia quas nihil, maxime eum est cum dolorum dolor quibusdam eveniet. Omnis accusamus repellendus, laudantium iure itaque. Quod quaerat, aperiam ab.
+			</div>
 		</div>
 	</div>
 	
@@ -322,7 +344,7 @@
 	</footer>
 
 
-	
+	<!-- modal, overlay -->
 	<div class="modal">
 		<h2>Modal Title</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates itaque quae cupiditate labore ea libero sequi debitis eveniet, voluptatum ratione, corrupti culpa accusantium molestias quasi repellendus autem laboriosam expedita.</p>
