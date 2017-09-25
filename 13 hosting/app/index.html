@@ -9,6 +9,7 @@
 	<![endif]-->
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700|PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -41,20 +42,20 @@
 		</div>
 	</header>
 
-	<!-- Benefits -->
+	<!-- Benefits with animate effect-->
 	<div class="benefits js-hosting">
 		<div class="wrap clearfix">
-			<div class="benefits-item uptime">
+			<div class="benefits-item uptime wow fadeInLeft" data-wow-offset="200">
 				<h3>99,9% UPtime guarantee</h3>
 				<p>Disk space in all packages has been increased by ten times!</p>
 				<a href="#">read more</a>
 			</div>
-			<div class="benefits-item managed">
+			<div class="benefits-item managed wow swing" data-wow-offset="200">
 				<h3>Managed Services</h3>
 				<p>Leave the set up, management and monitoring to us.</p>
 				<a href="#">read more</a>
 			</div>
-			<div class="benefits-item services">
+			<div class="benefits-item services wow fadeInRight" data-wow-offset="200">
 				<h3>Cloud Services</h3>
 				<p>Reliable, high- performance cloud that meets your changing business demands.</p>
 				<a href="#">read more</a>
@@ -62,7 +63,7 @@
 		</div>
 	</div>
 	
-	<!-- Search -->
+	<!-- Search with animate effect -->
 	<div class="search js-domains wrap">
 		<h2>Search Domain</h2>
 		<p>Save big on domain options like .com, .co, .biz, .net, .org and grab new domains like .xyz,<br>.club, .guru, .email, .link, .today, and more!</p>
@@ -75,15 +76,16 @@
 		</div>
 
 		<div class="search-description clearfix">
-			<div class="search-item find">
+			<!-- 150-200 оптимальное значение -->
+			<div class="search-item find wow wobble" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="200">
 				<h3>find domain</h3>
 				<p>Etiam efficitur, risus sit amet sodales laoreet, sem mauris interdum lectus, nec luctus est.</p>
 			</div>
-			<div class="search-item choose">
+			<div class="search-item choose wow wobble" data-wow-offset="200">
 				<h3>choose plan</h3>
 				<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia.</p>
 			</div>
-			<div class="search-item build">
+			<div class="search-item build wow wobble" data-wow-offset="200">
 				<h3>build your website</h3>
 				<p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
 			</div>
@@ -96,27 +98,27 @@
 			<h2>Features</h2>
 
 			<div class="features-list">
-				<div class="features-item love">
+				<div class="features-item love wow wobble" data-wow-offset="200">
 				    <h3>Made with love</h3>
 				    <p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
 				</div>
-				<div class="features-item database">
+				<div class="features-item database wow wobble" data-wow-offset="200">
 				    <h3>Databases</h3>
 				    <p>Curabitur imperdiet enim id faucibus sollicitudin.</p>
 				</div>
-				<div class="features-item vps">
+				<div class="features-item vps wow wobble" data-wow-offset="200">
 				    <h3>VPS server</h3>
 				    <p>Phasellus aliquam arcu quis lectus aliquam, sed dignissim ligula efficitur.</p>
 				</div>
-				<div class="features-item secure">
+				<div class="features-item secure wow wobble" data-wow-offset="200">
 				    <h3>Fully secured</h3>
 				    <p>Phasellus aliquam arcu quis lectus aliquam efficitur.</p>
 				</div>
-				<div class="features-item backup">
+				<div class="features-item backup wow wobble" data-wow-offset="200">
 				    <h3>Daily backups</h3>
 				    <p>Aliquam nisl lectus, rhoncus nec ex vestibulum. </p>
 				</div>
-				<div class="features-item cloud">
+				<div class="features-item cloud wow wobble" data-wow-offset="200">
 				    <h3>Cloud hosted</h3>
 				    <p>Etiam sagittis tellus at lacus cursus, non molestie nulla.</p>
 				</div>
@@ -353,6 +355,7 @@
 	<div class="overlay"></div>
 
 	<script src="lib/jquery-3.2.1.min.js"></script>
+	<script src="lib/wow.min.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>
