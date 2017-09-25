@@ -146,7 +146,6 @@ $(function(){
 				faqContent.slideUp();
 			}
 			
-
 			// открытыть текущий question
 			$(this).next().slideToggle();  //toggleClass('show-question');
 		});
@@ -184,19 +183,44 @@ $(function(){
 	})();
 
 	// wow js
-	new WOW().init();
+	(function(){
+		new WOW().init();
 
-	// wow = new WOW(
-	// 	{
-	// 		boxClass:     'wow',      // default
-	// 		animateClass: 'animated', // default
-	// 		offset:       0,          // default
-	// 		mobile:       true,       // default
-	// 		live:         true        // default
-	// 	}
-	// )
-	// wow.init();
+		// wow = new WOW(
+		// 	{
+		// 		boxClass:     'wow',      // default
+		// 		animateClass: 'animated', // default
+		// 		offset:       0,          // default
+		// 		mobile:       true,       // default
+		// 		live:         true        // default
+		// 	}
+		// )
+		// wow.init();
+	})();
 
+	// https://github.com/mattboldt/typed.js - run string
+	(function(){
+		// old version
+		// $('.header-intro h1').typed({
+		// 	strings: ['Strength in equality.The power of dreams', 'Web hosting for $9.95/mo $2.95/mo', 'Sign up today and also get a free<br>1-on-1 consultation to help you get started'],
+		// 	typeSpeed: 0
+		// });
+
+
+
+		var options = {
+		  strings: ["<i>Strength in equality.The power of</i> dreams.", "Web hosting for $9.95/mo $2.95/mo","Sign up today and also get a free<br>1-on-1 consultation to help you get started"],
+		  typeSpeed: 50,
+		  backSpeed: 10,
+		  backDelay: 2000,
+		  loop: true,
+		  contentType: 'html',
+		  showCursor: true
+		}
+
+		var typed = new Typed(".header-intro span", options);
+	})();
+	
 	// placeholder ie9
 	$('input, textarea').placeholder();
 
