@@ -197,5 +197,7 @@ $(function(){
 	// )
 	// wow.init();
 
+	// placeholder ie9
+	$('input, textarea').placeholder();
 
 });
