@@ -350,7 +350,8 @@
 	<div class="modal">
 		<h2>Modal Title</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates itaque quae cupiditate labore ea libero sequi debitis eveniet, voluptatum ratione, corrupti culpa accusantium molestias quasi repellendus autem laboriosam expedita.</p>
-	
+		
+		<!-- examples -->
 		<input type="radio" name="radio1" checked>
 		<input type="radio" name="radio1"><br>
 		<label>
@@ -370,6 +371,20 @@
 			
 			<button type="submit">Send</button><br><br>
 		</form>
+
+		<input
+		    type="range"
+		    min="10"                    // default 0
+		    max="1000"                  // default 100
+		    step="10"                   // default 1
+		    value="300"                 // default min + (max-min)/2
+		><br>
+		<!--  data-orientation="vertical" // default horizontal -->
+
+		<span class="js-range-value">1</span>
+		<button type="button" class="js-btn minus">-</button>
+		<button type="button" class="js-btn plus">+</button>
+		<br><br>
 	
 		<a href="#">Close</a>
 	</div>
@@ -394,6 +409,9 @@
 
 	<!-- https://github.com/jquery-validation/jquery-validation.git -->
 	<script src="lib/jquery.validate.min.js"></script>
+
+	<!-- http://rangeslider.js.org/ -->
+	<script src="lib/rangeslider.min.js"></script>
 
 	<script src="js/custom.js"></script>
 </body>

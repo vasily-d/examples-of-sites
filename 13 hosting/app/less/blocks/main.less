@@ -41,16 +41,64 @@
 		&.uptime {
 			float: left;
 
+			position: relative;
+			
+			&:after{
+				content: '';
+
+				width: 82px;
+				height: 82px;
+
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -41px;
+
+				background: url('../../img/benefits-sprite.png') no-repeat;
+				background-position: 0 0;
+			}
 		}
 
 		&.managed {
 			float: left;
+			
+			position: relative;
+			
+			&:after{
+				content: '';
 
+				width: 82px;
+				height: 82px;
+
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -41px;
+
+				background: url('../../img/benefits-sprite.png') no-repeat;
+				background-position: -92px 0;
+			}
 		}
 
 		&.services {
 			float: left;
+			
+			position: relative;
+			
+			&:after{
+				content: '';
 
+				width: 82px;
+				height: 82px;
+
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -41px;
+
+				background: url('../../img/benefits-sprite.png') no-repeat;
+				background-position: -184px 0;
+			}
 		}
 	}
 }
@@ -140,15 +188,15 @@
 
 		// background images
 		.find{
-
+			background: url('../../img/search-icon.png') no-repeat;
 		}
 
 		.choose{
-
+			background: url('../../img/mouse-icon.png') no-repeat;
 		}
 
 		.build{
-
+			background: url('../../img/browse-icon.png') no-repeat;
 		}
 	}
 }
@@ -195,29 +243,113 @@
 
 		// background image
 		.love{
+			position: relative;
+					
+			&:after{
+				content: '';
 
+				width: 39px;
+				height: 29px;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				background: url('../../img/features-sprite.png') no-repeat;
+				background-position: 0 0;
+			}
 		}
 
 		.database{
+			position: relative;
+					
+			&:after{
+				content: '';
 
+				width: 39px;
+				height: 29px;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				background: url('../../img/features-sprite.png') no-repeat;
+				background-position: 0 -29px;
+			}
 		}
 
 		.vps{
+			position: relative;
+					
+			&:after{
+				content: '';
 
+				width: 39px;
+				height: 29px;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				background: url('../../img/features-sprite.png') no-repeat;
+				background-position: 0 -63px;
+			}
 		}
 
 		.secure{
+			position: relative;
+					
+			&:after{
+				content: '';
 
+				width: 39px;
+				height: 29px;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				background: url('../../img/features-sprite.png') no-repeat;
+				background-position: 0 -97px;
+			}
 
 		}
 
 		.backup{
+			position: relative;
+					
+			&:after{
+				content: '';
 
+				width: 39px;
+				height: 29px;
+
+				position: absolute;
+				top: -4px;
+				left: 0;
+
+				background: url('../../img/features-sprite.png') no-repeat;
+				background-position: 0 -127px;
+			}
 
 		}
 
 		.cloud{
+			position: relative;
+					
+			&:after{
+				content: '';
 
+				width: 39px;
+				height: 29px;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				background: url('../../img/features-sprite.png') no-repeat;
+				background-position: 0 -155px;
+			}
 		}
 	}
 }

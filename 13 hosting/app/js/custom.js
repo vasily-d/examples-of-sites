@@ -289,4 +289,48 @@ $(function(){
 		});
 	})();
 
+	// http://rangeslider.js.org/
+	(function(){
+		var rangeS = $('input[type="range"]');
+
+		// span
+		var rangeValue = $('.js-range-value');
+		var step = parseInt(rangeS.attr('step'));
+		var min = parseInt(rangeS.attr('min'));
+		var max = parseInt(rangeS.attr('max'));
+
+		rangeS.rangeslider({
+			polyfill: false,
+
+			onInit: function() {
+				rangeValue.text(rangeS.val());
+			},
+
+			onSlide: function(p,v) {
+				// вызываеться как при ручном движении так и при программном через update
+				rangeValue.text(p+' '+v);
+			}
+		});
+
+		// change color
+		$('.rangeslider__fill').css('background', '#f00');
+
+		$('.js-btn').on('click', function() {
+			var currentVal = parseInt(rangeS.val());
+			
+			// alert(currentVal+' '+min+' '+max+' : '+(currentVal > min)+' '+(currentVal < max));
+
+			if((currentVal >= min) && (currentVal <= max)) {
+				
+				if($(this).hasClass('minus')) {
+					rangeS.val(currentVal-step).rangeslider('update', true);
+				}
+
+				if($(this).hasClass('plus')) {
+					rangeS.val(currentVal+step).rangeslider('update', true);
+				}				
+			}
+		});
+	})();
+
 });
