@@ -17,4 +17,5 @@ examples of sites:
 11.2 barber price
 11.3 barber shop
 12 nerds index-catalog
-13 hosting
+13 hosting (js examples)
+14 sedon index-hotels
