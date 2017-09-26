@@ -16,12 +16,12 @@
 <body>
 	<header class="main-header wrap">
 		<nav class="header-nav">
-			<ul>
+			<ul class="clearfix">
 				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и видео</a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+				<li class="photo-li"><a href="#">Фото и видео</a></li>
+				<li class="logo-li"><a href="#"></a></li>
+				<li class="map-li"><a href="#">Гостиницы</a></li>
+				<li class="last-li"><a href="#">Карта штата</a></li>
 			</ul>
 		</nav>
 		<div class="header-slide">
@@ -30,7 +30,7 @@
 	</header>
 
 	<main class="wrap">
-		<h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+		<h1>Седона — небольшой городок в аризоне,<br> заслуживающий большего!</h1>
 		<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
 		<section class="features-itembg-photo">
@@ -78,24 +78,24 @@
 
 	<div class="sentence wrap">
 		<h2>Заинтересовались?</h2>
-		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+		<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 	</div>
 
 	<div class="map wrap">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2252665.1828655615!2d47.796904578125016!3d56.5389103173785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1506342134117" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
 
-	<footer class="main-footer wrap">
+	<footer class="main-footer wrap clearfix">
 		<p class="footer-link">
 			<a href="#">#visitsedona</a>
 		</p>
-		<ul class="footer-social">
-			<li><a href="https://ru-ru.facebook.com/" target="_blank">fb</a></li>
-			<li><a href="https://www.instagram.com/?hl=ru" target="_blank">insta</a></li>
-			<li><a href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">yt</a></li>
+		<ul class="footer-social clearfix">
+			<li><a class="tw" href="https://twitter.com/?lang=ru" target="_blank">facebook</a></li>
+			<li><a class="fb" href="https://ru-ru.facebook.com/" target="_blank">instagram</a></li>
+			<li><a class="yt" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">youtube</a></li>
 		</ul>
 		<p class="footer-copyright">
-			<a href="#"><img src="img/copyright.png" alt="copyright" width="113" height="39"></a>
+			<span>Website by </span><a href="#"><img src="img/copyright.png" alt="copyright" width="113" height="39"></a>
 		</p>
 	</footer>
 
@@ -112,7 +112,6 @@
 			Дата выезда:
 			<input type="date" name="dateOut" value="2017-07-04">
 		</label><br>
-
 		<label>
 			Взрослые:
 			<input type="text" name="countMen" value="2">

@@ -1,7 +1,10 @@
 .main-footer{
+	background: #fdfdfd;
 
 	.footer-link{
-		padding: 46px 0 46px 128px;
+		float: left;
+		padding: 46px 250px 46px 128px;
+		margin: 0;
 		
 		a{
 			color: #000;
@@ -12,11 +15,59 @@
 	}
 
 	.footer-social{
+		float: left;
+		margin: 0;
+		padding: 37px 0;
 
+		li{
+			float: left;
+			margin-left: 11px;
+
+			&:first-child{
+				margin-left: 0;
+			}
+
+			a{				
+				display: block;
+				width: 46px;
+				height: 48px;
+
+				font-size: 0;
+
+				&.tw{
+					background: url('../img/twitter.png') no-repeat;
+				}
+
+				&.fb{
+					background: url('../img/fb.png') no-repeat;
+				}
+
+				&.yt{
+					background: url('../img/youtube.png') no-repeat;
+				}
+			}
+		}
 	}
 
 	.footer-copyright{
-		
+		float: right;
+		margin: 0;
+		padding: 37px 100px 37px 0;
 
+		font-size: 14px;
+		line-height: 26px;
+
+		span{
+			vertical-align: 50%;
+			padding-right: 10px;
+		}
+
+		a{
+			font-size: 0;
+			
+			width: 113px;
+			height: 39px;
+			display: inline-block;
+		}
 	}
 }
