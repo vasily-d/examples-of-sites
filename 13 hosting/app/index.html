@@ -9,7 +9,7 @@
 	<![endif]-->
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,700|PT+Sans:400,700' rel='stylesheet' type='text/css'>
-
+	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -350,15 +350,51 @@
 	<div class="modal">
 		<h2>Modal Title</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptates itaque quae cupiditate labore ea libero sequi debitis eveniet, voluptatum ratione, corrupti culpa accusantium molestias quasi repellendus autem laboriosam expedita.</p>
+	
+		<input type="radio" name="radio1" checked>
+		<input type="radio" name="radio1"><br>
+		<label>
+			All<br>
+			<input class="js-check-all" type="checkbox" name="checkbox1"><br>
+		</label>
+		<div class="js-filter-group">
+			<input type="checkbox" name="checkbox2" checked>
+			<input type="checkbox" name="checkbox3">
+			<input type="checkbox" name="checkbox4"><br><br>
+		</div>
+
+		<form class="form-test" action="/">
+			<div><input type="text" name="name"></div>
+			<div><input type="email" name="email"></div>
+			<div><input type="password" name="password"></div>
+			
+			<button type="submit">Send</button><br><br>
+		</form>
+	
 		<a href="#">Close</a>
 	</div>
 	<div class="overlay"></div>
 
 	<!-- <script src="lib/jquery-3.2.1.min.js"></script> -->
 	<script src="lib/jquery-1.12.4.min.js"></script>
+
 	<script src="lib/wow.min.js"></script>
+
+	<!-- https://github.com/mathiasbynens/jquery-placeholder -->
 	<script src="lib/jquery.placeholder.min.js"></script>
+
+	<!-- https://github.com/mattboldt/typed.js -->
 	<script src="lib/typed.min.js"></script>
+
+	<!-- https://github.com/john-terenzio/jQuery-Hover-Delay -->
+	<script src="lib/jquery.hoverdelay.min.js"></script>
+
+	<!-- https://github.com/fronteed/icheck -->
+	<script src="lib/icheck.min.js"></script>
+
+	<!-- https://github.com/jquery-validation/jquery-validation.git -->
+	<script src="lib/jquery.validate.min.js"></script>
+
 	<script src="js/custom.js"></script>
 </body>
 </html>

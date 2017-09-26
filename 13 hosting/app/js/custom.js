@@ -155,9 +155,10 @@ $(function(){
 		// mini-popup span
 		var minipopup = $('.js-minipopup');
 
+		// https://github.com/john-terenzio/jQuery-Hover-Delay
 		$('.js-linkpopup').hover(function(){
 			minipopup.fadeToggle();
-		});
+		}, 300);
 	})();
 
 
@@ -216,12 +217,76 @@ $(function(){
 		  loop: true,
 		  contentType: 'html',
 		  showCursor: true
-		}
+		};
 
 		var typed = new Typed(".header-intro span", options);
 	})();
 	
 	// placeholder ie9
 	$('input, textarea').placeholder();
+
+	// icheck - https://github.com/fronteed/icheck
+	(function(){
+		// запуск
+		$('input').iCheck({
+			checkboxClass: 'icheckbox_polaris',
+			radioClass: 'iradio_polaris'
+		});
+
+		$('input').on('ifChecked', function(e){
+			// callback
+			$('.modal a').html('Close 2');
+		});
+
+		$('input').on('ifUnchecked', function(e){
+			// callback
+			$('.modal a').html('Close');
+		});
+
+
+		// check all and uncheck all
+		$('.js-check-all').on('ifChecked', function(e){
+			// callback
+			$('.js-filter-group').iCheck('check');
+		});
+
+		$('.js-check-all').on('ifUnchecked', function(e){
+			// callback
+			$('.js-filter-group').iCheck('uncheck');
+		});
+	})();
+
+	// https://github.com/jquery-validation/jquery-validation.git
+	// https://jqueryvalidation.org/
+	(function(){
+		$('.form-test').validate({
+			rules: {
+				name: {
+					required: true
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				password: {
+					required: true,
+					minlength: 6,
+					digits: true 
+				}
+			},
+			messages: {
+				name: {
+					required: 'error 1'
+				},
+				email: {
+					required: 'error 2'
+				},
+				password: {
+					required: 'error 3'
+				}
+			},
+			focusCleanup:  true
+		});
+	})();
 
 });
