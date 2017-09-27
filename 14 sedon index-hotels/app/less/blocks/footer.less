@@ -35,15 +35,39 @@
 				font-size: 0;
 
 				&.tw{
-					background: url('../img/twitter.png') no-repeat;
+					background: #81b3d2 url('../img/twitter.png') no-repeat 50% 50%;
+
+					&:hover{	
+						background: #669ec0 url('../img/twitter.png') no-repeat 50% 50%;
+					}
+
+					&:active{
+						background: #5496bd url('../img/twitter-active.png') no-repeat 50% 50%;
+					}
 				}
 
 				&.fb{
-					background: url('../img/fb.png') no-repeat;
+					background: #81b3d2 url('../img/fb.png') no-repeat 50% 50%;
+
+					&:hover{	
+						background: #669ec0 url('../img/fb.png') no-repeat 50% 50%;
+					}
+
+					&:active{
+						background: #5496bd url('../img/fb-active.png') no-repeat 50% 50%;
+					}
 				}
 
 				&.yt{
-					background: url('../img/youtube.png') no-repeat;
+					background: #81b3d2 url('../img/youtube.png') no-repeat 50% 50%;
+
+					&:hover{	
+						background: #669ec0 url('../img/youtube.png') no-repeat 50% 50%;
+					}
+
+					&:active{
+						background: #5496bd url('../img/youtube-active.png') no-repeat 50% 50%;
+					}
 				}
 			}
 		}
@@ -58,16 +82,26 @@
 		line-height: 26px;
 
 		span{
-			vertical-align: 50%;
+			vertical-align: -50%;
 			padding-right: 10px;
 		}
 
 		a{
 			font-size: 0;
+		
+			background: url('../img/copyright.jpg') no-repeat;
 			
-			width: 113px;
+			width: 40px;
 			height: 39px;
 			display: inline-block;
+		
+			&:hover{
+				opacity: 0.7;
+			}
+		
+			&:active{
+				opacity: 0.3;
+			}
 		}
 	}
 }
