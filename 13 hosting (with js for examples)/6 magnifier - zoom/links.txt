@@ -1,0 +1,3 @@
+https://github.com/mark-rolich/Magnifier.js
+http://mark-rolich.github.io/Magnifier.js/
+https://github.com/mark-rolich/Event.js

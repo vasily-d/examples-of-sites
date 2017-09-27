@@ -1,0 +1,14 @@
+{
+  "name": "Event.js",
+  "homepage": "https://github.com/mark-rolich/Event.js",
+  "_release": "4ac358a06d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "4ac358a06dff9a75546906620b9d6c2425ece193"
+  },
+  "_source": "https://github.com/mark-rolich/Event.js.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/mark-rolich/Event.js.git",
+  "_direct": true
+}
