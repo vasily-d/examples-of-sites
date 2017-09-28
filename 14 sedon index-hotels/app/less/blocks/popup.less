@@ -1,15 +1,104 @@
 .popup{
-	display: none;
+	// display: none;
+	width: 572px;
 
-	width: 566px;
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%);
+
+	background: #fff;
 
 	h3{
+		font-size: 21px;
+		line-height: 26px;
+		font-weight: 700;
+		text-align: center;
 
+		margin: 0;
+		padding: 30px 0;
+
+		background: #766357;
 	}
+	
+	.bottom-popup{
+		padding: 55px;
 
+		label{
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 26px;
 
+			float: left;
+			vertical-align: middle;
+			margin-top: 7px;
+		}
 
-	button{
-		
+		input{
+			border: 0;
+			background: #f2f2f2;
+
+			height: 40px;
+			padding: 10px 40px 10px 10px;
+			box-sizing: border-box;
+		}
+
+		input[name="dateIn"]{
+			float: right;
+
+			width: 346px;
+			background: #f2f2f2 url('../../img/calendare.png') no-repeat 315px 9px;
+		}
+
+		div:nth-child(1){
+			margin-bottom: 30px;
+		}
+
+		input[name="dateOut"]{
+			float: right;
+
+			width: 346px;
+			background: #f2f2f2 url('../../img/calendare.png') no-repeat 315px 9px;
+		}
+
+		div:nth-child(2){
+			margin-bottom: 30px;
+		}
+
+		label[for="countMen"], label[for="countChildrens"]{
+			float: none;
+		}
+
+		input[name="countMen"]{
+			float: none;
+			width: 115px;
+			margin-left: 22px;
+			margin-right: 50px;
+
+			text-align: center;
+		}
+
+		input[name="countChildrens"]{
+			float: right;
+			width: 115px;
+
+			text-align: center;
+		}
+
+		button{
+			width: 100%;
+			padding: 16px 0;
+			margin-top: 52px;
+
+			color: #fff;
+			font-size: 21px;
+			line-height: 26px;
+			font-weight: 700;
+			text-transform: uppercase;
+
+			background: #81b3d2;
+			border: 0;
+			cursor: pointer;
+		}
 	}
 }

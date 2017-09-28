@@ -119,23 +119,26 @@
 	<!-- popup - hide -->
 	<div class="popup">
 		<h3>Поиск гостиницы в седоне</h3>
-		<label>
-			Дата заезда:
-			<input type="date" name="dateIn" value="2017-04-24">
-		</label><br>
-		<label>
-			Дата выезда:
-			<input type="date" name="dateOut" value="2017-07-04">
-		</label><br>
-		<label>
-			Взрослые:
-			<input type="text" name="countMen" value="2">
-		</label>
-		<label>
-			Дети:
-			<input type="text" name="countChildrens" value="0">
-		</label><br>
-		<button type="submit">Найти</button>
+		<div class="bottom-popup">
+			<div class="clearfix">
+				<label for="dateIn">Дата заезда:</label>
+				<input id="dateIn" type="date" name="dateIn" value="2017-04-24">	
+			</div>
+			
+			<div class="clearfix">
+				<label for="dateOut">Дата выезда:</label>
+				<input id="dateOut" type="date" name="dateOut" value="2017-07-04">	
+			</div>
+			
+			<div class="clearfix">
+				<label for="countMen">Взрослые:</label>
+				<input id="countMen" type="text" name="countMen" value="2">
+				<label for="countChildrens">Дети:</label>
+				<input id="countChildrens" type="text" name="countChildrens" value="0">
+			</div>
+
+			<button type="submit">Найти</button>
+		</div>
 	</div>
 </body>
 </html>
