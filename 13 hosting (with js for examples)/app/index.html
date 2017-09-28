@@ -343,6 +343,16 @@
 			<a class="email" href="#"><br>support@cloudhost.com</a>
 			<p class="copyright">Copyright © 2015 Cloud Host. All rights reserved.</p>
 		</div>
+
+		<div>
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+		</div>
 	</footer>
 
 
@@ -390,6 +400,25 @@
 	</div>
 	<div class="overlay"></div>
 
+	<div class="modal fade" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title">Modal title</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p>One fine body&hellip;</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
 	<!-- <script src="lib/jquery-3.2.1.min.js"></script> -->
 	<script src="lib/jquery-1.12.4.min.js"></script>
 
@@ -412,6 +441,10 @@
 
 	<!-- http://rangeslider.js.org/ -->
 	<script src="lib/rangeslider.min.js"></script>
+
+	<script src="lib/bower_components/bootstrap/js/modal.js"></script>
+	<script src="lib/bower_components/bootstrap/js/transition.js"></script>
+	<script src="lib/bower_components/bootstrap/js/tooltip.js"></script>
 
 	<script src="js/custom.js"></script>
 </body>
