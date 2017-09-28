@@ -16,7 +16,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('less', function(){
-  return gulp.src('app/less/*.less')
+  return gulp.src('app/less/style.less')
   .pipe(less())
   .on('error', notify.onError(function(err){
     return {
