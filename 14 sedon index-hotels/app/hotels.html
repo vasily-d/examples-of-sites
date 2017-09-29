@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+
+	<link href="https://fonts.google.com/?query=PT+sans&selection.family=PT+Sans:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrap">	
+		<header class="main-header">
+			<nav class="header-nav">
+				<ul class="clearfix">
+					<li><a href="index.html">Информация</a></li>
+					<li class="photo-li"><a href="#">Фото и видео</a></li>
+					<li class="logo-li"><a href="#"></a></li>
+					<li class="map-li"><a class="active-li-nav">Гостиницы</a></li>
+					<li class="last-li"><a href="#">Карта штата</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section class="filters-range clearfix">
+			<form action="/" method="get">
+				<div class="list-filters clearfix">
+					<div class="left-filter">
+						<h2>Инфраструктура:</h2>
+						<ul>
+							<li>
+								<input id="basin" type="checkbox" name="basin" checked>
+								<label for="basin">Бассейн</label>
+							</li>
+							<li>
+								<input id="parking" type="checkbox" name="parking">
+								<label for="parking">Парковка</label>
+							</li>
+							<li>
+								<input id="wifi" type="checkbox" name="wifi">
+								<label for="wifi">Wi-Fi</label>
+							</li>
+						</ul>
+					</div>
+					<div class="right-filter">
+						<h2>Инфраструктура:</h2>
+						<ul>
+							<li>
+								<input id="hodel" type="checkbox" name="hodel" checked>
+								<label for="hodel">Гостиница</label>
+							</li>
+							<li>
+								<input id="otel" type="checkbox" name="otel" checked>
+								<label for="otel">Отель</label>
+							</li>
+							<li>
+								<input id="apart" type="checkbox" name="apart" checked>
+								<label for="apart">Апартаменты</label>
+							</li>
+						</ul>
+					</div>	
+				</div>
+
+				<div class="range-filter">
+					<h2>Стоимость в сутки (Р):</h2>
+					<div class="price-range">
+						<label>от</label>
+						<input type="text" name="from" value="0">
+						<label>до</label>
+						<input type="text" name="to" value="3000">
+					</div>
+					<input type="range" name="range"><br>
+					<button type="submit">Показать</button>
+				</div>
+			</form>
+		</section>
+
+		<section class="sort clearfix">
+			<span class="sort-found">Найдено: 3</span>
+			<div class="sort-pagination clearfix">
+				<span>Сортировка:</span>
+				<ul class="clearfix">
+					<li class="active-li"><a href="#">по цене</a></li>
+					<li><a href="#">по типу</a></li>
+					<li><a href="#">по рейтингу</a></li>
+				</ul>
+			</div>
+			<div class="sort-up-down-btns">
+				<a href="#"><img src="img/hotels/up.png" alt="up sort" width="11" height="10">up</a>
+				<a href="#"><img src="img/hotels/down.png" alt="down sort" width="11" height="10">down</a>
+			</div>	
+		</section>
+
+		<section class="catalog-hotels">
+			<div class="hotel clearfix">
+				<div class="hotel-description clearfix">
+					<img src="img/hotels/hotel1.jpg" alt="hotels1">
+					<div class="description">
+						<a href="#">
+							<h2 class="title">Amara Resort &amp; Spa</h2>
+						</a>
+						<div class="price">
+							Гостиница<span>от 3000 Р.</span>
+						</div>
+						<div class="buttons">
+							<button type="button" class="btn blue-button">Подробнее</button>
+							<button type="button" class="btn brown-button">Забронировать</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="hotel-info">
+					<div class="hotel-stars">
+						<i><img src="img/hotels/four-stars.png" alt="stars"></i>
+					</div>
+
+					<div class="hotel-rating">
+						Рейтинг: 8,5
+					</div>
+				</div>
+			</div>
+
+			<div class="hotel clearfix">
+				<div class="hotel-description clearfix">
+					<img src="img/hotels/hotel2.jpg" alt="hotels2">
+					<div class="description">
+						<a href="#">
+							<h2 class="title">Desert Quail Inn</h2>
+						</a>
+						<div class="price">
+							Мотель<span>от 3000 Р.</span>
+						</div>
+						<div class="buttons">
+							<button type="button" class="btn blue-button">Подробнее</button>
+							<button type="button" class="btn brown-button">Забронировать</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="hotel-info">
+					<div class="hotel-stars">
+						<i><img src="img/hotels/three-stars.png" alt="stars"></i>
+					</div>
+
+					<div class="hotel-rating">
+						Рейтинг: 8,5
+					</div>
+				</div>
+			</div>
+
+			<div class="hotel clearfix">
+				<div class="hotel-description clearfix">
+					<img src="img/hotels/hotel3.jpg" alt="hotels3">
+					<div class="description">
+						<a href="#">
+							<h2 class="title">Villas at Poco Diablo</h2>
+						</a>
+						<div class="price">
+							Апартаменты<span>от 3000 Р.</span>
+						</div>
+						<div class="buttons">
+							<button type="button" class="btn blue-button">Подробнее</button>
+							<button type="button" class="btn brown-button">Забронировать</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="hotel-info">
+					<div class="hotel-stars">
+						<i><img src="img/hotels/two-stars.png" alt="stars"></i>
+					</div>
+
+					<div class="hotel-rating">
+						Рейтинг: 8,5
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="main-footer clearfix">
+			<p class="footer-link">
+				<a href="#">#visitsedona</a>
+			</p>
+			<ul class="footer-social clearfix">
+				<li><a class="tw" href="https://twitter.com/?lang=ru" target="_blank">facebook</a></li>
+				<li><a class="fb" href="https://ru-ru.facebook.com/" target="_blank">instagram</a></li>
+				<li><a class="yt" href="https://www.youtube.com/?gl=RU&hl=ru" target="_blank">youtube</a></li>
+			</ul>
+			<p class="footer-copyright">
+				<span>Website by </span><a href="#">X-Studio</a>
+			</p>
+		</footer>
+	</div>
+
+	<script src="lib/jquery.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
