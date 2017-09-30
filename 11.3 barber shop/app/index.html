@@ -6,6 +6,8 @@
 
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link href="css/square/red.css" rel="stylesheet">
+	
 	<link rel="stylesheet" href="css/style.css">
 
 	<!--[if lt IE 9]>
@@ -199,6 +201,18 @@
 	</div>
 	<div class="modal-overlay"></div>
 
+	<script src="js/jquery.min.js"></script>
+	<script src="js/icheck.min.js"></script>
 	<script src="js/popup.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		  $('input').iCheck({
+		    checkboxClass: 'icheckbox_square-red',
+		    radioClass: 'iradio_square-red',
+		    increaseArea: '20%' // optional
+		  });
+		});
+	</script>
 </body>
 </html>

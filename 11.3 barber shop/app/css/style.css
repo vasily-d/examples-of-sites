@@ -311,6 +311,8 @@ main .filter-items .brands-items input[name="checkbox6"] {
 }
 main .filter-items .brands-items label {
   margin-left: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 18px;
 }
@@ -320,6 +322,8 @@ main .filter-items .type-items input {
 main .filter-items .type-items label {
   font-size: 14px;
   line-height: 18px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 main .filter-items .type-items button {
   margin: 0;
