@@ -16,7 +16,6 @@
 			img{
 				float: left;
 				margin-right: 28px;
-
 			}
 
 			.description{
@@ -30,6 +29,15 @@
 
 					margin: 0;
 					margin-bottom: 9px;
+
+					&:hover{
+						color: #81b3d2;
+					}
+
+					&:active{
+						color: #000;
+						opacity: 0.3;
+					}
 				}
 
 				.price{
@@ -53,6 +61,8 @@
 						font-weight: 700;
 						text-transform: uppercase;
 
+						padding: 6px 16px;
+
 						border: 0;
 						cursor: pointer;
 					}
@@ -61,10 +71,28 @@
 						background: #81b3d2;
 
 						margin-right: 4px;
+
+						&:hover{
+							background: #669ec0;
+						}
+
+						&:active{
+							background: #5496bd;
+							color: rgba(255,255,255,0.3);
+						}
 					}
 
 					.brown-button{
 						background: #766357;
+
+						&:hover{
+							background: #604e43;
+						}
+
+						&:active{
+							background: #503e33;
+							color: rgba(255,255,255,0.3);
+						}
 					}
 				}
 			}

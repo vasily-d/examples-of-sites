@@ -8,8 +8,8 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
 
-	<link href="https://fonts.google.com/?query=PT+sans&selection.family=PT+Sans:400,700" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -48,7 +48,7 @@
 						</ul>
 					</div>
 					<div class="right-filter">
-						<h2>Инфраструктура:</h2>
+						<h2>Тип жилья:</h2>
 						<ul>
 							<li>
 								<input id="hodel" type="checkbox" name="hodel" checked>
@@ -91,8 +91,8 @@
 				</ul>
 			</div>
 			<div class="sort-up-down-btns">
-				<a href="#"><img src="img/hotels/up.png" alt="up sort" width="11" height="10">up</a>
-				<a href="#"><img src="img/hotels/down.png" alt="down sort" width="11" height="10">down</a>
+				<a class="up-sort" href="#">up</a>
+				<a class="down-sort active-sort" href="#">down</a>
 			</div>	
 		</section>
 
@@ -198,6 +198,7 @@
 	</div>
 
 	<script src="lib/jquery.min.js"></script>
-	<script src="js/custom.js"></script>
+	<script src="lib/icheck.min.js"></script>
+	<script src="js/hotels-icheck.js"></script>
 </body>
 </html>
