@@ -1,0 +1,37 @@
+*{outline: 1px solid black;}
+
+// : for ie
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear{clear: both;}
+
+body{
+	padding: 0;
+	margin: 0;
+
+	background: #fff;
+
+	img{
+		max-width: 100%;
+		height: auto;
+		
+		// for ie 9
+		border: 0;
+	}
+	
+	ul{list-style: none;}
+	
+	a{text-decoration: none;}
+	
+	// h1,h2,h3,p,ul,input{margin: 0; padding: 0;}
+
+	.wrap{
+		width: 940px;	//960-2*10
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+}
