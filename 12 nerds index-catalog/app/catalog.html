@@ -38,7 +38,7 @@
 			<form action="/" method="get">
 				<h2>Стоимость:</h2>
 				<div class="box-range">
-					<input type="range" name="range" min="0" max="20000">	
+					<input type="text" id="range" value="">	
 				</div>
 				<div class="screen-range">
 					ОТ<span>0</span>ДО<span>15000</span>
@@ -130,5 +130,52 @@
 		</div>
 	</footer>
 
+
+	<script src="lib/jquery.min.js"></script>
+	// <script src="lib/rangeslider.min.js"></script>
+	<script src="lib/ion.rangeSlider.min.js"></script>
+	<script src="lib/icheck.min.js"></script>
+	<script>
+		// rangeslider
+		// $(function() {
+		// 	$('input[type="range"]').rangeslider({
+		//     	polyfill: false,
+		       
+		//     	// Callback function
+	 	//    	   	onInit: function() {},
+
+	 	//    	   	// Callback function
+	 	//    	   	onSlide: function(position, value) {},
+
+	 	//    	   	// Callback function
+	 	//    	   	onSlideEnd: function(position, value) {}
+		//     });
+		// });
+
+		// ionrangeslider
+		$(function () {
+	        $("#range").ionRangeSlider({
+	            hide_min_max: true,
+	            keyboard: true,
+	            min: 0,
+	            max: 5000,
+	            from: 1000,
+	            to: 4000,
+	            type: 'double',
+	            step: 1,
+	            prefix: "$",
+	            grid: true
+	        });
+	    });
+
+		// icheck
+		$(function() {
+			$('input[type="radio"], input[type="checkbox"]').iCheck({
+				checkboxClass: 'icheckbox_square-orange',
+				radioClass: 'iradio_square-orange',
+				increaseArea: '20%' // optional
+			});
+		});
+	</script>
 </body>
 </html>
