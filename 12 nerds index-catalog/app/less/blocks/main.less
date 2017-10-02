@@ -359,14 +359,53 @@ main{
 					float: left;
 					margin-right: 20px;
 
-					&.current a{opacity: 1;}
-
-					&:last-child{
+					&:nth-child(3){
 						margin-right: 0;
 						padding-right: 86px;
 
 						// background: url('../../img/sort-down.png') no-repeat right 5px, url('../../img/sort-up.png') no-repeat 150px 5px;
 					}
+
+					&:nth-child(4){
+						float: right;
+						width: 9px;
+						height: 9px;
+						margin-right: 0;
+
+						background: url('../../img/sort-down.png') no-repeat;
+						cursor: pointer;
+						opacity: 0.2;
+
+						&:hover{
+							opacity: 0.4;
+						}
+
+						&:active{
+							opacity: 1;
+						}
+					}
+
+					&:nth-child(5){
+						float: right;
+						width: 9px;
+						height: 9px;
+
+						background: url('../../img/sort-up.png') no-repeat;
+						cursor: pointer;
+						opacity: 0.2;
+
+						&:hover{
+							opacity: 0.4;
+						}
+
+						&:active{
+							opacity: 1;
+						}						
+					}
+
+					&.current a{opacity: 1;}
+
+					
 					
 					a{
 						color: #000;
@@ -381,51 +420,51 @@ main{
 					}
 				}
 
-				&:before{
-					content: '';
-					display: block;
-					width: 9px;
-					height: 9px;
+				// &:before{
+				// 	content: '';
+				// 	display: block;
+				// 	width: 9px;
+				// 	height: 9px;
 
-					position: absolute;
-					top: 5px;
-					right: 18px;
+				// 	position: absolute;
+				// 	top: 5px;
+				// 	right: 18px;
 					
-					background: url('../img/sort-down.png') no-repeat;
-					cursor: pointer;
-					opacity: 0.2;
-				}
+				// 	background: url('../img/sort-down.png') no-repeat;
+				// 	cursor: pointer;
+				// 	opacity: 0.2;
+				// }
 
-				&:hover:before{
-					opacity: 0.4;
-				}
+				// &:hover:before{
+				// 	opacity: 0.4;
+				// }
 
-				&:active:before{
-					opacity: 1;
-				}
+				// &:active:before{
+				// 	opacity: 1;
+				// }
 
-				&:after{
-					content: '';
-					display: block;
-					width: 9px;
-					height: 9px;
+				// &:after{
+				// 	content: '';
+				// 	display: block;
+				// 	width: 9px;
+				// 	height: 9px;
 
-					position: absolute;
-					top: 5px;
-					right: 0;
+				// 	position: absolute;
+				// 	top: 5px;
+				// 	right: 0;
 					
-					background: url('../img/sort-up.png') no-repeat;
-					cursor: pointer;
-					opacity: 0.2;			
-				}
+				// 	background: url('../img/sort-up.png') no-repeat;
+				// 	cursor: pointer;
+				// 	opacity: 0.2;			
+				// }
 
-				&:hover:after{
-					opacity: 0.4;
-				}
+				// &:hover:after{
+				// 	opacity: 0.4;
+				// }
 
-				&:active:after{
-					opacity: 1;
-				}
+				// &:active:after{
+				// 	opacity: 1;
+				// }
 			}
 		}
 

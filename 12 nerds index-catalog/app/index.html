@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>nerds</title>
+	<title>nerds catalog</title>
 	
 	<!--[if lt IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -15,138 +15,95 @@
 <body>
 	<header class="main-header">
 		<div class="wrapper clearfix">
-			<a class="header-logo" href="/"><img src="img/logo.png" alt="logo"></a>
+			<a class="header-logo"><img src="img/logo.png" alt="logo"></a>
 			<nav class="header-nav">
 				<ul class="clearfix">
-					<li class="current"><a href="#">Студия</a></li>
+					<li><a href="index.html">Студия</a></li>
 					<li><a href="#">Клиенты</a></li>
-					<li><a href="catalog.html">Магазин</a></li>
+					<li class="current"><a href="#">Магазин</a></li>
 					<li><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="header-basket">
 				<a href="#"><span>Корзина</span></a>
 			</div>
+			<div class="header-template clear">
+				<h1>Магазин готовых шаблонов</h1>
+			</div>
 		</div>
 	</header>
-	
-	<div class="box-slider">
-		<div class="slider">
-			<!-- классический вариант слайдера -->
-			<div class="slider-controls">
-				<i class="active" data-id="1"></i>
-				<i data-id="2"></i>
-				<i data-id="3"></i>
-			</div>
-			<div class="slides">
-				<div class="slide">
-					<div class="slide-text">
-						<div class="slide-title">Долго, дорого, скрупулезно</div>
-						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-						<a class="btn" href="#">Узнать больше</a>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide-text">
-						<div class="slide-title">Любим математику как никто другой</div>
-						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-						<a class="btn" href="#">Узнать больше</a>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="slide-text">
-						<div class="slide-title">Только ночь, только хардкор</div>
-						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-						<a class="btn" href="#">Узнать больше</a>
-					</div>
-				</div>	
-			</div>
-			
-			<!-- другой вариант слайдера -->
-			<!-- <div class="wrapper">
-				<ul>
-					<li>
-						<div class="box-slider">
-							<h2>Долго, дорого, скрупулезно</h2>
-							<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-							<a href="#">Узнать больше</a>
-						</div>
-					</li>
-					<li>
-						<div class="box-slider">
-							<h2>Любим математику как никто другой</h2>
-							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-							<a href="#">Узнать больше</a>
-						</div>
-					</li>
-					<li class="last">
-						<div class="box-slider">
-							<h2>Только ночь, только хардкор</h2>
-							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-							<a href="#">Узнать больше</a>
-						</div>
-					</li>
-				</ul>
-			</div> -->
-		</div>	
-	</div>
-	
-	<main class="wrapper">
-		<div class="main-features clearfix">
-			<article>
-				<img src="img/features1.jpg" alt="features1">
-				<h2>Веб-сайты</h2>
-				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-				<a href="#">Заказать</a>	
-			</article>
-			<article>
-				<img src="img/features2.jpg" alt="features2">
-				<h2>Приложения</h2>
-				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-				<a href="#">Заказать</a>
-			</article>
-			<article class="last">
-				<img src="img/features3.jpg" alt="features3">
-				<h2>Презентации</h2>
-				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-				<a href="#">Заказать</a>
-			</article>
-		</div>
-		<div class="main-content clearfix">
-			<div class="content-left">
-				<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара</h2>
-				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-				<h3>Выполняем заказы на разработку:</h3>
-				<ul>
-					<li>Веб-сайтов любой сложности</li>
-					<li>Мобильных приложений для iOS и Android</li>
-					<li>Слайдшоу и видео для корпоративных презентаций</li>
-				</ul>	
-			</div>
-			<div class="content-right">
-				<img src="img/nerds.jpg" alt="nerds">
-				<p>с 2004 года Любим точность во всем:</p>
 
-				<table>
-					<tr class="prices">
-						<td>146<sup class="procent">%</sup></td>
-						<td>100<sup class="procent">%</sup></td>
-						<td>50<sup class="procent">%</sup></td>
-					</tr>
-					<tr class="prices-text clearfix">
-						<td>Уровень самоотдачи</td>
-						<td>Соблюдение сроков</td>
-						<td>Минимальная предоплата</td>
-					</tr>
-				</table>
+	<main class="wrapper clearfix">
+		<aside class="filter-templates">
+			<form action="/" method="get">
+				<h2>Стоимость:</h2>
+				<div class="box-range">
+					<input type="text" id="range" value="">	
+				</div>
+				<div class="screen-range">
+					ОТ<span>0</span>ДО<span>15000</span>
+				</div>
+
+				<h2>Сетка:</h2>
+				<label>
+					<input type="radio" name="radio" checked>Адаптивная<br>
+				</label>
+				<label>
+					<input type="radio" name="radio">Фиксированная<br>
+				</label>
+				<label>
+					<input type="radio" name="radio">Резиновая<br>
+				</label>
+
+				<h2 class="last">Особенности:</h2>
+				<label>
+					<input type="checkbox" name="checkbox1" checked>Слайдер<br>
+				</label>
+				<label>
+					<input type="checkbox" name="checkbox2">Блок преимуществ<br>
+				</label>
+				<label>
+					<input type="checkbox" name="checkbox3" checked>Новости<br>
+				</label>
+				<label>
+					<input type="checkbox" name="checkbox4">Галерея<br>
+				</label>
+				<label>
+					<input type="checkbox" name="checkbox5">Корзина<br>
+				</label>
+
+				<button type="button">ПОКАЗАТЬ</button>		
+			</form>
+		</aside>
+		<section class="list-templates">
+			<div class="sort clearfix">
+				<h2>Сортировать</h2>
+
+				<ul class="clearfix">
+					<li class="current"><a href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По названию</a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
 			</div>
-		</div>
-		<div class="main-brands clearfix">
-			<div class="brand1"></div>
-			<div class="brand2"></div>
-			<div class="brand3"></div>
-			<div class="brand4"></div>
-		</div>
+			<div class="sites clearfix">
+				<div><img src="img/site1.jpg" alt="site1" width="360" height="576"></div>
+				<div><img src="img/site2.jpg" alt="site2" width="360" height="576"></div>
+				<div><img src="img/site3.jpg" alt="site3" width="360" height="576"></div>
+				<div><img src="img/site4.jpg" alt="site4" width="360" height="576"></div>
+				<div><img src="img/site5.jpg" alt="site5" width="360" height="576"></div>
+				<div><img src="img/site6.jpg" alt="site6" width="360" height="576"></div>
+			</div>
+			<div class="pagination">
+				<ul class="clearfix">
+					<li class="current-li"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">следующая</a></li>
+				</ul>
+			</div>
+		</section>
 	</main>
 	
 	<div class="map">
@@ -175,99 +132,52 @@
 		</div>
 	</footer>
 
-	<!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script src="lib/unslider-min.js"></script>
+
+	<script src="lib/jquery.min.js"></script>
+	// <script src="lib/rangeslider.min.js"></script>
+	<script src="lib/ion.rangeSlider.min.js"></script>
+	<script src="lib/icheck.min.js"></script>
 	<script>
-		jQuery(document).ready(function($) {
-			$('.slider').unslider({
-				autoplay:true,
-				arrows:false
+		// rangeslider
+		// $(function() {
+		// 	$('input[type="range"]').rangeslider({
+		//     	polyfill: false,
+		       
+		//     	// Callback function
+	 	//    	   	onInit: function() {},
+
+	 	//    	   	// Callback function
+	 	//    	   	onSlide: function(position, value) {},
+
+	 	//    	   	// Callback function
+	 	//    	   	onSlideEnd: function(position, value) {}
+		//     });
+		// });
+
+		// ionrangeslider
+		$(function () {
+	        $("#range").ionRangeSlider({
+	            hide_min_max: true,
+	            keyboard: true,
+	            min: 0,
+	            max: 5000,
+	            from: 1000,
+	            to: 4000,
+	            type: 'double',
+	            step: 1,
+	            prefix: "$",
+	            grid: true
+	        });
+	    });
+
+		// icheck
+		$(function() {
+			$('input[type="radio"], input[type="checkbox"]').iCheck({
+				checkboxClass: 'icheckbox_square-orange',
+				radioClass: 'iradio_square-orange',
+				increaseArea: '20%' // optional
 			});
 		});
-	</script> -->
-
-	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-	<script>
-		function Slider(time) {
-			// variables
-			this.time = time || 1000; // by default
-
-			// добавить иключение из остановки слайдера когда кликнули на controls!
-			this.btnStopSlider = document.querySelector('.box-slider .slider .slides');
-			
-			this.slides = document.querySelectorAll('.box-slider .slider .slides .slide');
-			this.btnsControl = document.querySelectorAll('.box-slider .slider .slider-controls i');
-			this.currentSlide = document.querySelectorAll('.box-slider .slider .slides .slide');
-			var flagTimer = false;	// timer off
-			var that = this;
-
-			// events
-			this.btnStopSlider.addEventListener('click', function(e) {
-				if(!flagTimer) {
-					flagTimer = !flagTimer;
-					clearInterval(that.timer);
-				}
-				else {
-					flagTimer = !flagTimer;
-					that.run();
-				}
-			});
-
-			for(var i = 0; i < that.btnsControl.length; i++) {
-				that.btnsControl[i].addEventListener('click', function(e) {
-
-					// удаление всех классов active
-					for(var i = 0; i < that.btnsControl.length; i++) {
-						that.btnsControl[i].classList.remove('active');
-					}
-
-					// постановка класса active
-					this.classList.add('active');
-
-					// изменнеие слайдера
-					for(var i = 0; i < that.currentSlide.length; i++) {
-						that.currentSlide[i].style.display = 'none';
-					}
-					that.currentSlide[this.getAttribute('data-id')-1].style.display = 'block';
-				});
-			}
-
-			// functions
-			this.run = function() {
-				var count = 0;
-
-				// запуск слайдера по таймеру
-				that.timer = setInterval(function() {
-					that.flagTimer = true;
-					
-					// переключение слайдера по таймеру
-					if(count < 3) {
-						console.log(count);
-
-						for(var i = 0; i < that.currentSlide.length; i++) {
-							that.currentSlide[i].style.display = 'none';
-						}
-						that.currentSlide[count].style.display = 'block';
-
-						count++;
-					}
-					else {
-						count = 0;
-
-						for(var i = 0; i < that.currentSlide.length; i++) {
-							that.currentSlide[i].style.display = 'none';
-						}
-						that.currentSlide[count].style.display = 'block';
-
-						count++;
-					}
-
-				}, that.time);
-			};
-		};
-
-		var mySlider = new Slider(1500);
-		mySlider.run();
 	</script>
 </body>
 </html>
