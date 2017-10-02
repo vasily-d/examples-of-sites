@@ -1,5 +1,6 @@
 .main-header{
 	background: #f1f5f7;
+	padding-bottom: 60px;
 
 	.top-header{
 		min-height: 42px;
@@ -95,10 +96,102 @@
 	}
 
 	.bottom-header{
-		// ??????????????
+		margin-bottom: 45px;
+		
+		.description-header{
+			float: left;
+			margin-left: 50px;
+
+			color: #ee3643;
+			font-size: 16px;
+			line-height: 23px;
+			font-style: italic;
+		}
+
+		.contact-header{
+			float: left;
+			margin-left: 70px;
+
+			.tel{
+				color: #e9292a;
+				font-size: 21px;
+				line-height: 21px;
+
+				border: 3px solid #fff;
+
+				display: block;
+				padding: 9px 47px 9px 70px;
+			}
+
+			address{
+				color: #32425c;
+				font-size: 14px;
+				line-height: 24px;
+				font-style: normal;
+
+				margin-left: 8px;
+			}
+		}
+
+		.login-header{
+			float: left;
+			margin-left: 70px;
+
+			.login{
+				color: #000;
+				font-size: 21px;
+				line-height: 21px;
+
+				padding: 14px 25px 14px 45px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 6px;	//10-4
+
+				background: #fff url('../../img/login-icon.png') no-repeat 15px 50%;
+			}
+
+			.reg{
+				color: #000;
+				font-size: 21px;
+				line-height: 21px;
+
+				padding: 14px 22px 14px 22px;
+				display: inline-block;
+				vertical-align: middle;
+
+				background: #fff;
+			}
+		}
 	}
 
 	.main-menu{
+		min-height: 55px;
 
+		background: #32425c;
+		border-bottom: 5px solid #293449;
+
+		ul{
+			margin: 0;
+			padding: 0;
+			margin-left: 50px;
+			padding-top: 22px;
+
+			li{
+				float: left;
+				margin-left: 60px;
+
+				&:first-child{
+					margin-left: 0;
+				}
+
+				a{
+					color: #fff;
+					font-size: 17px;
+					line-height: 17px;
+
+					display: block;
+				}
+			}
+		}
 	}
 }
