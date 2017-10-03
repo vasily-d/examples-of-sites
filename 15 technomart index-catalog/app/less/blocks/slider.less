@@ -1,0 +1,96 @@
+.item{
+	float: left;
+	width: 300px;
+	height: 123px;
+	margin-left: 20px;
+	padding: 20px 0 20px 20px;
+	box-sizing: border-box;
+
+	position: relative;
+
+	&:first-child{
+		margin-left: 0;
+	}
+
+	h3{
+		margin: 0;
+		margin-bottom: 20px;
+
+		color: #fff;
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 700;
+	}
+
+	a{
+		color: #fff;
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: uppercase;
+		
+		display: inline-block;
+		padding: 11px 22px;
+
+		background: rgba(0, 0, 0, .1);
+		border-radius: 5px;
+	}
+
+	&:first-child{
+		background: #f6b22d url('../img/features1-icon.png') 213px 30px no-repeat;
+	}
+
+	&:nth-child(2){
+		background: #4aafde url('../img/features2-icon.png') 196px 30px no-repeat;
+	}
+
+	&:nth-child(3){
+		background: #cc79d1 url('../img/features3-icon.png') 190px 30px no-repeat;
+	}
+}
+
+.new{
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 50px;
+		height: 50px;
+
+		background: #000;
+	}
+}
+
+.slider{
+	.top-slider{
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
+
+	.bottom-slider{
+		margin-bottom: 54px;
+		
+		.slide{
+			float: left;
+			width: 620px;
+			height: 266px;
+
+			background: url('../img/slider1.jpg') no-repeat;
+		}
+
+		.aside-slide{
+			float: right;
+
+			.top{
+				float: none;
+				margin-left: 20px;
+				margin-bottom: 20px;
+			}
+
+			.bottom{
+				float: none;
+			}
+		}
+	}
+}
