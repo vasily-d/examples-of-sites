@@ -10,4 +10,5 @@ app/css/*.css
 app/Thumbs.db
 dist/
 app/libs/bower_components/
+app/libs/bower/
 node_modules/
