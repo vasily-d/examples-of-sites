@@ -1,6 +1,6 @@
 .main-footer{
 	.footer-social{
-		width: 300px;
+		max-width: 300px;
 		float: left;
 		margin: 68px 0;
 		margin-right: 100px;
@@ -156,6 +156,7 @@
 	.main-footer .footer-sales{
 		float: none;
 		margin: 50px auto;
+		text-align: center;
 	}
 }
 
@@ -177,7 +178,39 @@
 
 @media screen and (max-width: 480px){
 	.map .map-popup{
-		left: 0;
-		width: 310px;
+		left: 5px;
+		width: 300px;
+	}
+}
+
+// media catalog.html
+@media screen and(max-width: 855px){
+	main .list-templates .pagination{
+		display: none;
+	}
+
+	main .list-templates .sort{
+		display: none;
+	}
+
+	main .list-templates .sites div{
+		margin: 5px 0;
+	}
+}
+
+@media screen and(max-width: 1160px){
+	main .filter-templates{
+		float: none;
+		width: 100%;
+		text-align: center;
+
+		.box-range{
+			width: 100%;
+		}
+	}
+
+	main .list-templates{
+		float: none;
+		margin: 20px auto;
 	}
 }
