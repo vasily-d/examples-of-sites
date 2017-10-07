@@ -1,6 +1,6 @@
 *{outline: 1px solid black;}
 
-// : for ie
+// one : for ie
 .clearfix:after{
 	content: "";
 	display: table;
@@ -13,9 +13,10 @@ body{
 	padding: 0;
 	margin: 0;
 
-	background: #fff;
-
-	font-family: 'Cuprum', sans-serif;
+	background: @bgColor;
+	
+	color: @bodyColor;
+	font-family: @bodyFont;
 
 	img{
 		max-width: 100%;
@@ -32,8 +33,9 @@ body{
 	// h1,h2,h3,p,ul,input{margin: 0; padding: 0;}
 
 	.wrap{
-		width: 940px;	//960-2*10
-		padding: 0 10px;
+		width: @widthWrap;	//960-2*10
+		padding-left: 10px;
+		padding-right: 10px;
 		margin-left: auto;
 		margin-right: auto;
 	}
