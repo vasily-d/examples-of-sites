@@ -1,14 +1,14 @@
 // page index.html
 
-.main-footer{
+.main-footer {
 	background: #fdfdfd;
 
-	.footer-link{
+	.footer-link {
 		float: left;
 		padding: 46px 250px 46px 128px;
 		margin: 0;
 		
-		a{
+		a {
 			color: #000;
 			font-weight: 700;
 			font-size: 21px;
@@ -16,58 +16,58 @@
 		}
 	}
 
-	.footer-social{
+	.footer-social {
 		float: left;
 		margin: 0;
 		padding: 37px 0;
 
-		li{
+		li {
 			float: left;
 			margin-left: 11px;
 
-			&:first-child{
+			&:first-child {
 				margin-left: 0;
 			}
 
-			a{				
+			a {
 				display: block;
 				width: 46px;
 				height: 48px;
 
 				font-size: 0;
 
-				&.tw{
+				&.tw {
 					background: #81b3d2 url('../img/twitter.png') no-repeat 50% 50%;
 
-					&:hover{	
+					&:hover {	
 						background: #669ec0 url('../img/twitter.png') no-repeat 50% 50%;
 					}
 
-					&:active{
+					&:active {
 						background: #5496bd url('../img/twitter-active.png') no-repeat 50% 50%;
 					}
 				}
 
-				&.fb{
+				&.fb {
 					background: #81b3d2 url('../img/fb.png') no-repeat 50% 50%;
 
-					&:hover{	
+					&:hover {	
 						background: #669ec0 url('../img/fb.png') no-repeat 50% 50%;
 					}
 
-					&:active{
+					&:active {
 						background: #5496bd url('../img/fb-active.png') no-repeat 50% 50%;
 					}
 				}
 
-				&.yt{
+				&.yt {
 					background: #81b3d2 url('../img/youtube.png') no-repeat 50% 50%;
 
-					&:hover{	
+					&:hover {	
 						background: #669ec0 url('../img/youtube.png') no-repeat 50% 50%;
 					}
 
-					&:active{
+					&:active {
 						background: #5496bd url('../img/youtube-active.png') no-repeat 50% 50%;
 					}
 				}
@@ -75,7 +75,7 @@
 		}
 	}
 
-	.footer-copyright{
+	.footer-copyright {
 		float: right;
 		margin: 0;
 		padding: 37px 100px 37px 0;
@@ -83,12 +83,12 @@
 		font-size: 14px;
 		line-height: 26px;
 
-		span{
+		span {
 			vertical-align: -50%;
 			padding-right: 10px;
 		}
 
-		a{
+		a {
 			font-size: 0;
 		
 			background: url('../img/copyright.png') no-repeat;
@@ -97,13 +97,160 @@
 			height: 39px;
 			display: inline-block;
 		
-			&:hover{
+			&:hover {
 				opacity: 0.7;
 			}
 		
-			&:active{
+			&:active {
 				opacity: 0.3;
 			}
 		}
+	}
+}
+
+
+
+// MEDIA index.html
+@media screen and (max-width: 960px) {
+	.logo-li {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 925px) {
+	.footer-link{
+		display: none;
+	}
+
+	.main-footer .footer-social {
+		float: left;
+		padding-left: 50px;
+	}
+
+	.main-footer .footer-copyright {
+		float: right;
+		padding-right: 50px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.main-header .header-nav ul li{
+		text-align: center;
+
+		&:first-child, &.map-li, &.photo-li, &.last-li {
+			float: none;
+			margin: 0;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+@media screen and (max-width: 730px) {
+	main .features2-list .features2-item {
+		float: none;
+		width: 100%;
+		min-height: 150px;
+
+		h2 {
+			margin: 0;
+			padding-top: 20px;
+		}
+	}
+
+	main .features1-text-itembg {
+		.features1-text {
+			display: none;
+		}
+
+		.features1-itembg {
+			width: 100%;
+		}
+	}
+
+	main .features2-itembg-text {
+		.features2-text {
+			display: none;
+		}
+
+		.features2-itembg {
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.main-footer .footer-social {
+		padding-left: 0;
+	}
+
+	.main-footer .footer-copyright {
+		padding-right: 0;
+	}
+}
+
+// MEDIA hotels.html
+@media screen and (max-width: 1020px) {
+	.wrap .filters-range {
+		.range-filter {
+			display: none;
+		}
+
+		.list-filters {
+			float: none;
+			width: 100%;
+			
+			.left-filter {
+				float: left;
+			}
+
+			.right-filter {
+				float: right;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 750px) {
+	.sort {
+		display: none;
+	}
+
+	.catalog-hotels .hotel .hotel-info {
+		display: none;
+	}
+}
+
+@media screen and(max-width: 650px) {
+	.wrap .filters-range {
+		padding: 0;
+
+		.list-filters {
+			.left-filter {
+				width: 150px;
+			}
+
+			.right-filter {
+				width: 150px;
+			}
+		}
+	}
+}
+
+@media screen and(max-width: 610px) {
+	.wrap .catalog-hotels{
+		padding: 0 20px;
+	}
+
+	.catalog-hotels .hotel .hotel-description .description {
+		text-align: center;
+		margin-top: 10px;
+
+		.buttons .brown-button{
+			margin-top: 10px;
+		}
+	}
+
+	.catalog-hotels .hotel .hotel-description img{
+		width: 100%;
 	}
 }
