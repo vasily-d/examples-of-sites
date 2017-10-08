@@ -30,10 +30,10 @@ examples of sites:
 
 11.3 barber shop
 
-12 nerds index-catalog
+12 hosting (js examples)
 
-13 hosting (js examples)
+13 nerds index-catalog adaptive
 
-14 sedon index-hotels
+14 sedon index-hotels adaptive
 
-15 technomart index-catalog
+15 technomart index-catalog adaptive
