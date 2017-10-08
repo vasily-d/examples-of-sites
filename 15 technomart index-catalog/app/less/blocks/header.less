@@ -14,7 +14,7 @@
 
 		.logo-header{
 			background: #ee3643;
-			box-shadow: 0 5px 0 #b52933;
+			box-shadow: 0 5px 0 #8e1e26;
 
 			width: 220px;
 			height: 42px;
@@ -28,6 +28,15 @@
 			line-height: 24px;
 			text-transform: uppercase;
 			text-align: center;
+
+			&:hover{
+				background: #ca2c37;
+
+			}
+
+			&:active{
+				background: #ba2732;
+			}
 		}
 
 		.search-header input{
@@ -48,6 +57,16 @@
 			&::placeholder{
 				color: #fff;
 			}
+
+			&:hover{
+				background: #212a3a url('../img/search-icon-hover.png') no-repeat;
+			}
+
+			&:focus{
+				background: #fff url('../img/search-icon-active.png') no-repeat;
+				color: #000;
+				font-size: 17px;
+			}
 		}
 
 		.favorite-header{
@@ -58,10 +77,22 @@
 			padding-left: 50px;
 			box-sizing: border-box;
 
-			background: url('../../img/favorite-icon.png') no-repeat 17px 0;
+			background: url('../img/favorite-icon.png') no-repeat 17px 0;
 
 			span{
 
+			}
+
+			&:hover{
+				background: url('../img/favorite-icon-hover.png') 17px 0 no-repeat;
+			}
+
+			&:active{
+				opacity: .5;	
+
+				span{
+					opacity: .6;
+				}			
 			}
 		}
 
@@ -74,10 +105,22 @@
 			padding-left: 50px;
 			box-sizing: border-box;
 
-			background: url('../../img/basket-icon.png') no-repeat 17px 0;
+			background: url('../img/basket-icon.png') no-repeat 17px 0;
 
 			span{
 
+			}
+
+			&:hover{
+				background: url('../img/basket-icon-hover.png') 17px 0 no-repeat;
+			}
+
+			&:active{
+				opacity: .5;	
+
+				span{
+					opacity: .6;
+				}			
 			}
 		}
 
@@ -92,6 +135,14 @@
 
 			color: #fff;
 			text-align: center;
+
+			&:hover{
+				background: #5fbb2d;
+			}
+
+			&:active{
+				background: #518534;
+			}
 		}
 	}
 
@@ -147,7 +198,24 @@
 				vertical-align: middle;
 				margin-right: 6px;	//10-4
 
-				background: #fff url('../../img/login-icon.png') no-repeat 15px 50%;
+				background: #fff url('../img/login-icon.png') no-repeat 15px 50%;
+
+				&:hover{
+					background: #fff url('../../img/login-icon-active.png') no-repeat 15px 50%;
+					
+					span{
+						color: #ee3643;
+					}
+				}
+
+				&:active{
+					span{
+						color: #000;
+						opacity: .3;
+					}
+
+					background: #fff url('../img/login-icon.png') no-repeat 15px 50%;
+				}
 			}
 
 			.reg{
@@ -160,6 +228,19 @@
 				vertical-align: middle;
 
 				background: #fff;
+
+				&:hover{
+					span{
+						color: #ee3643;
+					}
+				}
+
+				&:active{
+					span{
+						color: #000;
+						opacity: .3;
+					}
+				}
 			}
 		}
 	}
@@ -173,12 +254,12 @@
 		ul{
 			margin: 0;
 			padding: 0;
-			margin-left: 50px;
-			padding-top: 22px;
 
 			li{
 				float: left;
-				margin-left: 60px;
+				width: 134px;
+				min-height: 55px;
+				text-align: center;
 
 				&:first-child{
 					margin-left: 0;
@@ -187,9 +268,19 @@
 				a{
 					color: #fff;
 					font-size: 17px;
-					line-height: 17px;
+					line-height: 55px;
 
 					display: block;
+				}
+
+				&:hover{
+					background: #293449;
+				}
+
+				&:active{
+					a{
+						opacity: .5;
+					}
 				}
 			}
 		}
