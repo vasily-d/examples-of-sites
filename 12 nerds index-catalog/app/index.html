@@ -175,6 +175,25 @@
 		</div>
 	</footer>
 
+	<div class="popup">
+		<h2>Напишите нам</h2>
+		<label class="left-label">
+			Ваше имя:<br>
+			<input type="text" name="name" placeholder="ваше имя">
+		</label>
+		<label class="right-label">
+			Ваша почта:<br>
+			<input type="email" name="name" placeholder="ваша почта">
+		</label>
+		<div class="clear"></div>
+		<label>
+			Текст письма:<br>
+			<textarea name="text" placeholder="В свободной форме"></textarea><br>
+		</label>
+		<button type="submit">Отправить</button>
+		<div class="x"></div>
+	</div>
+
 	<!-- <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="lib/unslider-min.js"></script>
 	<script>
@@ -273,6 +292,15 @@
 
 			// wow
 			new WOW().init();
+
+			$('.map button').on('click', function(e) {
+				$('.popup').css('display', 'block');
+				e.stopPropagation();
+
+				$('.popup .x').on('click', function(e) {
+					$('.popup').fadeOut(200);
+				});
+			});
 		});
 	</script>
 </body>
