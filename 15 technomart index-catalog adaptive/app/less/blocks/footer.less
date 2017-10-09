@@ -82,6 +82,22 @@
 					}
 				}
 			}
+
+			.top-menu li, .bottom-menu li{
+				&:hover{
+					a{
+						text-decoration: underline;
+					}
+				}
+
+				&:active{
+					opacity: .5;
+
+					a{
+						text-decoration: none;
+					}
+				}
+			}
 		}
 	}
 
@@ -106,35 +122,58 @@
 			width: 250px;
 
 			.vk{
-				background: #212a3a url('../../img/vk.png') 50% 50% no-repeat;
+				background: #212a3a url('../img/vk.png') 50% 50% no-repeat;
 				border-radius: 50%;
 				
 				display: inline-block;
 				width: 40px;
 				height: 40px;
+
+				&:hover{
+					background: #ee3643 url('../img/vk.png') 50% 50% no-repeat;;
+				}
+
+				&:active{
+					background: #ee3643 url('../img/vk.png') 50% 40% no-repeat;;
+				}
 			}
 
 			.fb{
-				background: #212a3a url('../../img/fb.png') 50% 50% no-repeat;
+				background: #212a3a url('../img/fb.png') 50% 50% no-repeat;
 				border-radius: 50%;
 
 				display: inline-block;
 				width: 40px;
 				height: 40px;
+
+				&:hover{
+					background: #ee3643 url('../img/fb.png') 50% 50% no-repeat;;
+				}
+
+				&:active{
+					background: #ee3643 url('../img/fb.png') 50% 40% no-repeat;;
+				}
 			}
 
 			.insta{
-				background: #212a3a url('../../img/insta.png') 50% 50% no-repeat;
+				background: #212a3a url('../img/insta.png') 50% 50% no-repeat;
 				border-radius: 50%;
 
 				display: inline-block;
 				width: 40px;
 				height: 40px;
-			}
 
+				&:hover{
+					background: #ee3643 url('../img/insta.png') 50% 50% no-repeat;;
+				}
+
+				&:active{
+					background: #ee3643 url('../img/insta.png') 50% 40% no-repeat;;
+				}
+			}
 		}
 
-		.feedback{
+		.feedbackMini{
 			float: left;
 			width: 190px;
 
@@ -149,6 +188,17 @@
 
 			a{
 				color: #ffd180;
+			}
+		}
+
+		.feedbackMini a, .developer a{
+			&:hover{
+				text-decoration: underline;
+			}
+
+			&:active{
+				text-decoration: none;
+				color: #ee3643;
 			}
 		}
 	}

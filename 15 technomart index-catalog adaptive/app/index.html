@@ -235,7 +235,7 @@
 					<a class="fb" href="https://facebook.com" target="_blank"></a>
 					<a class="insta" href="https://instagram.com" target="_blank"></a>
 				</div>
-				<div class="feedback">
+				<div class="feedbackMini">
 					Обратная связь:<br>
 					<a href="https://mail.ru" target="_blank">mail@mail.ru</a>
 				</div>
@@ -246,5 +246,33 @@
 			</div>
 		</div>
 	</footer>
+
+	
+
+	<!-- popup - map and feedback -->
+	<div class="bigMap"></div>
+	<div class="feedback">
+		<form action="/" method="get">
+			<div class="top-box">
+				<label class="left-label">
+					Ваше имя:<br>
+					<input type="text" name="name" placeholder="ваше имя">
+				</label>
+				<label class="right-label">
+					Ваша почта:<br>
+					<input type="email" name="email" placeholder="ваша почта">
+				</label>
+				<div class="clear"></div>
+				<label>
+					Текст письма:<br>
+					<textarea name="text" placeholder="ваш текст"></textarea>
+				</label><br>
+			</div>
+			<div class="bottom-box">	
+				<button type="submit">Отправить</button>
+			</div>
+			<div class="x-feedback"></div>
+		</form>
+	</div>
 </body>
 </html>
