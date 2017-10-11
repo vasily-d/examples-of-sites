@@ -41,9 +41,12 @@
 				<a class="tel" href="tel:+7 (812) 555 05 55">+7 (812) 555-05-55</a>
 				<address>г. Санкт-Петербург, ул. Б.</address>
 			</div>
-			<div class="login-header">
-				<a class="login" href="#"><span>Войти</span></a>
-				<a class="reg" href="#"><span>Регистрация</span></a>
+			<div class="loginIn-header">
+				<a class="name-login" href="#">Марк Цукурберг</a>
+				<div class="description-login">
+					<a class="myBuy" href="#">Мои заказы</a>
+					<a class="myCabinet" href="#">Личный кабинет</a>
+				</div>
 			</div>
 		</div>
 
@@ -59,136 +62,104 @@
 			</ul>
 		</nav>
 	</header>
-
-	<div class="slider wrap">
-		<div class="top-slider clearfix">
-			<div class="item new">
-				<h3>Материалы</h3>
-				<a href="#">на любой вкус</a>	
-			</div>
-			<div class="item">
-				<h3>Инструменты</h3>
-				<a href="#">на все случаи</a>	
-			</div>
-			<div class="item">
-				<h3>Техника</h3>
-				<a href="#">для стройки</a>	
-			</div>
-		</div>
-
-		<div class="bottom-slider clearfix">
-			<div class="slide"></div>
-			<div class="aside-slide">
-				<div class="item top">
-					<h3>Скидки 50%</h3>
-					<a href="#">на 350 товаров</a>	
-				</div>
-				<div class="item bottom">
-					<h3>Доставка</h3>
-					<a href="#">бесплатно</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<main class="wrap">
-		<div class="list-items">
-			<div class="header-list clearfix">
-				<h2>Популярные товары:</h2>
-				<button>Все популярные товары</button>
-			</div>
-			<ul class="clearfix">
-				<li>
-					<img src="img/item1.jpg" alt="item1">
-					<h3>Перфоратор BOSCH<br>BFG 9000</h3>
-					<span>32500 Р.</span><br>
-					<a href="#">25500 Р.</a>
-				</li>
-				<li>
-					<img src="img/item2.jpg" alt="item2">
-					<h3>Перфоратор BOSCH<br>BFG 3000</h3>
-					<span>22500 Р.</span><br>
-					<a href="#">15500 Р.</a>
-				</li>
-				<li>
-					<img src="img/item3.jpg" alt="item3">
-					<h3>Перфоратор BOSCH<br>BFG 6000</h3>
-					<span>30500 Р.</span><br>
-					<a href="#">25500 Р.</a>
-				</li>
-				<li class="new">
-					<img src="img/item4.jpg" alt="item4">
-					<h3>Перфоратор BOSCH<br>BFG 2000</h3>
-					<span></span><br>
-					<a href="#">12500 Р.</a>
-				</li>
+	
+	<main class="main-catalog wrap">
+		<div class="list-catalog">
+			<ul>
+				<li><a href="#">Каталог</a></li>
+				<li><a href="#">Инструменты</a></li>
+				<li><a href="#">Перфораторы</a></li>
 			</ul>
 		</div>
-		<div class="list-items">
-			<div class="header-list clearfix">
-				<h2>Популярные производители:</h2>
-				<button>Все производители</button>
+		<h2 class="item-name">
+			Перфораторы
+		</h2>
+
+		<aside class="filter-items">
+			<span>Фильтр:</span>
+			<form action="/" method="get">
+				<div class="range-filter">
+					<h3>Цена:</h3>
+					<input type="range" name="range">
+					<div class="min-max-range">
+						<input class="min-range" type="text" name="min" value="0">
+						<input class="max-range" type="text" name="max" value="30000">
+					</div>
+				</div>
+				
+				<div class="brand-filter">
+					<h3>Производители:</h3>
+					<label>
+						<input type="checkbox" name="brand" checked>Bosh<br>
+					</label>
+					<label>
+						<input type="checkbox" name="brand">Интерскол<br>
+					</label>
+					<label>
+						<input type="checkbox" name="brand" checked>Makita<br>
+					</label>
+					<label>
+						<input type="checkbox" name="brand">Dewalt<br>
+					</label>
+					<label>
+						<input type="checkbox" name="brand">Hitachi<br>
+					</label>
+				</div>
+				
+				<div class="battery-filter">
+					<h3>Питание:</h3>
+					<label>
+						<input type="radio" name="battery-name" checked>Аккумуляторные<br>
+					</label>
+					<label>
+						<input type="radio" name="battery-name">Сетевые<br>
+					</label>
+				</div>
+
+				<button type="submit">Показать</button>
+			</form>
+		</aside>
+
+		<section class="items">
+			<div class="sort-items">
+				<span>Сортировка:</span>
+				<ul>
+					<li><a href="">По цене</a></li>
+					<li><a href="">По типу</a></li>
+					<li><a href="">По йункционалу</a></li>
+					<li><a href="">Up</a></li>
+					<li><a href="">Down</a></li>
+				</ul>
 			</div>
-			<ul class="brands clearfix">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
+
+			<div class="list-items">
+				<div class="item1">
+					<h2>1</h2>
+					<span>2</span>
+					<a href="#">3</a>
+				</div>
+			</div>
+
+			<div class="pagination">
+				<ul>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">Следующая</a></li>
+				</ul>
+			</div>
+		</section>
+		<div class="clear"></div>
 	</main>
 
-	<div class="service">
+	<section class="about-catalog">
 		<div class="wrap">
-			<div class="top-service">
-				<h2>Сервисы</h2>
-				<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-			</div>
-			<div class="bottom-service clearfix">
-				<div class="left-delivery">
-					<ul>
-						<li class="active">Доставка</li>
-						<li>Гарантия</li>
-						<li>Кредит</li>
-					</ul>
-				</div>
-				<div class="right-delivery">
-					<h2>Доставка</h2>
-					<p>Мы с удовольствием доставим ваш товар прямо<br>
-					к вашему подъезду совершенно бесплатно!<br>
-					Ведь мы неплохо заработаем,<br>
-					поднимая его на ваш этаж!</p>
-				</div>
-			</div>
+			<h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+			Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
+			ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
 		</div>
-	</div>
-
-	<div class="about-contact wrap clearfix">
-		<div class="about">
-			<h2>КОМПАНИЯ &laquo;Техномарт&raquo;</h2>
-			<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-			<p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
-			<ul>
-				<li>Деловые линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
-			</ul>
-			<a href="#">Подробнее о компании</a>
-		</div>
-		<div class="contact">
-			<h2>Контакты</h2>
-			<p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-			<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2562235.3986463146!2d47.2979162812388!3d51.160415432964086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1507235922180" width="300" height="190" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<a href="#">Заблудились? Напишите нам!</a>
-		</div>
-	</div>
+	</section>
 
 	<footer class="main-footer">
 		<div class="top-footer">
@@ -246,33 +217,5 @@
 			</div>
 		</div>
 	</footer>
-
-	
-
-	<!-- popup - map and feedback -->
-	<div class="bigMap"></div>
-	<div class="feedback">
-		<form action="/" method="get">
-			<div class="top-box">
-				<label class="left-label">
-					Ваше имя:<br>
-					<input type="text" name="name" placeholder="ваше имя">
-				</label>
-				<label class="right-label">
-					Ваша почта:<br>
-					<input type="email" name="email" placeholder="ваша почта">
-				</label>
-				<div class="clear"></div>
-				<label>
-					Текст письма:<br>
-					<textarea name="text" placeholder="ваш текст"></textarea>
-				</label><br>
-			</div>
-			<div class="bottom-box">	
-				<button type="submit">Отправить</button>
-			</div>
-			<div class="x-feedback"></div>
-		</form>
-	</div>
 </body>
 </html>
