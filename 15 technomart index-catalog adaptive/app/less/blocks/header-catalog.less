@@ -17,6 +17,16 @@
 				font-size: 21px;
 				font-line: 21px;
 
+				span{
+					&:hover{
+						opacity: .6;
+					}
+
+					&:active{
+						opacity: .3
+					}
+				}
+
 				&:before{
 					content: '';
 					position: absolute;
@@ -39,7 +49,6 @@
 				
 					width: 21px;
 					height: 17px;
-				
 				}
 			}
 
@@ -60,6 +69,14 @@
 
 					position: relative;
 
+					&:hover{
+						color: #ee3643;
+					}
+
+					&:active{
+						text-decoration: none;
+					}
+
 					&:after{
 						content: '';
 						position: absolute;
@@ -75,7 +92,13 @@
 				}
 
 				.myCabinet{
+					&:hover{
+						color: #ee3643;
+					}
 
+					&:active{
+						text-decoration: none;
+					}
 				}
 			}
 		}
