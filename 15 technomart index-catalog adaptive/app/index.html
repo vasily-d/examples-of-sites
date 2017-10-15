@@ -151,7 +151,7 @@
 			</div>
 			<div class="bottom-service clearfix">
 				<div class="left-delivery">
-					<ul>
+					<ul class="js-service">
 						<li class="active">Доставка</li>
 						<li>Гарантия</li>
 						<li>Кредит</li>
@@ -178,7 +178,7 @@
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
-			<a href="#">Подробнее о компании</a>
+			<a class="js-bigMap" href="#">Подробнее о компании</a>
 		</div>
 		<div class="contact wow slideInRight" data-wow-offset="10" data-wow-duration="1s">
 			<h2>Контакты</h2>
@@ -186,7 +186,7 @@
 			<div class="map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2562235.3986463146!2d47.2979162812388!3d51.160415432964086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1507235922180" width="300" height="190" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
-			<a href="#">Заблудились? Напишите нам!</a>
+			<a class="js-feedback-btn" href="#">Заблудились? Напишите нам!</a>
 		</div>
 	</div>
 
@@ -202,7 +202,7 @@
 						+7 (812) 555-05-55
 					</address>
 				</div>
-				<div class="fotter-menu">
+				<div class="footer-menu">
 					<div class="top-menu">
 						<ul class="clearfix">
 							<li><a href="#">Компания</a></li>
@@ -250,9 +250,9 @@
 	
 
 	<!-- popup - map and feedback -->
-	<div class="bigMap"></div>
-	<div class="feedback">
-		<form action="/" method="get">
+	<div class="bigMap js-bigMap-popup"></div>
+	<div class="feedback js-feedback-popup">
+		<form action="#" method="post">
 			<div class="top-box">
 				<label class="left-label">
 					Ваше имя:<br>
@@ -271,7 +271,7 @@
 			<div class="bottom-box">	
 				<button type="submit">Отправить</button>
 			</div>
-			<div class="x-feedback"></div>
+			<div class="x-feedback js-feedback-close"></div>
 		</form>
 	</div>
 	

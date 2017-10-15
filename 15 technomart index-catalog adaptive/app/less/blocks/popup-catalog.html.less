@@ -1,0 +1,93 @@
+.popup-catalog-html{
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 1;
+
+	display: none;
+
+	background: #fff;
+	border-top: 6px solid #ee3643;
+
+	.top-popup{
+		color: #000;
+		font-size: 30px;
+		line-height: 18px;
+
+		margin: 50px 125px 50px 80px;
+		
+		p{
+			padding-left: 100px;
+			padding-top: 24px;
+			padding-bottom: 24px;
+
+			position: relative;
+			
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: url('../img/ok.png') no-repeat;
+
+				width: 66px;
+				height: 66px;
+			}
+		}
+	}
+
+	.bottom-popup{
+		background: #f1f1f1;
+
+		padding: 37px 80px;
+		
+		.buy{
+			display: inline-block;
+			vertical-align: top;
+			padding: 12px 0;
+			width: 220px;
+
+			background: #ee3643;
+			border-radius: 3px;
+
+			color: #fff;
+			font-size: 14px;
+			line-height: 18px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		button{
+			display: inline-block;
+			vertical-align: top;
+			width: 220px;
+			padding: 12px 0;
+			margin-left: 16px;
+			border-radius: 3px;
+
+			border: none;
+			cursor: pointer;
+			background: #fff;
+
+			color: #000;
+			font-family: @bodyFont;
+			font-size: 14px;
+			line-height: 18px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+
+	.x{
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	
+		background: url('../img/x-map.png') no-repeat;
+		cursor: pointer;
+
+		width: 21px;
+		height: 21px;
+	}
+}
