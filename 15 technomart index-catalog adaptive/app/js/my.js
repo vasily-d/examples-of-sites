@@ -42,7 +42,14 @@ $(function() {
 	});
 
 	// icheck
+	$('input').iCheck({
+	   checkboxClass: 'icheckbox_square',
+	   radioClass: 'iradio_square',
+	   increaseArea: '20%' // optional
+	 });
 
-
-
+	// rangeslider.js
+	 $('input[type="range"]').rangeslider({
+	 	polyfill : false
+	 });
 })

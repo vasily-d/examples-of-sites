@@ -2,6 +2,9 @@
   "name": "technomart",
   "dependencies": {
     "wow": "wowjs#^1.1.2",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "iCheck": "icheck#^1.0.2",
+    "normalize-css": "normalize.css#^7.0.0",
+    "rangeslider.js": "^2.3.1"
   }
 }

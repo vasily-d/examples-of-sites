@@ -72,7 +72,27 @@
 
 			>input{
 				width: 100%;
+			}
 
+			.rangeslider{
+				height: 10px;
+				background: #fff;
+
+				.rangeslider__fill{
+					background: grey;
+				}
+
+				.rangeslider__handle{
+					width: 20px;
+					height: 25px;
+
+					// background: black;
+					border: 1px solid white;
+
+					&:after{
+						background: black;
+					}
+				}
 			}
 
 			.min-max-range{
@@ -128,7 +148,11 @@
 			}
 
 			label{
-				// 8
+				.icheckbox_square{
+					margin-right: 8px;
+					margin-bottom: 8px;
+				}
+
 				input{
 					
 				}
@@ -144,6 +168,10 @@
 			}
 
 			label{
+				.iradio_square{
+					margin-right: 8px;
+					margin-bottom: 8px;
+				}
 
 				input{
 
@@ -155,6 +183,7 @@
 			color: #000;
 			font-size: 13px;
 			line-height: 18px;
+			text-transform: uppercase;
 
 			padding: 12px;
 			width: 138px;
