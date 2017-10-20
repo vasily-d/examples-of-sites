@@ -41,15 +41,23 @@ $(function() {
 		$(this).addClass('active');
 	});
 
-	// icheck
-	$('input').iCheck({
-	   checkboxClass: 'icheckbox_square',
-	   radioClass: 'iradio_square',
-	   increaseArea: '20%' // optional
-	 });
+	// unslider
+	$('.bottom-slider .slide >div').unslider({
+			autoplay: true,
+			speed: 2000,
+			delay: 4000,
+			arrow: false
+	});
 
 	// rangeslider.js
 	 $('input[type="range"]').rangeslider({
 	 	polyfill : false
+	 });
+
+	 // icheck
+	$('input').iCheck({
+	   checkboxClass: 'icheckbox_square',
+	   radioClass: 'iradio_square',
+	   increaseArea: '20%' // optional
 	 });
 })

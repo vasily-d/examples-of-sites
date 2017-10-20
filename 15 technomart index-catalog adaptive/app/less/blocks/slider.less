@@ -89,7 +89,26 @@
 			width: 620px;
 			height: 266px;
 
-			background: url('../img/slider1.jpg') no-repeat;
+			// background: url('../img/slider1.jpg') no-repeat;
+			
+			.unslider{
+				position: relative;
+
+				a{
+					display: none;
+				}
+
+				.unslider-nav{
+					position: absolute;
+					bottom: 20px;
+					left: 50%;
+					transform: translate(-50%);
+
+					li:first-child{
+						margin-right: 20px;
+					}
+				}
+			}
 		}
 
 		.aside-slide{
