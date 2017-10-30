@@ -34,6 +34,8 @@ examples of sites:
 
 13 nerds index-catalog adaptive
 
-14 sedon index-hotels adaptive
+14 icrowdme adaptive+js effect
 
-15 technomart index-catalog adaptive
+15 sedon index-hotels adaptive
+
+16 technomart index-catalog adaptive
