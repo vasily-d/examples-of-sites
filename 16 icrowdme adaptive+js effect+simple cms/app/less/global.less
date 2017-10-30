@@ -1,0 +1,42 @@
+// *{outline: 1px solid black;}
+
+// one : for ie
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear{clear: both;}
+
+body{
+	padding: 0;
+	margin: 0;
+	min-width: @min-width;
+
+	font-family: @base-font;
+	background: @base-bg;
+	color: @base-color-text;
+
+	img{
+		max-width: 100%;
+		height: auto;
+		
+		// for ie 9
+		border: 0;
+	}
+	
+	ul{list-style: none;}
+	
+	a{text-decoration: none;}
+
+	.wrap{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: @max-width;
+		height: 100%;
+
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
