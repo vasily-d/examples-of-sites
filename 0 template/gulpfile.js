@@ -70,9 +70,13 @@ gulp.task('copyMinCss', function() {
 });
 
 gulp.task('copyLibsJs', function() {
+  // файл
   //gulp.src('app/libs/bower/jquery/dist/jquery.min.js')
+	// папка
   //  .pipe(gulp.dest('dist/libs/bower/jquery/dist'))
+  // файл
   //  gulp.src('app/libs/bower/wow/dist/wow.min.js')
+  // папка
   //  .pipe(gulp.dest('dist/libs/bower/wow/dist'));
 });
 
