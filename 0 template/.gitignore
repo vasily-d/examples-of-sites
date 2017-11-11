@@ -6,7 +6,6 @@ app/*.pdf
 app/*.psd
 app/*.pdf
 app/*.sublime*
-app/css/*.css
 app/Thumbs.db
 dist/
 app/libs/bower_components/

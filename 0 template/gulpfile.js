@@ -1,10 +1,10 @@
 //npm i browser-sync --save-dev
 //npm i gulp-less --save-dev
 
-//npm install --save-dev del
+//npm install del --save-dev
 //npm install gulp-cssnano --save-dev
 //npm install run-sequence --save-dev
-//npm install --save-dev gulp-imagemin
+//npm install gulp-imagemin --save-dev
 
 var gulp = require('gulp'),
     less = require('gulp-less'),
@@ -24,6 +24,7 @@ gulp.task('browserSync', function() {
   });
 });
 
+// style.less подтягивает все файлы через import
 gulp.task('less', function() {
   return gulp.src('app/less/style.less')
     .pipe(less())
@@ -53,7 +54,7 @@ gulp.task('copyFonts', function() {
 });
 
 gulp.task('copyCompressImg', function() {
-  return gulp.src('app/img/**/*.{png,jpg,gif,svg}')
+  return gulp.src('app/img/**/*')
     //.pipe(imagemin({
     //  imagemin.optipng({optimizationLevel: 3}),
     //  imagemin.jpegtran({progressive: true})
@@ -70,6 +71,7 @@ gulp.task('copyMinCss', function() {
 });
 
 gulp.task('copyLibsJs', function() {
+  // выбираем вручную для каждого проекта в отдельности
   // файл
   //gulp.src('app/libs/bower/jquery/dist/jquery.min.js')
 	// папка
@@ -96,8 +98,5 @@ gulp.task('default', ['browserSync', 'less'], function () {
   // обновляем браузер при любых изменениях в html, less или js
   gulp.watch('app/less/**/*.less', ['less']);
   gulp.watch('app/js/**/*.js', browserSync.reload);
-  gulp.watch('app/*.html', browserSync.reload);
-
-  //gulp.watch('app/less/**/*', browserSync.reload); 
-  //gulp.watch('app/css/**/*.css', browserSync.reload); 
+  gulp.watch('app/*.html', browserSync.reload); 
 });
