@@ -32,10 +32,14 @@ examples of sites:
 
 12 hosting (js examples)
 
-13 nerds index-catalog adaptive
+13 simple adaptive site
 
-14 icrowdme adaptive+js effect
+14 nerds index-catalog adaptive
 
-15 sedon index-hotels adaptive
+15 icrowdme adaptive+js effect
 
-16 technomart index-catalog adaptive
+16 sedon index-hotels adaptive
+
+17 technomart index-catalog adaptive
+
+18 sini adaptive
