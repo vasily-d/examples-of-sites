@@ -1,0 +1,36 @@
+.main-menu{
+	min-height: 40px;
+	margin-bottom: 40px;
+
+	background: #505050;
+
+	ul{
+		margin: 0;
+		padding: 0;
+
+		li{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 40px;
+			
+			&.active-li{
+				background: #3f3f3f;
+				border-left: 1px solid #838383;
+				border-right: 1px solid #838383;
+			}
+
+			a{
+				color: #fff;
+				font-size: 14px;
+				line-height: 40px;
+
+				padding: 0 24px;
+				display: block;
+
+				&:hover{
+					opacity: .5;
+				}
+			}
+		}
+	}
+}
