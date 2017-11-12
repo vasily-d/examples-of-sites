@@ -27,9 +27,18 @@ body a {
 body ul {
   list-style: none;
 }
+body {
+  min-width: 1024px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
 .wrapper {
   width: 1024px;
   margin: 0 auto;
+  height: 100%;
 }
 .unslider-nav {
   max-width: 1170px;
@@ -42,7 +51,7 @@ header .header-top {
 }
 header .header-top .language-usd {
   float: left;
-  padding: 19px 0 17px 0;
+  padding: 19px 0 17px 15px;
 }
 header .header-top .language-usd label {
   color: #bef2ff;
@@ -91,7 +100,7 @@ header .header-bottom {
   padding: 0 3px;
   box-sizing: border-box;
 }
-header .header-bottom .logo {
+header .header-bottom .logo a {
   float: left;
   font-size: 36px;
   color: #656565;
@@ -370,12 +379,12 @@ footer .footer-bottom .wrapper {
   line-height: 1.46;
 }
 footer .footer-bottom .wrapper .copyright {
-  margin: 27px 0 27px 3px;
+  margin: 27px 0 27px 10px;
   float: left;
 }
 footer .footer-bottom .wrapper .footer-nav {
   float: right;
-  margin: 27px 3px 27px 0;
+  margin: 27px 10px 27px 0;
 }
 footer .footer-bottom .wrapper .footer-nav ul li {
   padding: 0 14px;

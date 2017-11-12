@@ -1,8 +1,21 @@
 @import "config.less";
 
+body{
+	min-width: 1024px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	
+	// for ie 9
+	border: 0;
+}
+
 .wrapper{
 	width: 1024px;
 	margin: 0 auto;
+	height: 100%;
 }
 
 // slider
@@ -16,7 +29,7 @@ header{
 
 		.language-usd{
 			float: left;
-			padding: 19px 0 17px 0;
+			padding: 19px 0 17px 15px;
 
 			label{
 				color: #bef2ff;
@@ -38,13 +51,8 @@ header{
 					background: #000;
 				}
 			}
-
-
-
-
-
-
 		}
+
 		.top-menu{
 			float: right;
 			
@@ -75,7 +83,7 @@ header{
 		padding: 0 3px;
 		box-sizing: border-box;
 
-		.logo{
+		.logo a{
 			float: left;
 			font-size: 36px;
 			color: #656565;
@@ -374,12 +382,12 @@ footer{
 			line-height: 1.46;
 
 			.copyright{
-				margin: 27px 0 27px 3px;
+				margin: 27px 0 27px 10px;
 				float: left;
 			}
 			.footer-nav{
 				float: right;
-				margin: 27px 3px 27px 0;
+				margin: 27px 10px 27px 0;
 
 				ul{
 					li{
