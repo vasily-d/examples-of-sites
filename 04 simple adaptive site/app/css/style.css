@@ -184,6 +184,8 @@ footer .footer-copyright {
   main aside {
     float: none;
     margin: 0 auto;
+    margin-bottom: 20px;
+    width: 300px;
   }
   main aside .left-menu {
     text-align: center;
