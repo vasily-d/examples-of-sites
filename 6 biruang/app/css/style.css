@@ -25,6 +25,9 @@ a {
   text-decoration: none;
 }
 .wrapper {
+  width: 1190px;
+}
+.wrapper {
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -250,6 +253,11 @@ a {
   padding: 42px 0;
   background: #f45a40;
 }
+.subscribe .wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
 .subscribe .wrapper h2 {
   color: #fff;
   font-size: 22.65px;
@@ -303,6 +311,11 @@ footer p:last-child {
 }
 footer a {
   color: #fff;
+}
+footer .wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
 footer .wrapper article {
   float: left;
