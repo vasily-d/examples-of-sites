@@ -1,236 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Motion</title>
-	
-	<!--[if lt IE 9]>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<![endif]-->
+	<head>
+		<meta charset="UTF-8">
+		<title>Motion</title>
+		
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<![endif]-->
 
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/unslider.css">
+		<link rel="stylesheet" href="css/unslider-dots.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
-	<link rel="stylesheet" href="css/unslider.css">
-	<link rel="stylesheet" href="css/unslider-dots.css">
-</head>
+	<body class="wrapper">
+		<div class="flag"></div>
 
-<body>
-	<div class="flag"></div>
-
-	<header>
-		<div class="wrapper clearfix">
-			<div class="logo">
-				<div class="log-top">
-					<img src="img/logo.png" alt="logo">
-					<h1><a href="index.html">Motion</a></h1>	
+		<header>
+			<div class="wrapper clearfix">
+				<div class="logo">
+					<div class="log-top">
+						<img src="img/logo.png" alt="logo">
+						<h1><a href="index.html">Motion</a></h1>	
+					</div>
+					
+					<p>Asingle Page Template</p>
 				</div>
-				
-				<p>Asingle Page Template</p>
+				<nav>
+					<ul class="clearfix">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about-us.html">About</a></li>
+						<li><a href="team.html">Team</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="other.html">Other</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
 			</div>
-			<nav>
-				<ul class="clearfix">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Team</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Other</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
+		</header>
+
+		<div class="slider wrapper">
+			<ul>
+				<li><img src="img/slider.png" alt="slider1"></li>
+				<li><img src="img/slider.png" alt="slider2"></li>
+				<li><img src="img/slider.png" alt="slider3"></li>
+			</ul>
 		</div>
-	</header>
+		
+		<section class="first">
+			<div class="wrapper clearfix">
+				<h2>Smart &amp; Creative </h2>
+				<p>This is why you will use it :)</p>
 
-	<div class="slider wrapper">
-		<!-- 
-			установка слайдера:
-			-подключаем css
-			-подключаем <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-			и js и пишем небольшой скрипт перед </body>
-			-в js прописываем наш класс под слайдер
-			-создаем список в классе нашего слайдера там где стоит наш слайдер
-			- стилизуем кнопки через уже определенный класс
-				.unslider-nav{
-					max-width:1170px; margin:0 auto; position:relative; top:-40px;
-				}
-			- надписи делаем через позиционирования в li
-		-->
+				<div class="first-bottom">
+					<img src="img/1.png" alt="image1">
+					<article>
+						<h3>Multi purpose</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+					</article>
+				</div>
+				<div class="first-bottom">
+					<img src="img/2.png" alt="image2">
+					<article>
+						<h3>Flat UI</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+					</article>
+				</div>
+				<div class="first-bottom">
+					<img src="img/3.png" alt="image3">
+					<article>
+						<h3>Creative Design</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+					</article>
+				</div>
+			</div>
+		</section>
 
-		<ul>
-			<li><img src="img/slider.png" alt="slider"></li>
-			<li><img src="img/slider.png" alt="slider"></li>
-			<li><img src="img/slider.png" alt="slider"></li>
-		</ul>
-	</div>
-	
-	<section class="first">
-		<div class="wrapper clearfix">
-			<h2>Smart &amp; Creative </h2>
-			<p>This is why you will use it :)</p>
+		<section class="second">
+			<div class="wrapper clearfix">
+				<h2>Talented &amp; Experts</h2>
+				<p>This is our team :)</p>
+				<div class="second-bottom">
+					<img src="img/foto1.png" alt="foto1">
+					<h3>Mahmoud Baghagho</h3>
+					<p>Senior UI Designer</p>
+					<div class="btn"><a href="#">Follow</a></div>
+				</div>
+				<div class="second-bottom">
+					<img src="img/foto2.png" alt="foto2">
+					<h3>Abd ElRahman </h3>
+					<p>Senior App Developer</p>
+					<div class="btn"><a href="#">Follow</a></div>
+				</div>
+				<div class="second-bottom">
+					<img src="img/foto3.png" alt="foto3">
+					<h3>Mostafa Amin</h3>
+					<p>Senior Graphic Designer</p>
+					<div class="btn"><a href="#">Follow</a></div>
+				</div>
+				<div class="second-bottom last">
+					<img src="img/foto4.png" alt="foto4">
+					<h3>Ahmed Ali</h3>
+					<p>Senior Web Developer</p>
+					<div class="btn"><a href="#">Follow</a></div>
+				</div>
+			</div>
+		</section>
 
-			<div class="first-bottom">
-				<img src="img/1.png" alt="image1">
-				<article>
-					<h3>Multi purpose</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
-				</article>
-			</div>
-			<div class="first-bottom">
-				<img src="img/2.png" alt="image2">
-				<article>
-					<h3>Flat UI</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
-				</article>
-			</div>
-			<div class="first-bottom">
-				<img src="img/3.png" alt="image3">
-				<article>
-					<h3>Creative Design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
-				</article>
-			</div>
-		</div>
-	</section>
+		<section class="third">
+			<div class="third-top">
+				<div class="wrapper">
+					<div class="main">
+						<div class="block">
+							<h2>Start Up</h2>
+							<p>For beginners</p>
+							<div class="middle">
+								<ul>
+									<li>Basic pages</li>
+									<li>MySQL Databases</li>
+									<li>Bandwith</li>
+									<li class="last">Storage space</li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<p><span>$</span><span>15</span>/mo</p>
+								<p><a href="#">Order</a></p>
+							</div>
+						</div>
 
-	<section class="second">
-		<div class="wrapper clearfix">
-			<h2>Talented &amp; Experts</h2>
-			<p>This is our team :)</p>
-			<div class="second-bottom">
-				<img src="img/foto1.png" alt="foto1">
-				<h3>Mahmoud Baghagho</h3>
-				<p>Senior UI Designer</p>
-				<div class="btn"><a href="#">Follow</a></div>
-			</div>
-			<div class="second-bottom">
-				<img src="img/foto2.png" alt="foto2">
-				<h3>Abd ElRahman </h3>
-				<p>Senior App Developer</p>
-				<div class="btn"><a href="#">Follow</a></div>
-			</div>
-			<div class="second-bottom">
-				<img src="img/foto3.png" alt="foto3">
-				<h3>Mostafa Amin</h3>
-				<p>Senior Graphic Designer</p>
-				<div class="btn"><a href="#">Follow</a></div>
-			</div>
-			<div class="second-bottom last">
-				<img src="img/foto4.png" alt="foto4">
-				<h3>Ahmed Ali</h3>
-				<p>Senior Web Developer</p>
-				<div class="btn"><a href="#">Follow</a></div>
-			</div>
-		</div>
-	</section>
+						<div class="block">
+							<h2>Start Up</h2>
+							<p>For beginners</p>
+							<div class="middle">
+								<ul>
+									<li>Basic pages</li>
+									<li>MySQL Databases</li>
+									<li>Bandwith</li>
+									<li class="last">Storage space</li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<p><span>$</span><span>15</span>/mo</p>
+								<p><a href="#">Order</a></p>
+							</div>
+						</div>
 
-	<section class="third">
-		<div class="third-top">
+						<div class="block">
+							<h2>Start Up</h2>
+							<p>For beginners</p>
+							<div class="middle">
+								<ul>
+									<li>Basic pages</li>
+									<li>MySQL Databases</li>
+									<li>Bandwith</li>
+									<li class="last">Storage space</li>
+								</ul>
+							</div>
+							<div class="bottom">
+								<p><span>$</span><span>15</span>/mo</p>
+								<p><a href="#">Order</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="third-bottom"></div>
+			<div class="fourth-bottom wrapper">
+				<p>And more available plans for all needs .... Check here</p>
+			</div>		
+		</section>
+
+		<section class="fourth">
 			<div class="wrapper">
+				<h2>Latest Tweets</h2>
+				<p>This is how to keep in touch :)</p>
+				<div><img src="img/twitter-icon.png" alt="twiiter"></div>
+				<p>&copy; Abd-Alrahaman Elgazzar <span>Great work Abd-Alrahaman , I really love the application  ... hope you haveall the luck in ur life ..  also have alook here</span> http://t.co/zfdgfdg</p>
+			</div>
+		</section>
 
-				<div class="main">
-					<div class="block">
-						<h2>Start Up</h2>
-						<p>For beginners</p>
-						<div class="middle">
-							<ul>
-								<li>Basic pages</li>
-								<li>MySQL Databases</li>
-								<li>Bandwith</li>
-								<li class="last">Storage space</li>
-							</ul>
-						</div>
-						<div class="bottom">
-							<p><span>$</span><span>15</span>/mo</p>
-							<p><a href="#">Order</a></p>
-						</div>
-					</div>
-
-					<div class="block">
-						<h2>Start Up</h2>
-						<p>For beginners</p>
-						<div class="middle">
-							<ul>
-								<li>Basic pages</li>
-								<li>MySQL Databases</li>
-								<li>Bandwith</li>
-								<li class="last">Storage space</li>
-							</ul>
-						</div>
-						<div class="bottom">
-							<p><span>$</span><span>15</span>/mo</p>
-							<p><a href="#">Order</a></p>
-						</div>
-					</div>
-
-					<div class="block">
-						<h2>Start Up</h2>
-						<p>For beginners</p>
-						<div class="middle">
-							<ul>
-								<li>Basic pages</li>
-								<li>MySQL Databases</li>
-								<li>Bandwith</li>
-								<li class="last">Storage space</li>
-							</ul>
-						</div>
-						<div class="bottom">
-							<p><span>$</span><span>15</span>/mo</p>
-							<p><a href="#">Order</a></p>
-						</div>
-					</div>
+		<footer>
+			<div class="wrapper clearfix">
+				<p class="ftr-left">&copy; 2013 <span>Motion Template</span>. Design by Begha</p>
+				<div class="ftr-right">
+					<a href="https://facebook.com" target="_blank"><img src="img/fb.png" alt="fb"></a>
+					<a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
+					<a href="http://www.rss.ru/" target="_blank"><img src="img/rss.png" alt="rss"></a>
 				</div>
-				
+			</div>
+		</footer>
+
+		<div class="map">
+			<div class="mapin">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1150032.4313859998!2d37.99786412463377!3d55.73839944897112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1503227628884" width="100%" height="250" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div>
+				<h2>Contact Us</h2>
+				<p class="first">7oroof@7oroof.com</p>
+				<p>Your address goes here</p>
 			</div>
 		</div>
-		<div class="third-bottom"></div>
-		<div class="fourth-bottom wrapper">
-			<p>And more available plans for all needs .... Check here</p>
-		</div>		
-	</section>
-
-	<section class="fourth">
-		<div class="wrapper">
-			<h2>Latest Tweets</h2>
-			<p>This is how to keep in touch :)</p>
-			<div><img src="img/twitter-icon.png" alt="twiiter"></div>
-			<p>&copy; Abd-Alrahaman Elgazzar <span>Great work Abd-Alrahaman , I really love the application  ... hope you haveall the luck in ur life ..  also have alook here</span> http://t.co/zfdgfdg</p>
-		</div>
-	</section>
-
-	<footer>
-		<div class="wrapper clearfix">
-			<p class="ftr-left">&copy; 2013 <span>Motion Template</span>. Design by Begha</p>
-			<div class="ftr-right">
-				<a href="https://facebook.com" target="_blank"><img src="img/fb.png" alt="fb"></a>
-				<a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
-				<a href="#" target="_blank"><img src="img/rss.png" alt="rss"></a>
-			</div>
-		</div>
-	</footer>
-
-	<div class="map">
-		<div class="mapin">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1150032.4313859998!2d37.99786412463377!3d55.73839944897112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1503227628884" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-		</div>
-		<div>
-			<h2>Contact Us</h2>
-			<p class="first">7oroof@7oroof.com</p>
-			<p>Your address goes here</p>
-		</div>
-	</div>
-	
-	<script
-	  src="https://code.jquery.com/jquery-2.2.4.min.js"
-	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-	  crossorigin="anonymous"></script>
-	<script src="js/unslider-min.js"></script>
-	<script>
-			jQuery(document).ready(function($) {
-				$('.slider').unslider({
-					autoplay:true,
-					arrows:false
+		
+		<script
+		  src="https://code.jquery.com/jquery-2.2.4.min.js"
+		  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+		  crossorigin="anonymous"></script>
+		<script src="js/unslider-min.js"></script>
+		<script>
+				jQuery(document).ready(function($) {
+					$('.slider').unslider({
+						autoplay:true,
+						arrows:false
+					});
 				});
-			});
-	</script>
-</body>
+		</script>
+	</body>
 </html>
