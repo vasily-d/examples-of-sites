@@ -22,16 +22,73 @@
 	<body>
 		<header class="main-header wrap">
 			<div class="header-logo">
-				<a href="index.html"><img src="img/logo.png" alt="logo" width="145" height="40"></a>
+				<a href="index.html">
+					<img src="img/logo.png" alt="logo" width="145" height="40">
+				</a>
 			</div>
 		</header>
 
 		<nav class="main-menu wrap">
-			<ul>
+			<!-- old version -->
+			<!-- <ul>
 				<li><a href="index.html">Главная</a></li>
 				<li class="active-li"><a href="goods.html">Товары</a></li>
 				<li><a href="about-us.html">О нас</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
+			</ul> -->
+
+			<ul>
+			 	<li class="dropdown">
+			 		<a id="dLabel1" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			 		  Главная
+			 	    <span class="caret"></span>
+			 	  </a>
+			 		<ul class="dropdown-menu" aria-labelledby="dLabel1">
+			 			<li><a href="item1.html">item1</a></li>
+						<li><a href="item2.html">item2</a></li>
+						<li><a href="item3.html">item3</a></li>
+						<li><a href="item4.html">item4</a></li>
+			 		</ul>
+			 	</li>
+			 		
+			 	<li class="dropdown">
+			 		<a id="dLabel2" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			 			Товары
+			 	    <span class="caret"></span>
+			 	  </a>		 
+			 		<ul class="dropdown-menu" aria-labelledby="dLabel2">
+			 			<li><a href="item11.html">item11</a></li>
+						<li><a href="item22.html">item22</a></li>
+						<li><a href="item33.html">item33</a></li>
+						<li><a href="item44.html">item44</a></li>
+			 		</ul>
+			 	</li>
+
+			 	<li class="dropdown">
+			 	 	<a id="dLabel3" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			 			О нас
+	 		      <span class="caret"></span>
+	 		  	</a>		 	
+			 		<ul class="dropdown-menu" aria-labelledby="dLabel3">
+			 			<li><a href="item111.html">item111</a></li>
+	 					<li><a href="item222.html">item222</a></li>
+	 					<li><a href="item333.html">item333</a></li>
+	 					<li><a href="item444.html">item444</a></li>
+			 		</ul>
+			 	</li>
+
+			 	<li class="dropdown">
+			 		<a id="dLabel4" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			 			Контакты
+	 		      <span class="caret"></span>
+	 		    </a>
+				 	<ul class="dropdown-menu" aria-labelledby="dLabel4">
+				 		<li><a href="item1111.html">item1111</a></li>
+	 					<li><a href="item2222.html">item2222</a></li>
+	 					<li><a href="item3333.html">item3333</a></li>
+	 					<li><a href="item4444.html">item4444</a></li>
+				 	</ul>
+			 	</li>
 			</ul>
 		</nav>
 		
@@ -65,5 +122,12 @@
 			</div>
 			<p class="footer-copyright">2014 &copy; All rights reserved</p>
 		</footer>
+		
+		<script
+	  src="https://code.jquery.com/jquery-1.12.4.min.js"
+	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	  crossorigin="anonymous"></script>
+	  <script src="libs/bootstrap.min.js"></script>
+		<script src="js/index-page.js"></script>
 	</body>
 </html>

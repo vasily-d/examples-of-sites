@@ -3,10 +3,18 @@
 	margin-bottom: 40px;
 
 	background: #505050;
-
+	background: -webkit-linear-gradient(to bottom, #5e5e5e, #454444);
+	background: -o-linear-gradient(to bottom, #5e5e5e, #454444);
+	background: linear-gradient(to bottom, #5e5e5e, #454444);
+	
+	// оформление меню
 	ul{
 		margin: 0;
 		padding: 0;
+
+		.dropdown a{
+			text-decoration: none;
+		}
 
 		li{
 			display: inline-block;
@@ -24,13 +32,39 @@
 				font-size: 14px;
 				line-height: 40px;
 
+				text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.5);
+
 				padding: 0 24px;
 				display: block;
+
+				-webkit-transition: all .3s;
+				-moz-transition: all .3s;
+				-ms-transition: all .3s;
+				-o-transition: all .3s;
+				transition: all .3s;
 
 				&:hover{
 					opacity: .5;
 				}
 			}
+
+			// оформление подменю
+			.dropdown-menu{
+				background: grey;
+				
+				li{
+					width: 100%;
+
+					a{
+						display: block;
+
+						&:hover{
+							background: #fff;
+						}
+					}
+				}
+			}
+
 		}
 	}
 }

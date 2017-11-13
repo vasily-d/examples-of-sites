@@ -17,6 +17,10 @@ main{
 
 				border-bottom: 1px solid #c8c8c8;
 
+				&:last-child{
+					border-bottom: none;
+				}
+
 				&.active-li{
 					background: #f9f9f9;
 				}
@@ -27,6 +31,12 @@ main{
 					color: #656363;
 					font-size: 14px;
 					line-height: 38px;
+
+					-webkit-transition: all .3s;
+					-moz-transition: all .3s;
+					-ms-transition: all .3s;
+					-o-transition: all .3s;
+					transition: all .3s;
 
 					&:hover{
 						opacity: .5;

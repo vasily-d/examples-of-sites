@@ -1,12 +1,11 @@
 $(function() {
-	// запуск и подключение icheck
-	// $('input').iCheck({
-	// 	checkboxClass: 'icheckbox_polaris',
-	// 	radioClass: 'iradio_polaris'
-	// });
+	$('.dropdown-toggle').dropdown();
 
-	// wow js
-	// new WOW().init();
-
+	// aside nav
+	$('.left-menu li').on('click', function(e) {
+		console.log($(this).parent());
+		$(this).parent().find('li').removeClass('active-li');
+		$(this).addClass('active-li');
+	});
 
 });
