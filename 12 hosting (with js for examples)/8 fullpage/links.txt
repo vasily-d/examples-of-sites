@@ -1,8 +1,0 @@
-https://github.com/alvarotrigo/fullPage.js/
-https://github.com/gdsmith/jquery.easing
-
-http://easings.net/ru
-http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp
-
-Аналоги:
-https://github.com/peachananr/onepage-scroll

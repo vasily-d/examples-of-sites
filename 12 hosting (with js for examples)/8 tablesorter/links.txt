@@ -1,2 +1,0 @@
-https://github.com/Mottie/tablesorter
-https://mottie.github.io/tablesorter/docs/

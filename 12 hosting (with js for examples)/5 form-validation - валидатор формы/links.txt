@@ -1,2 +1,0 @@
-https://jqueryvalidation.org/
-https://jqueryvalidation.org/documentation/
