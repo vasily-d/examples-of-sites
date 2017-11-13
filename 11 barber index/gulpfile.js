@@ -1,5 +1,6 @@
 //npm i browser-sync --save-dev
 //npm i gulp-less --save-dev
+
 var gulp = require('gulp'),
     less = require('gulp-less'),
     browserSync = require('browser-sync');
@@ -17,23 +18,20 @@ gulp.task('browserSync', function() {
 
 gulp.task('less', function(){
   return gulp.src('app/css/*.less')
-  .pipe(less())
-  .on('error', notify.onError(function(err){
-    return {
-      title: 'Styles',
-      message: err.message
-    };
-  }))
-  .pipe(gulp.dest('app/css'))
-  .pipe(browserSync.reload({stream: true}))
+    .pipe(less())
+    .on('error', notify.onError(function(err){
+      return {
+        title: 'Styles',
+        message: err.message
+      };
+    }))
+    .pipe(gulp.dest('app/css'))
+    .pipe(browserSync.reload({stream: true}))
 });
 
 
 gulp.task('default', ['browserSync', 'less'], function (){
   gulp.watch('app/css/**/*.less', ['less']);
-  
-  //gulp.watch('app/less/**/*', browserSync.reload); 
-  //gulp.watch('app/css/**/*.css', browserSync.reload); 
   
   // Обновляем браузер при любых изменениях в HTML или JS
   gulp.watch('app/js/*.js', browserSync.reload);
