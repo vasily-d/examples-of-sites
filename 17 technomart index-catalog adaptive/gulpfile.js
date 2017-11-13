@@ -35,7 +35,4 @@ gulp.task('default', ['browserSync', 'less'], function () {
   gulp.watch('app/less/**/*.less', ['less']);
   gulp.watch('app/js/**/*.js', browserSync.reload);
   gulp.watch('app/*.html', browserSync.reload);
-
-  //gulp.watch('app/less/**/*', browserSync.reload); 
-  //gulp.watch('app/css/**/*.css', browserSync.reload); 
 });
