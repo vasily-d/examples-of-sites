@@ -1,0 +1,174 @@
+.stages-of-building{
+	h2{
+		margin: 0;
+		margin-bottom: 60px;
+
+		color: #2e2e2e;
+		font-size: 38px;
+		line-height: 52px;
+		font-weight: 900;
+		font-family: 'MuseoSansCyrl_900', sans-serif;		
+	}
+
+	>div{
+		text-align: center;
+
+		.left{
+			float: left;
+			margin-left: 115px;
+			position: relative;
+
+			// 1
+			&:after{
+				content: '';
+				position: absolute;
+				top: 75px;
+				left: -100px;
+			
+				background: url('../img/1.png') no-repeat;
+
+				width: 163px;
+				height: 234px;
+			}
+
+			h3{
+				margin: 0;
+				margin-top: 40px;
+				margin-bottom: 20px;
+
+				color: #353535;
+				font-size: 30px;
+				line-height: 40px;
+				font-weight: 500;
+				font-family: 'MuseoSansCyrl_500', sans-serif;	
+			}
+
+			ul{
+				margin: 0;
+				padding: 0;
+				max-width: 380px;
+				margin: 0 auto;
+
+				text-align: left;
+
+				li{
+					color: #353535;
+					font-size: 22px;
+					line-height: 35px;
+					font-weight: 300;
+					font-family: 'MuseoSansCyrl_300', sans-serif;	
+
+					padding-left: 40px;
+
+					position: relative;
+					
+					// points
+					&:after{
+						content: '';
+						position: absolute;
+						top: 40%;
+						left: 12px;
+					
+						background: url('../img/point.png') no-repeat;
+						width: 7px;
+						height: 7px;
+					}
+				}
+			}
+		}
+
+		.right{
+			float: right;
+			padding-top: 380px;
+			width: 666px;
+			height: 354px;
+
+			// background: url('../img/stages-of-building2.png') no-repeat;
+
+			position: relative;
+
+			img{
+				position: absolute;
+				top: 0;
+				left: 50px;
+			}
+			
+			// 2
+			&:after{
+				content: '';
+				position: absolute;
+				top: 70px;
+				left: 100px;
+			
+				background: url('../img/2.png') no-repeat;
+				width: 166px;
+				height: 239px;
+			}
+		
+			h3{
+				margin: 0;
+				margin-top: 40px;
+				margin-bottom: 20px;
+
+				color: #353535;
+				font-size: 30px;
+				line-height: 40px;
+				font-weight: 500;
+				font-family: 'MuseoSansCyrl_500', sans-serif;	
+			}
+		
+			ul{
+				margin: 0;
+				padding: 0;
+				max-width: 380px;
+				margin: 0 auto;
+
+				text-align: left;
+		
+				li{
+					color: #353535;
+					font-size: 22px;
+					line-height: 35px;
+					font-weight: 300;
+					padding-left: 40px;
+					font-family: 'MuseoSansCyrl_300', sans-serif;	
+
+					position: relative;
+					
+					// points
+					&:after{
+						content: '';
+						position: absolute;
+						top: 45%;
+						left: 20px;
+					
+						background: url('../img/point.png') no-repeat;
+						width: 7px;
+						height: 7px;
+					}
+				}
+			}
+		}
+	}
+	
+	a{
+		width: 226px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 160px;
+		padding: 18px 0;
+
+		background: #fcc24c;
+
+		color: #353535;
+		font-size: 20px;
+		line-height: 20px;
+		font-weight: 500;
+		text-align: center;
+		font-family: 'GothamProMedium', sans-serif;
+
+		&:hover{
+			opacity: .5;
+		}
+	}
+}

@@ -1,0 +1,98 @@
+// *{outline: 1px solid black;}
+
+// one : for ie
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear{clear: both;}
+
+// fonts
+@font-face {
+  font-family: 'MuseoSansCyrl_100';
+  src: url('../fonts/100/MuseoSansCyrl.eot');
+  src: url('../fonts/100/MuseoSansCyrl.eot') format('embedded-opentype'),
+       url('../fonts/100/MuseoSansCyrl.woff2') format('woff2'),
+       url('../fonts/100/MuseoSansCyrl.woff') format('woff'),
+       url('../fonts/100/MuseoSansCyrl.ttf') format('truetype'),
+       url('../fonts/100/MuseoSansCyrl.svg#MuseoSansCyrl') format('svg');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl_300';
+  src: url('../fonts/300/MuseoSansCyrl_0.eot');
+  src: url('../fonts/300/MuseoSansCyrl_0.eot') format('embedded-opentype'),
+       url('../fonts/300/MuseoSansCyrl_0.woff2') format('woff2'),
+       url('../fonts/300/MuseoSansCyrl_0.woff') format('woff'),
+       url('../fonts/300/MuseoSansCyrl_0.ttf') format('truetype'),
+       url('../fonts/300/MuseoSansCyrl_0.svg#MuseoSansCyrl_0') format('svg');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl_500';
+  src: url('../fonts/500/MuseoSansCyrl_1.eot');
+  src: url('../fonts/500/MuseoSansCyrl_1.eot') format('embedded-opentype'),
+       url('../fonts/500/MuseoSansCyrl_1.woff2') format('woff2'),
+       url('../fonts/500/MuseoSansCyrl_1.woff') format('woff'),
+       url('../fonts/500/MuseoSansCyrl_1.ttf') format('truetype'),
+       url('../fonts/500/MuseoSansCyrl_1.svg#MuseoSansCyrl_1') format('svg');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl_700';
+  src: url('../fonts/700/MuseoSansCyrl_2.eot');
+  src: url('../fonts/700/MuseoSansCyrl_2.eot') format('embedded-opentype'),
+       url('../fonts/700/MuseoSansCyrl_2.woff2') format('woff2'),
+       url('../fonts/700/MuseoSansCyrl_2.woff') format('woff'),
+       url('../fonts/700/MuseoSansCyrl_2.ttf') format('truetype'),
+       url('../fonts/700/MuseoSansCyrl_2.svg#MuseoSansCyrl_2') format('svg');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl_900';
+  src: url('../fonts/900/MuseoSansCyrl_3.eot');
+  src: url('../fonts/900/MuseoSansCyrl_3.eot') format('embedded-opentype'),
+       url('../fonts/900/MuseoSansCyrl_3.woff2') format('woff2'),
+       url('../fonts/900/MuseoSansCyrl_3.woff') format('woff'),
+       url('../fonts/900/MuseoSansCyrl_3.ttf') format('truetype'),
+       url('../fonts/900/MuseoSansCyrl_3.svg#MuseoSansCyrl_3') format('svg');
+}
+
+@font-face {
+  font-family: 'GothamProMedium';
+  src: url('../fonts/GothamPro-Medium/GothamProMedium.eot');
+  src: url('../fonts/GothamPro-Medium/GothamProMedium.eot') format('embedded-opentype'),
+       url('../fonts/GothamPro-Medium/GothamProMedium.woff2') format('woff2'),
+       url('../fonts/GothamPro-Medium/GothamProMedium.woff') format('woff'),
+       url('../fonts/GothamPro-Medium/GothamProMedium.ttf') format('truetype'),
+       url('../fonts/GothamPro-Medium/GothamProMedium.svg#GothamProMedium') format('svg');
+}
+
+body{
+	padding: 0;
+	margin: 0;
+
+	img{
+		max-width: 100%;
+		height: auto;
+		
+		// for ie 9
+		border: 0;
+	}
+	
+	ul{list-style: none;}
+	
+	a{text-decoration: none;}
+
+	.wrap{
+		max-width: 1180px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100%;
+
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}

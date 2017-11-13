@@ -1,0 +1,104 @@
+.reviews{
+	// 166
+	margin-bottom: 245px;
+
+	h2{
+		margin: 0;
+		margin-top: 10px;
+
+		color: #2e2e2e;
+		font-size: 38px;
+		line-height: 52px;
+		font-weight: 900;
+		font-family: 'MuseoSansCyrl_900', sans-serif;	
+	}
+
+	.review{
+		margin-top: 110px;
+
+		.photo{
+			float: left;
+			font-size: 0;
+			
+			span{
+				display: block;
+				padding-top: 30px;
+
+				color: #2e2e2e;
+				font-size: 30px;
+				line-height: 40px;
+				font-weight: 300;
+				font-family: 'MuseoSansCyrl_300', sans-serif;
+				text-align: center;	
+			}
+		}
+
+		.comment{
+			float: left;
+			max-width: 450px;
+			margin-top: 100px;
+			margin-left: 120px;
+
+			position: relative;
+
+			color: #2e2e2e;
+			font-size: 30px;
+			line-height: 40px;
+			font-weight: 300;
+			font-family: 'MuseoSansCyrl_300', sans-serif;
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: -25px;
+				left: -50px;
+			
+				background: url('../img/left-arrow.png') no-repeat;
+				
+				width: 40px;
+				height: 27px;
+			}
+
+			&:before{
+				content: '';
+				position: absolute;
+				bottom: -25px;
+				left: 370px;
+			
+				background: url('../img/right-arrow.png') no-repeat;
+				
+				width: 40px;
+				height: 28px;
+			}
+		}
+
+		.video{
+			float: right;
+			margin-top: -60px;
+			height: 355px;
+			
+			color: #353535;
+			font-size: 23px;
+			line-height: 40px;
+			font-weight: 300;
+			font-family: 'MuseoSansCyrl_300', sans-serif;	
+
+			span{
+				display: block;
+				margin-bottom: 30px;
+			}
+
+			img{
+				cursor: pointer;
+
+				&:hover{
+					opacity: .9;
+				}
+			}
+
+			iframe{
+				display: none;
+			}
+		}
+	}
+}

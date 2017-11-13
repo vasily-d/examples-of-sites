@@ -1,0 +1,560 @@
+footer{
+	min-height: 710px;
+	background: #353535;
+	
+	.calc-house, .about-company, .price-list{
+		max-width: 780px;
+		margin: 0 auto;
+
+		p{
+			margin: 0;
+			margin-right: 80px;
+			float: right;
+
+			color: #ffffff;
+			font-size: 30px;
+			line-height: 40px;
+			font-weight: 500;
+			font-family: 'MuseoSansCyrl_500', sans-serif;	
+		}
+
+		a{
+			float: right;
+			display: block;
+			width: 180px;
+			padding: 16px 0;
+			margin-right: 40px;
+
+			text-align: center;
+			
+			background: #fcc24c;
+
+			color: #353535;
+			font-size: 20px;
+			line-height: 20px;
+			font-weight: 500;
+			font-family: 'GothamProMedium', sans-serif;
+
+			&:hover{
+				opacity: .5;
+			}
+		}
+	}
+
+	.calc-house{
+		padding-top: 120px;
+	}
+
+	.about-company{
+		margin-top: 73px;
+	}
+
+	.price-list{
+		margin-top: 87px;
+	}
+
+	.social{
+		margin-top: 125px;
+		text-align: center;
+		
+		a, p{
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		a{
+			font-size: 0;
+			margin-right: 10px;
+
+			&:hover{
+				opacity: .5;
+			}		
+		}
+
+		p{
+			margin: 0;
+			margin-right: 3px;
+
+			color: #fff;
+			font-size: 30px;
+			line-height: 30px;
+			font-weight: 500;
+			font-family: 'MuseoSansCyrl_500', sans-serif;	
+		}
+	}
+}
+
+// POPUP
+.popup{
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 99;
+	box-shadow: 0 0 10px #000;
+
+	display: none;
+
+	blockquote{
+		margin: 0;
+
+		background: #fff;
+		padding: 50px;
+		// border-radius: 10px;
+
+		font-size: 30px;
+		line-height: 30px;
+		font-weight: 500;
+		font-family: 'MuseoSansCyrl_500', sans-serif;
+	}
+
+	.x-feedback{
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		border: none;
+	
+		background: url('../img/x-map.png') no-repeat;
+		cursor: pointer;
+	
+		width: 21px;
+		height: 21px;
+	}
+}
+
+// ALL MEDIA
+
+// header
+@media (max-width: 1100px){
+	header .wrap{
+		text-align: center;
+
+		.logo{
+			float: none;
+			display: block;
+			margin-top: 0;
+			margin-right: 0;
+		}
+
+		.main-nav{
+			float: none;
+			display: block;
+			margin-top: 10px;
+		}
+
+		.tel{
+			float: none;
+			display: block;
+			margin-top: 10px;
+			z-index: 90;
+		}
+
+		.house-img{
+			margin-top: 10px;
+		}
+
+		.title-header{
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 700px){
+	header .wrap{
+		.logo{
+			display: none;
+			margin-top: 0;
+		}
+
+		.main-nav{
+			margin-top: 0;
+			padding-top: 10px;
+
+			ul li{
+				margin-right: 20px;
+			}
+		}
+
+		.tel{
+			margin-top: 0;
+		}
+	}
+}
+
+// features
+@media (max-width: 1200px){
+	.features{
+		h2{
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+
+		.features-box{
+			.item p{
+				width: 30%;
+				font-size: 16px;
+			}
+		}
+
+		a{
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media (max-width: 970px){
+	.features{
+		.features-box{
+
+			.item p{
+				float: none;
+				margin: 0 auto;
+				width: 90%;
+			}
+		}
+	}
+}
+
+// examples-of-houses
+@media (max-width: 1200px){
+	.examples-of-houses{
+		margin-bottom: 70px;
+
+		h2{
+			margin-top: 50px;
+			margin-bottom: -60px;
+			text-align: center;
+		}
+		
+		.examples{
+			.top-examples{
+				.left{
+					float: none;
+					display: block;
+					margin: 0 auto;
+					margin-bottom: 10px;
+				}
+
+				.right{
+					text-align: center;
+
+					>div{
+						// float: none;
+						// display: inline-block;
+						// margin-right: 0;
+
+						float: left;
+						margin-right: 10px !important;
+					}
+
+					img{
+						margin-right: 0;
+					}
+				}
+			}
+
+			.bottom-examples{
+				float: none;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+
+				>div{
+					margin-top: 10px;
+
+					&:first-child{
+						float: left;
+					}
+
+					&:last-child{
+						float: left;
+					}
+				}
+			}
+		}		
+	}
+}
+
+// по 2
+@media (max-width: 882px){
+	.examples-of-houses .examples .top-examples{
+		.fotorama.fotorama2{
+			float: left;
+			margin-left: 10px;
+		}
+
+		.fotorama.fotorama3{
+			float: left;
+		}
+
+		.fotorama.fotorama4{
+			float: left;
+			margin-left: 10px;
+		}
+
+		.fotorama.fotorama5{
+			float: left;
+		}
+	}
+
+	.examples-of-houses .examples .bottom-examples{
+		>div{
+
+			&:nth-child(3){
+				float: left;
+				margin-left: 10px;
+				
+			}
+
+			&:last-child{
+				float: left;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+@media (max-width: 625px){
+	.examples-of-houses .examples .top-examples{
+		.fotorama.fotorama2{
+			margin-left: 50%;
+			transform: translate(-50%);
+		}
+
+		.fotorama.fotorama3{
+			margin-left: 50%;
+			transform: translate(-50%);
+		}
+
+		.fotorama.fotorama4{
+			margin-left: 50%;
+			transform: translate(-50%);
+		}
+
+		.fotorama.fotorama5{
+			margin-left: 50%;
+			transform: translate(-50%);
+		}
+	}
+
+	.examples-of-houses .examples .bottom-examples{
+		.fotorama.fotorama6{
+			margin-left: 50%;
+			transform: translate(-50%);
+		}
+
+		.fotorama.fotorama7{
+			margin-left: 50%;
+			transform: translate(-50%);
+		}
+
+		>div{
+			&:nth-child(3){
+				float: left;
+			}
+
+			&:last-child{
+				float: left;
+			}
+		}
+	}
+}
+
+// stages-of-building
+@media (max-width: 1300px){
+	.stages-of-building{
+		h2{
+			text-align: center;
+		}
+
+		>div{
+			.left{
+				float: none;
+				margin-left: 0;
+
+				ul{
+					margin-bottom: 20px;
+				}
+
+				&:after{
+					left: 50px;
+				}
+			}
+
+			.right{
+				float: none;
+				margin-left: 0;
+				width: auto;
+
+				img{
+					left: 0;
+				}
+
+				&:after{
+					left: 50px;
+				}
+			}
+		}
+
+		a{
+			margin-bottom: 20px;
+		}	
+	}
+}
+
+@media (max-width: 600px){
+	.stages-of-building{
+		>div{
+			.left{
+				&:after{
+					display: none;
+				}
+			}
+
+			.right{
+				padding-top: 320px;
+
+				&:after{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 450px){
+	.stages-of-building{
+
+		>div{
+			.right{
+				padding-top: 220px;
+			}
+		}
+	}
+}
+
+// .additional-services
+@media (max-width: 1200px){
+	.additional-services{
+		h2{
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		
+		.list-services{
+			
+			.service{
+				width: 30%;
+
+				&:nth-child(2n){
+					float: right;
+				}
+			}
+		}
+
+		a{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media (max-width: 900px){
+	.additional-services{
+		h2{
+			margin-bottom: 50px;
+			text-align: center;
+			font-size: 35px;
+		}
+		
+		.list-services{
+			padding-left: 0;
+			
+			.service{
+				// float: none;
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+
+				p{
+					padding-top: 70px;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
+// .reviews
+@media (max-width: 1200px){
+	h2{
+		text-align: center;
+	}
+
+	.reviews{
+		margin-bottom: 50px;
+		
+		.review{
+			margin-top: 50px;
+
+			.comment{
+				font-size: 18px;
+				margin-left: 55px;
+			}
+		}
+	}
+}
+
+@media (max-width: 1110px){
+	.reviews{
+		.review{
+			.comment{
+				display: none;
+
+			}
+		}
+	}
+}
+
+@media (max-width: 630px){
+	.reviews{
+		.review{
+			.photo{
+				display: none;
+			}
+
+			.video{
+				text-align: center;
+				margin: 0 auto;
+				float: none;
+
+				iframe{
+					margin: 0 auto;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// footer
+@media (max-width: 820px){
+	footer .wrap{
+		.calc-house{
+			padding-top: 50px;
+		}
+		
+		.calc-house, .price-list, .about-company {
+			p, a{
+				float: none;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+			}
+		}
+
+		.social{
+			margin-top: 50px;
+		}	
+	}
+}

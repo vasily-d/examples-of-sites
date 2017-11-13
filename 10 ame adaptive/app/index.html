@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="title" content="">
+		<meta name="description" content="">
+		<title>AMET</title>
+
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- fonts -->
+		<!-- in global.less -->
+
+		<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+		
+	<body>
+		<header>
+			<div class="wrap clearfix">
+				<div class="logo">
+					<a href="index.html">
+						<img src="img/AMET-prozrachnyj-fon-logo.png" alt="logo" width="100">
+					</a>
+				</div>
+				<nav class="main-nav">
+					<ul>
+						<li><a href="#example-house">Примеры домов</a></li>
+						<li><a href="#stages-construction">Этапы строительства</a></li>
+						<li><a href="#about-us">О нас</a></li>
+						<li><a href="#reviews">Отзывы</a></li>
+					</ul>
+				</nav>
+				<div class="tel">
+					<a href="tel:83438540396">8 (343) 85-40-396</a>
+				</div>
+
+				<div class="house-img">
+					<img src="img/house-header.png" alt="house image" width="874" height="495">
+				</div>
+				<div class="title-header">
+					Строительства<br>домов из бруса
+				</div>
+			</div>
+		</header>
+
+		<section class="features wrap">
+			<h2>Нас выбирают по этим причинам</h2>
+			<div class="features-box clearfix">	
+				<div class="item">
+					<p>Качественно делаем<br>свое дело</p>
+				</div>
+				<div class="item">
+					<p>Предоставляем гарантию<br>на все выполненные работы</p>
+				</div>
+				<div class="item">
+					<p>Индивидуальный подход<br>к каждому клиенту</p>
+				</div>
+				<div class="item">
+					<p>Соблюдение сроков<br>строительства</p>
+				</div>
+				<div class="item">
+					<p>Используем современные<br>технологии</p>
+				</div>
+				<div class="item">
+					<p>Наведение порядка после<br>строительства</p>
+				</div>
+			</div>
+			<a href="#">Выбрать нас</a>
+		</section>
+
+		<section class="img-preview-video">
+			<!-- <div class="img-preview">
+				<img src="img/img-preview-video.jpg" alt="image preview video" width="1440" height="663">
+			</div> -->
+			<!-- <p class="title-preview">Видео<br>домов</p>
+			<a class="play-img" href="#"></a> -->
+
+
+			<!-- <div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/0eyINkG5aag?controls=0" frameborder="0" allowfullscreen></iframe>
+			</div> -->
+
+			<!-- <video width="500" controls poster="img/img-preview-video.jpg">
+			  <source type="video/youtube" src="https://www.youtube.com/watch?v=0eyINkG5aag&list=RD0eyINkG5aag">
+			</video> -->
+
+			<img src="img/img-preview-video.jpg" alt="image preview video" width="1440" height="663" >
+			<!-- <iframe width="100%" height="663" src="?autoplay=1" frameborder="0" allowfullscreen></iframe> -->
+			<iframe width="100%" height="663" src="https://www.youtube-nocookie.com/embed/ceYOGLKTCx0?rel=0&amp;showinfo=0" style="border:0" allowfullscreen></iframe>
+		</section>
+
+		<section class="examples-of-houses wrap" id="example-house">
+			<h2>Примеры домов</h2>
+
+		<!-- old -->
+		<!-- 	<div class="examples">
+				<div class="top-examples clearfix">
+					<div class="left">
+						<img src="img/example1.jpg" alt="picture house example" width="580" height="580">
+					</div>
+					<div class="right">
+						<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+						<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+						<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+						<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+					</div>
+				</div>
+				<div class="bottom-examples fotorama" data-nav="thumbs" data-allowfullscreen="true">
+					<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+					<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+					<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+					<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+				</div>
+			</div> -->
+
+			<!-- переделанная часть верстки под 7 папок по категориям -->
+			<div class="examples">
+				<div class="top-examples clearfix">
+					<!-- папка all -->
+					<div class="left fotorama fotorama1" data-width="580" data-height="580" data-allowfullscreen="true">
+						<img src="img/imgs-to-slides/all/1.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/2.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/3.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/4.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/5.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/6.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/7.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/8.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/9.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/10.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/11.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/12.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/13.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/14.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/15.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/16.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/17.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/18.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/19.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/20.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/21.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/22.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/23.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/24.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/25.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/26.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/27.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/28.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/29.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/30.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/31.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/32.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/33.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/34.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/35.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/36.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/37.jpg" alt="picture house example" width="580" height="580">
+						<img src="img/imgs-to-slides/all/38.jpg" alt="picture house example" width="580" height="580">
+					</div>
+					<div class="right">
+						<!-- папка 1 -->
+						<div class="fotorama fotorama2" data-width="279" data-height="279" data-allowfullscreen="true">
+							<img src="img/imgs-to-slides/1/1.jpg" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/1/2.jpg" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/1/3.jpg" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/1/4.jpg" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/1/5.jpg" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/1/6.jpg" alt="picture house example" width="279" height="279">
+						</div>
+						<!-- папка 2 -->
+						<div class="fotorama fotorama3" data-width="279" data-height="279" data-allowfullscreen="true">
+							<img src="img/imgs-to-slides/2/1.jpg" alt="picture house example" width="279" height="279">		
+							<img src="img/imgs-to-slides/2/2.jpg" alt="picture house example" width="279" height="279">		
+						</div>
+						<!-- папка 3 -->
+						<div class="fotorama fotorama4" data-width="279" data-height="279" data-allowfullscreen="true">
+							<img src="img/imgs-to-slides/3/1.JPG" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/3/2.jpg" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/3/3.jpg" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/3/4.jpg" alt="picture house example" width="279" height="279">
+							<img src="img/imgs-to-slides/3/5.jpg" alt="picture house example" width="279" height="279">
+						</div>
+						<!-- папка 4 -->
+						<div class="fotorama fotorama5" data-width="279" data-height="279" data-allowfullscreen="true">
+							<img src="img/imgs-to-slides/4/1.jpg" alt="picture house example" width="279" height="279">	
+							<img src="img/imgs-to-slides/4/2.jpg" alt="picture house example" width="279" height="279">	
+							<img src="img/imgs-to-slides/4/3.jpg" alt="picture house example" width="279" height="279">	
+							<img src="img/imgs-to-slides/4/4.jpg" alt="picture house example" width="279" height="279">	
+							<img src="img/imgs-to-slides/4/5.jpg" alt="picture house example" width="279" height="279">	
+							<img src="img/imgs-to-slides/4/6.jpg" alt="picture house example" width="279" height="279">	
+							<img src="img/imgs-to-slides/4/7.jpg" alt="picture house example" width="279" height="279">	
+						</div>
+					</div>
+				</div>
+				<div class="bottom-examples clearfix">
+					<!--  папка 5 -->
+					<div class="fotorama fotorama6" data-width="279" data-height="279" data-allowfullscreen="true">
+						<img src="img/imgs-to-slides/5/1.jpg" alt="picture house example" width="279" height="279">
+						<img src="img/imgs-to-slides/5/2.jpg" alt="picture house example" width="279" height="279">
+						<img src="img/imgs-to-slides/5/3.jpg" alt="picture house example" width="279" height="279">
+					</div>
+					<!-- папка 6 -->
+					<div class="fotorama fotorama7" data-width="279" data-height="279" data-allowfullscreen="true">
+						<img src="img/imgs-to-slides/6/1.JPG" alt="picture house example" width="279" height="279">
+						<img src="img/imgs-to-slides/6/2.JPG" alt="picture house example" width="279" height="279">
+						<img src="img/imgs-to-slides/6/3.JPG" alt="picture house example" width="279" height="279">
+						<img src="img/imgs-to-slides/6/4.JPG" alt="picture house example" width="279" height="279">
+						<img src="img/imgs-to-slides/6/5.JPG" alt="picture house example" width="279" height="279">
+					</div>
+					<!-- <div class="fotorama">
+						<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+						<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+					</div>
+					<div class="fotorama">
+						<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+						<img src="img/example2.jpg" alt="picture house example" width="279" height="279">
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+		<section class="stages-of-building wrap" id="stages-construction">
+			<h2>Этапы строительства дома</h2>
+			<div class="clearfix">
+				<div class="left">
+					<img src="img/stages-of-building1.png" alt="stages of building" width="396" height="372">
+					<h3>Проект</h3>
+					<ul>
+						<li>Подбор и создание проекта</li>
+						<li>Утверждение материалов</li>
+						<li>Согласование деталей</li>
+					</ul>
+				</div>
+				<div class="right">
+					<img src="img/stages-of-building2.png" alt="stage of building" width="666" height="394">
+					<h3>Строительство</h3>
+					<ul>
+						<li>Подготовка участка</li>
+						<li>Строительство фундамента</li>
+						<li>Строительство дома</li>
+						<li>Установка инженерных сетей</li>
+						<li>Отделочные работы</li>
+					</ul>
+				</div>
+			</div>
+			<a href="#">Построить дом</a>
+		</section>
+
+		<section class="additional-services wrap" id="about-us">
+			<h2>Дополнительные услуги</h2>
+			<div class="list-services clearfix">
+				<div class="service">
+					<p>Дизайн интерьера</p>
+				</div>
+				<div class="service">
+					<p>Строительство беседок</p>
+				</div>
+				<div class="service">
+					<p>Строительство гаражей</p>
+				</div>
+				<div class="service">
+					<p>Ландшафтный дизайн</p>
+				</div>
+				<div class="service">
+					<p>Строительство бань</p>
+				</div>
+				<div class="service">
+					<p>Строительство других хозяйственных построек</p>
+				</div>
+				<div class="service">
+					<p>Возведение ограждений</p>
+				</div>
+				<div class="service">
+					<p>Пос гарантийное обслуживание</p>
+				</div>
+				<div class="service">
+					<p>Строительство печей и каминов</p>
+				</div>
+			</div>
+			<a href="#">Заказать звонок</a>
+		</section>
+
+		<section class="reviews wrap" id="reviews">
+			<h2>Отзывы</h2>
+			<div class="review review1 clearfix">
+				<div class="photo">
+					<img src="img/photo1.jpg" alt="photo comment" width="220" height="220">
+					<span>Мария</span>
+				</div>
+				<div class="comment">
+					Благодарим компанию за доставленное счасте нам
+				</div>
+				<div class="video">
+					<span>Посмотреть видео отзыв:</span>
+					<img src="img/video1.jpg" alt="video review" width="376" height="273">
+					<iframe width="376" height="273" src="https://www.youtube-nocookie.com/embed/ceYOGLKTCx0?rel=0&amp;showinfo=0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="review review2 clearfix">
+				<div class="photo">
+					<img src="img/photo2.jpg" alt="photo comment" width="220" height="220">
+					<span>Андрей</span>
+				</div>
+				<div class="comment">
+					Мы очень довольны услугами компании. Спасибо
+				</div>
+				<div class="video">
+					<span>Посмотреть видео отзыв:</span>
+					<img src="img/video2.jpg" alt="video review" width="376" height="273">
+					<iframe width="376" height="273" src="https://www.youtube-nocookie.com/embed/ceYOGLKTCx0?rel=0&amp;showinfo=0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="review review3 clearfix">
+				<div class="photo">
+					<img src="img/photo3.jpg" alt="photo comment" width="220" height="220">
+					<span>Александра</span>
+				</div>
+				<div class="comment">
+					Очень быстро и качественно построили, огромное спасибо. Советуем, будете довольны
+				</div>
+				<div class="video">
+					<span>Посмотреть видео отзыв:</span>
+					<img src="img/video3.jpg" alt="video review" width="376" height="273">
+					<iframe width="376" height="273" src="https://www.youtube-nocookie.com/embed/ceYOGLKTCx0?rel=0&amp;showinfo=0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="wrap">
+				<div class="calc-house clearfix">
+					<a href="#">Заказать</a>
+					<p>Заказать расчет стоимости дома</p>
+				</div>
+				<div class="about-company clearfix">
+					<a href="#">Заказать</a>
+					<p>Получить сведения о компании</p>
+				</div>
+				<div class="price-list clearfix">
+					<a href="#">Заказать</a>
+					<p>Заказать прайс листы</p>
+				</div>
+				<div class="social">
+					<p>Подписаться:</p>
+					<a href="https://vk.com/feed" target="_blank">
+						<img src="img/vk.png" alt="vk" width="54" height="31">
+					</a>
+					<a href="https://ok.ru/" target="_blank">
+						<img src="img/odnok.png" alt="vk" width="32">
+					</a>
+				</div>
+			</div>
+		</footer>
+
+		<div class="popup js-feedback-popup">
+			<blockquote>
+				&laquo;Цена от 9000 за м<sup>2</sup> &raquo;
+			</blockquote>
+
+			<button class="x-feedback js-feedback-close" type="button"></button>
+		</div>
+
+		<!-- SCRIPT JS -->
+		<script
+ 		src="https://code.jquery.com/jquery-1.12.4.min.js"
+  	integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  	crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+		
+		<script src="js/index-page.js"></script>
+	</body>
+</html>

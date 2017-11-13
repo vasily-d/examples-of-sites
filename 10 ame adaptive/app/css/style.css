@@ -1,0 +1,969 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl_100';
+  src: url('../fonts/100/MuseoSansCyrl.eot');
+  src: url('../fonts/100/MuseoSansCyrl.eot') format('embedded-opentype'), url('../fonts/100/MuseoSansCyrl.woff2') format('woff2'), url('../fonts/100/MuseoSansCyrl.woff') format('woff'), url('../fonts/100/MuseoSansCyrl.ttf') format('truetype'), url('../fonts/100/MuseoSansCyrl.svg#MuseoSansCyrl') format('svg');
+}
+@font-face {
+  font-family: 'MuseoSansCyrl_300';
+  src: url('../fonts/300/MuseoSansCyrl_0.eot');
+  src: url('../fonts/300/MuseoSansCyrl_0.eot') format('embedded-opentype'), url('../fonts/300/MuseoSansCyrl_0.woff2') format('woff2'), url('../fonts/300/MuseoSansCyrl_0.woff') format('woff'), url('../fonts/300/MuseoSansCyrl_0.ttf') format('truetype'), url('../fonts/300/MuseoSansCyrl_0.svg#MuseoSansCyrl_0') format('svg');
+}
+@font-face {
+  font-family: 'MuseoSansCyrl_500';
+  src: url('../fonts/500/MuseoSansCyrl_1.eot');
+  src: url('../fonts/500/MuseoSansCyrl_1.eot') format('embedded-opentype'), url('../fonts/500/MuseoSansCyrl_1.woff2') format('woff2'), url('../fonts/500/MuseoSansCyrl_1.woff') format('woff'), url('../fonts/500/MuseoSansCyrl_1.ttf') format('truetype'), url('../fonts/500/MuseoSansCyrl_1.svg#MuseoSansCyrl_1') format('svg');
+}
+@font-face {
+  font-family: 'MuseoSansCyrl_700';
+  src: url('../fonts/700/MuseoSansCyrl_2.eot');
+  src: url('../fonts/700/MuseoSansCyrl_2.eot') format('embedded-opentype'), url('../fonts/700/MuseoSansCyrl_2.woff2') format('woff2'), url('../fonts/700/MuseoSansCyrl_2.woff') format('woff'), url('../fonts/700/MuseoSansCyrl_2.ttf') format('truetype'), url('../fonts/700/MuseoSansCyrl_2.svg#MuseoSansCyrl_2') format('svg');
+}
+@font-face {
+  font-family: 'MuseoSansCyrl_900';
+  src: url('../fonts/900/MuseoSansCyrl_3.eot');
+  src: url('../fonts/900/MuseoSansCyrl_3.eot') format('embedded-opentype'), url('../fonts/900/MuseoSansCyrl_3.woff2') format('woff2'), url('../fonts/900/MuseoSansCyrl_3.woff') format('woff'), url('../fonts/900/MuseoSansCyrl_3.ttf') format('truetype'), url('../fonts/900/MuseoSansCyrl_3.svg#MuseoSansCyrl_3') format('svg');
+}
+@font-face {
+  font-family: 'GothamProMedium';
+  src: url('../fonts/GothamPro-Medium/GothamProMedium.eot');
+  src: url('../fonts/GothamPro-Medium/GothamProMedium.eot') format('embedded-opentype'), url('../fonts/GothamPro-Medium/GothamProMedium.woff2') format('woff2'), url('../fonts/GothamPro-Medium/GothamProMedium.woff') format('woff'), url('../fonts/GothamPro-Medium/GothamProMedium.ttf') format('truetype'), url('../fonts/GothamPro-Medium/GothamProMedium.svg#GothamProMedium') format('svg');
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+body img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+body ul {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body .wrap {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+header {
+  background: #ecb548 url('../img/bg-header.jpg') no-repeat center 0;
+  background-size: cover;
+}
+header .wrap {
+  height: 677px;
+  position: relative;
+}
+header .wrap .logo {
+  float: left;
+  margin-right: 92px;
+  margin-top: 35px;
+  font-size: 0;
+}
+header .wrap .main-nav {
+  float: left;
+  margin-top: 40px;
+}
+header .wrap .main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header .wrap .main-nav ul li {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+}
+header .wrap .main-nav ul li:last-child {
+  margin-right: 0;
+}
+header .wrap .main-nav ul li a {
+  display: block;
+  color: #2e2e2e;
+  font-size: 21px;
+  line-height: 40px;
+  font-weight: 100;
+  font-family: 'MuseoSansCyrl_100', sans-serif;
+}
+header .wrap .main-nav ul li a:hover {
+  opacity: .5;
+}
+header .wrap .tel {
+  float: right;
+  margin-top: 40px;
+}
+header .wrap .tel a {
+  display: block;
+  color: #2e2e2e;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 900;
+  font-family: 'MuseoSansCyrl_900', sans-serif;
+}
+header .wrap .tel a:hover {
+  opacity: .5;
+}
+header .wrap .house-img {
+  max-width: 874px;
+  height: 495px;
+  position: absolute;
+  top: 150px;
+  left: -20px;
+  z-index: 1;
+}
+header .wrap .title-header {
+  position: absolute;
+  top: 280px;
+  right: 3px;
+  z-index: 0;
+  border: 10px solid #2e2e2e;
+  padding: 40px 35px 50px 95px;
+  color: #2e2e2e;
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: 900;
+  font-family: 'MuseoSansCyrl_900', sans-serif;
+}
+.features h2 {
+  margin: 125px 0 100px 0;
+  color: #2e2e2e;
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: 900;
+  font-family: 'MuseoSansCyrl_900', sans-serif;
+}
+.features .features-box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.features .features-box .item p {
+  margin: 0 0 80px 30px;
+  padding-top: 85px;
+  float: left;
+  width: 340px;
+  background: url('../img/ok.png') no-repeat 50% 0;
+  color: #353535;
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'GothamProMedium', sans-serif;
+}
+.features a {
+  width: 226px;
+  display: block;
+  margin: 40px auto 140px auto;
+  padding: 10px 0;
+  background: #fcc24c;
+  color: #353535;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'GothamProMedium', sans-serif;
+}
+.features a:hover {
+  opacity: .5;
+}
+.img-preview-video {
+  position: relative;
+  max-height: 621px;
+  overflow: hidden;
+}
+.img-preview-video iframe,
+.img-preview-video object,
+.img-preview-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-preview-video img {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 1440px;
+}
+.img-preview-video img:hover {
+  opacity: .9;
+}
+.img-preview-video iframe {
+  display: none;
+  max-height: 663px;
+  width: 1440px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.examples-of-houses {
+  margin-bottom: 180px;
+}
+.examples-of-houses h2 {
+  margin: 120px 0 75px 0;
+  color: #2e2e2e;
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: 900;
+  font-family: 'MuseoSansCyrl_900', sans-serif;
+}
+.examples-of-houses .examples .top-examples .left,
+.examples-of-houses .examples .top-examples .right {
+  position: relative;
+}
+.examples-of-houses .examples .top-examples .fotorama__stage__shaft:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99 !important;
+  color: #353535;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  font-family: 'MuseoSansCyrl_300', sans-serif;
+  width: 100%;
+  height: 65px !important;
+  background: #fcc24c;
+  opacity: .8;
+}
+.examples-of-houses .examples .top-examples .fotorama1 .fotorama__stage__shaft:after {
+  content: "Дом из профилированного бруса";
+}
+.examples-of-houses .examples .top-examples .fotorama2 .fotorama__stage__shaft:after {
+  content: "Дом из профилированного бруса «Элит» в кп. «Мельница»";
+}
+.examples-of-houses .examples .top-examples .fotorama3 .fotorama__stage__shaft:after {
+  content: "Дом из профилированного бруса в г. Горнозаводск";
+}
+.examples-of-houses .examples .top-examples .fotorama4 .fotorama__stage__shaft:after {
+  content: "Дом из профилированного бруса в д. Усть-Тары";
+}
+.examples-of-houses .examples .top-examples .fotorama5 .fotorama__stage__shaft:after {
+  content: "Дом из профилированного бруса в кп. Веретье";
+}
+.examples-of-houses .examples .bottom-examples .fotorama__stage__shaft:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99 !important;
+  color: #353535;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  font-family: 'MuseoSansCyrl_300', sans-serif;
+  width: 100%;
+  height: 65px !important;
+  background: #fcc24c;
+  opacity: .8;
+}
+.examples-of-houses .examples .bottom-examples .fotorama6 .fotorama__stage__shaft:after {
+  content: "Дом из профилированного бруса в снт. Михайловское";
+}
+.examples-of-houses .examples .bottom-examples .fotorama7 .fotorama__stage__shaft:after {
+  content: "Дом из строганного бруса в д. Молоково";
+}
+.examples-of-houses .examples .top-examples .left {
+  float: left;
+  max-width: 580px;
+  font-size: 0;
+  padding-bottom: 20px;
+}
+.examples-of-houses .examples .top-examples .right > div {
+  float: right;
+  max-width: 580px;
+  font-size: 0;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.examples-of-houses .examples .top-examples .right > div:nth-child(2n+1) {
+  margin-right: 0;
+}
+.examples-of-houses .examples .bottom-examples {
+  font-size: 0;
+}
+.examples-of-houses .examples .bottom-examples > div {
+  float: left;
+  margin-right: 10px;
+}
+.examples-of-houses .examples .bottom-examples > div:last-child {
+  margin-right: 0;
+}
+.stages-of-building h2 {
+  margin: 0;
+  margin-bottom: 60px;
+  color: #2e2e2e;
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: 900;
+  font-family: 'MuseoSansCyrl_900', sans-serif;
+}
+.stages-of-building > div {
+  text-align: center;
+}
+.stages-of-building > div .left {
+  float: left;
+  margin-left: 115px;
+  position: relative;
+}
+.stages-of-building > div .left:after {
+  content: '';
+  position: absolute;
+  top: 75px;
+  left: -100px;
+  background: url('../img/1.png') no-repeat;
+  width: 163px;
+  height: 234px;
+}
+.stages-of-building > div .left h3 {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #353535;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: 'MuseoSansCyrl_500', sans-serif;
+}
+.stages-of-building > div .left ul {
+  margin: 0;
+  padding: 0;
+  max-width: 380px;
+  margin: 0 auto;
+  text-align: left;
+}
+.stages-of-building > div .left ul li {
+  color: #353535;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 300;
+  font-family: 'MuseoSansCyrl_300', sans-serif;
+  padding-left: 40px;
+  position: relative;
+}
+.stages-of-building > div .left ul li:after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 12px;
+  background: url('../img/point.png') no-repeat;
+  width: 7px;
+  height: 7px;
+}
+.stages-of-building > div .right {
+  float: right;
+  padding-top: 380px;
+  width: 666px;
+  height: 354px;
+  position: relative;
+}
+.stages-of-building > div .right img {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+.stages-of-building > div .right:after {
+  content: '';
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  background: url('../img/2.png') no-repeat;
+  width: 166px;
+  height: 239px;
+}
+.stages-of-building > div .right h3 {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #353535;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: 'MuseoSansCyrl_500', sans-serif;
+}
+.stages-of-building > div .right ul {
+  margin: 0;
+  padding: 0;
+  max-width: 380px;
+  margin: 0 auto;
+  text-align: left;
+}
+.stages-of-building > div .right ul li {
+  color: #353535;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 300;
+  padding-left: 40px;
+  font-family: 'MuseoSansCyrl_300', sans-serif;
+  position: relative;
+}
+.stages-of-building > div .right ul li:after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 20px;
+  background: url('../img/point.png') no-repeat;
+  width: 7px;
+  height: 7px;
+}
+.stages-of-building a {
+  width: 226px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 160px;
+  padding: 18px 0;
+  background: #fcc24c;
+  color: #353535;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'GothamProMedium', sans-serif;
+}
+.stages-of-building a:hover {
+  opacity: .5;
+}
+.additional-services h2 {
+  margin: 0;
+  margin-bottom: 100px;
+  color: #2e2e2e;
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: 900;
+  font-family: 'MuseoSansCyrl_900', sans-serif;
+}
+.additional-services .list-services {
+  padding-left: 75px;
+}
+.additional-services .list-services .service {
+  float: left;
+  width: 286px;
+  margin-bottom: 60px;
+  margin-right: 80px;
+}
+.additional-services .list-services .service p {
+  margin: 0;
+  padding: 0;
+  padding-top: 94px;
+  background: url('../img/ok.png') 50% 0 no-repeat;
+  color: #353535;
+  font-size: 21px;
+  line-height: 27px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'GothamProMedium', sans-serif;
+}
+.additional-services a {
+  width: 226px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 140px;
+  margin-top: 20px;
+  padding: 16px 0;
+  background: #fcc24c;
+  color: #353535;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'GothamProMedium', sans-serif;
+}
+.additional-services a:hover {
+  opacity: .5;
+}
+.reviews {
+  margin-bottom: 245px;
+}
+.reviews h2 {
+  margin: 0;
+  margin-top: 10px;
+  color: #2e2e2e;
+  font-size: 38px;
+  line-height: 52px;
+  font-weight: 900;
+  font-family: 'MuseoSansCyrl_900', sans-serif;
+}
+.reviews .review {
+  margin-top: 110px;
+}
+.reviews .review .photo {
+  float: left;
+  font-size: 0;
+}
+.reviews .review .photo span {
+  display: block;
+  padding-top: 30px;
+  color: #2e2e2e;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+  font-family: 'MuseoSansCyrl_300', sans-serif;
+  text-align: center;
+}
+.reviews .review .comment {
+  float: left;
+  max-width: 450px;
+  margin-top: 100px;
+  margin-left: 120px;
+  position: relative;
+  color: #2e2e2e;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 300;
+  font-family: 'MuseoSansCyrl_300', sans-serif;
+}
+.reviews .review .comment:after {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: -50px;
+  background: url('../img/left-arrow.png') no-repeat;
+  width: 40px;
+  height: 27px;
+}
+.reviews .review .comment:before {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: 370px;
+  background: url('../img/right-arrow.png') no-repeat;
+  width: 40px;
+  height: 28px;
+}
+.reviews .review .video {
+  float: right;
+  margin-top: -60px;
+  height: 355px;
+  color: #353535;
+  font-size: 23px;
+  line-height: 40px;
+  font-weight: 300;
+  font-family: 'MuseoSansCyrl_300', sans-serif;
+}
+.reviews .review .video span {
+  display: block;
+  margin-bottom: 30px;
+}
+.reviews .review .video img {
+  cursor: pointer;
+}
+.reviews .review .video img:hover {
+  opacity: .9;
+}
+.reviews .review .video iframe {
+  display: none;
+}
+footer {
+  min-height: 710px;
+  background: #353535;
+}
+footer .calc-house,
+footer .about-company,
+footer .price-list {
+  max-width: 780px;
+  margin: 0 auto;
+}
+footer .calc-house p,
+footer .about-company p,
+footer .price-list p {
+  margin: 0;
+  margin-right: 80px;
+  float: right;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  font-family: 'MuseoSansCyrl_500', sans-serif;
+}
+footer .calc-house a,
+footer .about-company a,
+footer .price-list a {
+  float: right;
+  display: block;
+  width: 180px;
+  padding: 16px 0;
+  margin-right: 40px;
+  text-align: center;
+  background: #fcc24c;
+  color: #353535;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  font-family: 'GothamProMedium', sans-serif;
+}
+footer .calc-house a:hover,
+footer .about-company a:hover,
+footer .price-list a:hover {
+  opacity: .5;
+}
+footer .calc-house {
+  padding-top: 120px;
+}
+footer .about-company {
+  margin-top: 73px;
+}
+footer .price-list {
+  margin-top: 87px;
+}
+footer .social {
+  margin-top: 125px;
+  text-align: center;
+}
+footer .social a,
+footer .social p {
+  display: inline-block;
+  vertical-align: top;
+}
+footer .social a {
+  font-size: 0;
+  margin-right: 10px;
+}
+footer .social a:hover {
+  opacity: .5;
+}
+footer .social p {
+  margin: 0;
+  margin-right: 3px;
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: 'MuseoSansCyrl_500', sans-serif;
+}
+.popup {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 99;
+  box-shadow: 0 0 10px #000;
+  display: none;
+}
+.popup blockquote {
+  margin: 0;
+  background: #fff;
+  padding: 50px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 500;
+  font-family: 'MuseoSansCyrl_500', sans-serif;
+}
+.popup .x-feedback {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background: url('../img/x-map.png') no-repeat;
+  cursor: pointer;
+  width: 21px;
+  height: 21px;
+}
+@media (max-width: 1100px) {
+  header .wrap {
+    text-align: center;
+  }
+  header .wrap .logo {
+    float: none;
+    display: block;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  header .wrap .main-nav {
+    float: none;
+    display: block;
+    margin-top: 10px;
+  }
+  header .wrap .tel {
+    float: none;
+    display: block;
+    margin-top: 10px;
+    z-index: 90;
+  }
+  header .wrap .house-img {
+    margin-top: 10px;
+  }
+  header .wrap .title-header {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  header .wrap .logo {
+    display: none;
+    margin-top: 0;
+  }
+  header .wrap .main-nav {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+  header .wrap .main-nav ul li {
+    margin-right: 20px;
+  }
+  header .wrap .tel {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .features h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .features .features-box .item p {
+    width: 30%;
+    font-size: 16px;
+  }
+  .features a {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 970px) {
+  .features .features-box .item p {
+    float: none;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .examples-of-houses {
+    margin-bottom: 70px;
+  }
+  .examples-of-houses h2 {
+    margin-top: 50px;
+    margin-bottom: -60px;
+    text-align: center;
+  }
+  .examples-of-houses .examples .top-examples .left {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .examples-of-houses .examples .top-examples .right {
+    text-align: center;
+  }
+  .examples-of-houses .examples .top-examples .right > div {
+    float: left;
+    margin-right: 10px !important;
+  }
+  .examples-of-houses .examples .top-examples .right img {
+    margin-right: 0;
+  }
+  .examples-of-houses .examples .bottom-examples {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .examples-of-houses .examples .bottom-examples > div {
+    margin-top: 10px;
+  }
+  .examples-of-houses .examples .bottom-examples > div:first-child {
+    float: left;
+  }
+  .examples-of-houses .examples .bottom-examples > div:last-child {
+    float: left;
+  }
+}
+@media (max-width: 882px) {
+  .examples-of-houses .examples .top-examples .fotorama.fotorama2 {
+    float: left;
+    margin-left: 10px;
+  }
+  .examples-of-houses .examples .top-examples .fotorama.fotorama3 {
+    float: left;
+  }
+  .examples-of-houses .examples .top-examples .fotorama.fotorama4 {
+    float: left;
+    margin-left: 10px;
+  }
+  .examples-of-houses .examples .top-examples .fotorama.fotorama5 {
+    float: left;
+  }
+  .examples-of-houses .examples .bottom-examples > div:nth-child(3) {
+    float: left;
+    margin-left: 10px;
+  }
+  .examples-of-houses .examples .bottom-examples > div:last-child {
+    float: left;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 625px) {
+  .examples-of-houses .examples .top-examples .fotorama.fotorama2 {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .examples-of-houses .examples .top-examples .fotorama.fotorama3 {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .examples-of-houses .examples .top-examples .fotorama.fotorama4 {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .examples-of-houses .examples .top-examples .fotorama.fotorama5 {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .examples-of-houses .examples .bottom-examples .fotorama.fotorama6 {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .examples-of-houses .examples .bottom-examples .fotorama.fotorama7 {
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+  .examples-of-houses .examples .bottom-examples > div:nth-child(3) {
+    float: left;
+  }
+  .examples-of-houses .examples .bottom-examples > div:last-child {
+    float: left;
+  }
+}
+@media (max-width: 1300px) {
+  .stages-of-building h2 {
+    text-align: center;
+  }
+  .stages-of-building > div .left {
+    float: none;
+    margin-left: 0;
+  }
+  .stages-of-building > div .left ul {
+    margin-bottom: 20px;
+  }
+  .stages-of-building > div .left:after {
+    left: 50px;
+  }
+  .stages-of-building > div .right {
+    float: none;
+    margin-left: 0;
+    width: auto;
+  }
+  .stages-of-building > div .right img {
+    left: 0;
+  }
+  .stages-of-building > div .right:after {
+    left: 50px;
+  }
+  .stages-of-building a {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .stages-of-building > div .left:after {
+    display: none;
+  }
+  .stages-of-building > div .right {
+    padding-top: 320px;
+  }
+  .stages-of-building > div .right:after {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .stages-of-building > div .right {
+    padding-top: 220px;
+  }
+}
+@media (max-width: 1200px) {
+  .additional-services h2 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .additional-services .list-services .service {
+    width: 30%;
+  }
+  .additional-services .list-services .service:nth-child(2n) {
+    float: right;
+  }
+  .additional-services a {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .additional-services h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 35px;
+  }
+  .additional-services .list-services {
+    padding-left: 0;
+  }
+  .additional-services .list-services .service {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .additional-services .list-services .service p {
+    padding-top: 70px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1200px) {
+  h2 {
+    text-align: center;
+  }
+  .reviews {
+    margin-bottom: 50px;
+  }
+  .reviews .review {
+    margin-top: 50px;
+  }
+  .reviews .review .comment {
+    font-size: 18px;
+    margin-left: 55px;
+  }
+}
+@media (max-width: 1110px) {
+  .reviews .review .comment {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  .reviews .review .photo {
+    display: none;
+  }
+  .reviews .review .video {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+  }
+  .reviews .review .video iframe {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media (max-width: 820px) {
+  footer .wrap .calc-house {
+    padding-top: 50px;
+  }
+  footer .wrap .calc-house p,
+  footer .wrap .price-list p,
+  footer .wrap .about-company p,
+  footer .wrap .calc-house a,
+  footer .wrap .price-list a,
+  footer .wrap .about-company a {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer .wrap .social {
+    margin-top: 50px;
+  }
+}
