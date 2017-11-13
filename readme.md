@@ -1,45 +1,29 @@
 examples of sites:
 
-0 template
+0 old training projects (archive)
 
-1 old (html53+adaptive+no less)
+01 simple adaptive site
 
-2 old (html53+less+adaptive+.clearFix)
+02 magazine
 
-3 old (html53+no less)
+03 biruang
 
-4 creative studio
+04 leo shop
 
-5 magazine
+05 barber index
 
-6 biruang
+05.1 barber items
 
-7 motion
+05.2 barber price
 
-8 bazinger
+05.3 barber shop
 
-9 minimal
+06 sedon index-hotels adaptive
 
-10 leo shop
+07 technomart index-catalog adaptive
 
-11 barber index
+08 icrowdme adaptive+js effect
 
-11.1 barber items
+09 nerds index-catalog adaptive
 
-11.2 barber price
-
-11.3 barber shop
-
-12 hosting (js examples)
-
-13 simple adaptive site
-
-14 nerds index-catalog adaptive
-
-15 icrowdme adaptive+js effect
-
-16 sedon index-hotels adaptive
-
-17 technomart index-catalog adaptive
-
-18 sini adaptive
+10 ame adaptive
