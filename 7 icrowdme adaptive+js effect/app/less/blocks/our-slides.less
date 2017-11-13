@@ -14,10 +14,16 @@
 		}
 
 		img{
+			-webkit-transition: all 1s;
+			-o-transition: all 1s;
 			transition: all 1s;
 
 			&:hover{
 				// transform: rotate(15deg);
+
+				-webkit-transform: scale(0.9);
+				-ms-transform: scale(0.9);
+				-o-transform: scale(0.9);
 				transform: scale(0.9);
 			}
 		}
@@ -49,8 +55,13 @@
 
 		.progress{
 			.top-progress{
-					height: 20px;
+				height: 20px;
 				background: lime;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				-ms-border-radius: 10px;
+				-o-border-radius: 10px;
+				border-radius: 10px;
 
 				margin-left: 19px;
 				margin-right: 19px;
