@@ -1,0 +1,27 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+body img {
+  max-width: 100%;
+  height: auto;
+}
+body ul {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body .wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
