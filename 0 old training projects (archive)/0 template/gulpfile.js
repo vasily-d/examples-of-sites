@@ -71,6 +71,7 @@ gulp.task('copyMinCss', function() {
 });
 
 gulp.task('copyLibsJs', function() {
+  // вариант копирования по отдельности
   // выбираем вручную для каждого проекта в отдельности
   // файл
   //gulp.src('app/libs/bower/jquery/dist/jquery.min.js')
@@ -80,6 +81,10 @@ gulp.task('copyLibsJs', function() {
   //  gulp.src('app/libs/bower/wow/dist/wow.min.js')
   // папка
   //  .pipe(gulp.dest('dist/libs/bower/wow/dist'));
+
+  // вариант копирования всего
+  return gulp.src('app/libs/**/*')
+    .pipe(gulp.dest('dist/libs'));
 });
 
 gulp.task('copyJs', function() {
