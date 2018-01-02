@@ -1,0 +1,79 @@
+ // *{outline: 1px solid black;}
+
+// one : for ie
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clear{clear: both;}
+
+body{
+	padding: 0;
+	margin: 0;
+
+	background: #fff;
+	color: #000;
+
+	// fonts
+	@font-face {
+    font-family: 'MullerBlack';
+    src: url('../fonts/mullerBlack/MullerBlack.eot');
+    src: url('../fonts/mullerBlack/MullerBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/mullerBlack/MullerBlack.woff2') format('woff2'),
+        url('../fonts/mullerBlack/MullerBlack.woff') format('woff'),
+        url('../fonts/mullerBlack/MullerBlack.ttf') format('truetype'),
+        url('../fonts/mullerBlack/MullerBlack.svg#MullerBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+	}
+
+	@font-face {
+	  font-family: 'MullerUltraLight';
+	  src: url('../fonts/MullerUltraLight/MullerUltraLight.eot');
+	  src: url('../fonts/MullerUltraLight/MullerUltraLight.eot?#iefix') format('embedded-opentype'),
+	      url('../fonts/MullerUltraLight/MullerUltraLight.woff2') format('woff2'),
+	      url('../fonts/MullerUltraLight/MullerUltraLight.woff') format('woff'),
+	      url('../fonts/MullerUltraLight/MullerUltraLight.ttf') format('truetype'),
+	      url('../fonts/MullerUltraLight/MullerUltraLight.svg#MullerUltraLight') format('svg');
+	  font-weight: 200;
+	  font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'truelies';
+	    src: url('../fonts/TrueLiesRUSBYLYAJKA/truelies.eot');
+	    src: url('../fonts/TrueLiesRUSBYLYAJKA/truelies.eot') format('embedded-opentype'),
+	         url('../fonts/TrueLiesRUSBYLYAJKA/truelies.woff2') format('woff2'),
+	         url('../fonts/TrueLiesRUSBYLYAJKA/truelies.woff') format('woff'),
+	         url('../fonts/TrueLiesRUSBYLYAJKA/truelies.ttf') format('truetype'),
+	         url('../fonts/TrueLiesRUSBYLYAJKA/truelies.svg#truelies') format('svg');
+	}
+
+	// нужно добавить при появлении белой полоски при горизонтальном скролле
+	//overflow-x: hidden;
+
+	img{
+		max-width: 100%;
+		height: auto;
+		
+		// for ie 9
+		border: 0;
+	}
+	
+	ul{list-style: none;}
+	a{text-decoration: none;}
+	
+	h1,h2,h3,h4,p,ul,input{margin: 0; padding: 0;}
+
+	.wrap{
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 1190px;
+		height: 100%;
+
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}

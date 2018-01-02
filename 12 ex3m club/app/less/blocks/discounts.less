@@ -1,0 +1,111 @@
+.discounts {
+	margin-bottom: 190px;
+
+	background: url('../img/discounts-sale.png') center 0 no-repeat;
+	background-size: cover;
+	// width: 1300px;
+
+	// min-height: 881px;
+	min-height: 981px;
+
+	.wrap {
+		padding-top: 300px;
+		text-align: center;
+
+		h3 {
+			margin: 0 auto;
+			margin-bottom: 15px;
+			max-width: 640px;
+
+			font-family: 'TrueLies', sans-serif;
+		  font-size: 45px;
+		  font-weight: normal;
+		  line-height: 1.49;
+		  letter-spacing: 1px;
+		  text-align: center;
+		  color: #fff;
+		  text-transform: uppercase;
+
+			strong {
+				color: #ffd202;
+			}
+		}
+
+		p {
+			margin: 0 auto;
+			margin-bottom: 35px;
+			max-width: 640px;
+
+			font-family: 'MullerUltraLight', sans-serif;
+		  font-size: 16px;
+		  font-weight: 200;
+		  line-height: 1.5;
+		  letter-spacing: 1px;
+		  text-align: center;
+		  color: #fff;
+		}
+		
+		form {
+			position: relative;
+
+			input {
+				width: 210px;
+			  height: 47px;
+			  border-radius: 23.5px;
+			  border: solid 1px #fff;
+			  padding: 0 25px;
+			  padding-right: 60px;
+
+				font-family: 'MullerUltraLight';
+			  font-size: 16px;
+			  font-weight: 200;
+			  line-height: 0.88;
+			  line-height: 47px;
+			  letter-spacing: 1.1px;
+			  text-align: left;
+			  color: #fff;
+			  background: transparent;
+			  outline: none;
+
+			  &::placeholder {
+			  	font-family: 'MullerUltraLight';
+				  font-size: 16px;
+				  font-weight: 200;
+				  line-height: 0.88;
+				  line-height: 47px;
+				  letter-spacing: 1.1px;
+				  text-align: left;
+				  color: #fff;
+			  }
+			}
+
+			button {
+				position: absolute;
+				top: 0;
+				// left: 0;
+				margin-left: -45px;
+				border: none;
+				cursor: pointer;
+				outline: none;
+				
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+				border-radius: 50%;
+				background: #ffd202 url('../img/telegram.png') 45% 50% no-repeat;
+				width: 39px;
+				height: 39px;
+				margin-top: 5px;
+
+				&:hover {
+					box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+				}
+
+				&:active {
+					box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.14), inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+	}
+}
