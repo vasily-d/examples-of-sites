@@ -9,5 +9,4 @@ app/*.sublime*
 app/Thumbs.db
 app/libs/bower_components/
 app/libs/bower/
-dist/
 node_modules/
