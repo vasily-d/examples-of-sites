@@ -1,0 +1,50 @@
+footer {
+  position: fixed; 
+  bottom: 0; 
+  width: 100%;
+  background-color: #fff;
+
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+  >div {
+  	display: inline-block;
+  	vertical-align: top;
+  	width: 33.3333%;
+  	height: 80px;
+		padding-left: 100px;
+
+		a {
+			font-family: @sfb;
+      font-size: 14px;
+			color: #000;
+			line-height: 80px;
+
+			-webkit-transition: all .2s;
+			-o-transition: all .2s;
+			transition: all .2s;
+
+			&:hover {
+				opacity: .7;
+			}
+		}
+  }
+
+  .call {
+  	background: url('../img/call.jpg') 5px 50% no-repeat;
+  	background-size: 25%;
+  
+  }
+
+  .send {
+		background: url('../img/send.jpg') 0 50% no-repeat;
+		background-size: 22%;
+
+  }
+
+  .online {
+		background: url('../img/online.png') 0 50% no-repeat;
+		background-size: 22%;
+
+  }
+}

@@ -1,0 +1,107 @@
+header {
+	overflow: hidden;
+  position: fixed; 
+  top: 0;
+  z-index: 10; 
+  width: 100%;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+	background-color: #fff;
+  border-bottom: 2px solid #ccc;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+	
+	.logo {
+		display: inline-block;
+		vertical-align: top;
+		width: 43%;
+		margin-right: -4px;
+		padding-left: 40px;
+
+		a {
+			display: inline-block;
+			margin-bottom: 14px;	
+			
+			font-family: @sfb;
+			color: #000;
+			font-size: 20px;
+			text-transform: uppercase;		
+
+			-webkit-transition: all .2s;
+			-o-transition: all .2s;
+			transition: all .2s;
+
+			&:hover {
+				opacity: .5;
+			}
+		}
+
+		p {
+			font-family: @sfb;
+		}
+	}
+
+	.address-email {		
+		display: inline-block;
+		vertical-align: top;
+		width: 32%;
+		margin-right: -4px;
+
+		text-align: center;
+
+		address {
+			font-family: @sfb;
+			font-style: normal;
+
+			margin-bottom: 15px;
+		}
+
+		a {
+			font-family: @sfb;
+		  color: #600eb1;
+		  text-decoration: underline;
+
+			-webkit-transition: all .2s;
+			-o-transition: all .2s;
+			transition: all .2s;
+		
+		  &:hover {
+		    opacity: .5;
+		  }
+		}
+	}
+
+	.phones {
+		display: inline-block;
+		vertical-align: top;
+		width: 25%;
+		padding-right: 40px;
+
+		.phone-top, .phone-bottom {
+			a {
+				display: block;
+				
+				font-family: @sfb;
+				color: #000;
+			  font-size: 20px;
+			  text-align: right;
+				text-transform: uppercase;
+
+				-webkit-transition: all .2s;
+				-o-transition: all .2s;
+				transition: all .2s;
+
+				&:hover {
+					opacity: .5;
+				}
+			}
+		}
+
+		.phone-bottom {
+			margin-top: 9px;
+		}
+	}
+}
