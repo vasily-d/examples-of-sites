@@ -29,3 +29,17 @@ examples of sites:
 10 ame adaptive
 
 11 nform adaptive
+
+12 X-MET 7500
+
+13 ex3m club
+
+14 #wanttofly
+
+15 #wanttofly2
+
+16 watering systems
+
+17 wireless bluetooth speaker
+
+18 #wanttofly3
