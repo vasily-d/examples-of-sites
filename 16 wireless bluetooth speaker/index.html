@@ -42,7 +42,7 @@
 					</nav>
 					
 					<div class="buy-btn">
-						<a href="#">buy now</a>
+						<a href="#" class="js-popup">buy now</a>
 					</div>
 				</div>
 
@@ -127,8 +127,8 @@
 					<p class="new-price">
 						new price: <span>5</span>$
 					</p>
-					<form action="#" method="POST">
-						<input type="text" name="email" placeholder="Enter your email:"><br>
+					<form action="send.php" method="POST">
+						<input type="text" name="email" placeholder="Enter your email:" required><br>
 						<button type="submit">buy now</button>
 					</form>
 					<p>* There are only <span class="important">17 left!</span></p>
@@ -191,8 +191,81 @@
 			</div>
 		</footer>
 
+
+
+
+
+		<!-- popup -->
+		<div class="popup">
+			<h3>ОСТАВЬТЕ ЗАЯВКУ</h3>
+			<form class="main-form" action="send.php" method="POST">
+				<label for="email1">Ваша почта:</label><br>
+				<input type="text" id="email1" name="email" placeholder="ваша почта" required><br>
+				<button type="submit"><span>отправить заявку</span></button>
+			</form>
+			<button type="button" class="close" id="js-close-popup"></button>
+		</div>
+		<div class="popup-overlay"></div>
+
+
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="libs/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
 		<script src="js/index-page.js"></script>
+
+
+
+
+		<!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type='text/javascript'>
+    (function(){ var widget_id = 'TRk3iFmUkU';var d=document;var w=window;function l(){
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+    <!-- {/literal} END JIVOSITE CODE -->
+
+		 
+		 
+		<!--LiveInternet counter--><script type="text/javascript">
+		document.write("<a href='//www.liveinternet.ru/click' "+
+		"target=_blank><img src='//counter.yadro.ru/hit?t25.6;r"+
+		escape(document.referrer)+((typeof(screen)=="undefined")?"":
+		";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+		screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+		";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+		"' alt='' title='LiveInternet: �������� ����� ����������� ��"+
+		" �������' "+
+		"border='0' width='88' height='15'><\/a>")
+		</script><!--/LiveInternet-->
+		 
+		 
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+		    (function (d, w, c) {
+		        (w[c] = w[c] || []).push(function() {
+		            try {
+		                w.yaCounter47728456 = new Ya.Metrika({
+		                    id:47728456,
+		                    clickmap:true,
+		                    trackLinks:true,
+		                    accurateTrackBounce:true,
+		                    webvisor:true
+		                });
+		            } catch(e) { }
+		        });
+		 
+		        var n = d.getElementsByTagName("script")[0],
+		            s = d.createElement("script"),
+		            f = function () { n.parentNode.insertBefore(s, n); };
+		        s.type = "text/javascript";
+		        s.async = true;
+		        s.src = "https://mc.yandex.ru/metrika/watch.js";
+		 
+		        if (w.opera == "[object Opera]") {
+		            d.addEventListener("DOMContentLoaded", f, false);
+		        } else { f(); }
+		    })(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/47728456" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+
 	</body>
 </html>

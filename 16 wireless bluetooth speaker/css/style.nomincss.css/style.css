@@ -407,6 +407,112 @@ footer .footer-menu ul li a {
 footer .footer-menu ul li a:hover {
   opacity: .7;
 }
+.popup {
+  display: none;
+  padding: 40px 40px 0;
+  box-sizing: border-box;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #888;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14);
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50px;
+  z-index: 20;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.popup h3 {
+  margin-bottom: 12px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.popup p {
+  margin-bottom: 35px;
+  font-size: 16px;
+  text-align: center;
+  color: #4a4a4a;
+}
+.popup form input {
+  margin-bottom: 25px;
+  width: 270px;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+}
+.popup form input::placeholder {
+  font-size: 16px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.popup form label {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+}
+.popup form button {
+  margin-top: 35px;
+  margin-bottom: 40px;
+  max-width: 262px;
+  height: 60px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #ffd202;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.popup form button:hover {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+}
+.popup form button:active {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.14), inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.popup form button span {
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 21px;
+  height: 21px;
+  background: url("../img/x.png") no-repeat;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+.close:hover {
+  opacity: 0.4;
+  background: url("../img/x.png") no-repeat;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
 @media all and (max-width: 992px) {
   header .wrap .top {
     padding-left: 0;
@@ -414,6 +520,10 @@ footer .footer-menu ul li a:hover {
   }
 }
 @media all and (max-width: 768px) {
+  header {
+    min-height: auto;
+    height: auto;
+  }
   header .wrap .top .horizontal-menu {
     left: 44%;
   }
@@ -436,6 +546,10 @@ footer .footer-menu ul li a:hover {
   }
   header .wrap .top .buy-btn a {
     width: 100%;
+  }
+  header .wrap .bottom h1 {
+    font-size: 15px;
+    margin-top: 355px;
   }
 }
 @media all and (max-width: 768px) {
