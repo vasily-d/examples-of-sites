@@ -30,16 +30,58 @@ examples of sites:
 
 11 nform adaptive
 
-12 X-MET 7500
+11.1 X-MET 7500
 
-13 ex3m club
+12 ex3m club
 
-14 #wanttofly
+13 #wanttofly
 
-15 #wanttofly2
+14 #wanttofly2
 
-16 watering systems
+15 watering systems
 
-17 wireless bluetooth speaker
+16 wireless bluetooth speaker
 
-18 #wanttofly3
+17 #wanttofly3
+
+18 autokritik
+
+19 autokritik2
+
+20 autokritik3
+
+21 learnwork
+
+22 torf
+
+23 road
+
+24 apartment
+
+25 stomatology
+
+26 KassaRU
+
+26.1 KassaRU
+
+26.2 KassaRU
+
+26.3 KassaRU
+
+26.4 KassaRU
+
+27 nemo
+
+28 apartment2
+
+29 #wanttofly4
+
+30 industrial alpinism1
+
+31 industrial alpinism2
+
+32 industrial alpinism3
+
+33 industrial alpinism4
+
+34 industrial alpinism5
