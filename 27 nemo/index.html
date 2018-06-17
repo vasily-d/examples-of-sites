@@ -37,7 +37,7 @@
 		
 	<body>
 		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript" >
+		<script>
 		    (function (d, w, c) {
 		        (w[c] = w[c] || []).push(function() {
 		            try {
@@ -953,19 +953,19 @@
 			<h3>Запись на занятие</h3>
 			
 			<form class="main-form" action="mailer/smart.php" method="POST">
-				<select name="select_pool" id="agency" required>
+				<select name="select_pool" id="agency">
 					<option value="0" disabled>Выберите бассейн</option>
 					<option value="1" selected>метро - Пражская, ул. Кировоградская 36</option>
 					<option value="2">метро - Академическая, ул. Винокурова 24, к4</option>
 				</select>
-				<input type="text" id="name1" name="user_name" placeholder="Ваше Имя" autofocus required>
+				<input type="text" id="name1" name="user_name" placeholder="Ваше Имя" required>
 				<input type="text" id="tel1" name="user_phone" placeholder="Телефон" required>
 
 				<input class="hidden-form" type="hidden" name="user_type_btn" value="Аноним"><br>
 
 				<button class="btn" type="submit"><span>ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</span></button>
 			</form>
-			<button type="button" class="close" id="js-close-popup"></button>
+			<button type="button" class="close js-close-popup"></button>
 		</div>
 		<div class="popup-overlay"></div>
 
@@ -1005,7 +1005,7 @@
 					</ul>
 				</div>
 			</div>
-			<button type="button" class="close" id="js-close-popup"></button>
+			<button type="button" class="close js-close-popup"></button>
 		</div>
 		<div class="popup-overlay"></div>
 
@@ -1039,7 +1039,7 @@
 					</strong>
 				</p>
 			</div>
-			<button type="button" class="close" id="js-close-popup"></button>
+			<button type="button" class="close js-close-popup"></button>
 		</div>
 		<div class="popup-overlay"></div>
 
@@ -1063,7 +1063,7 @@
 				</address>
 			</div>
 			
-			<button type="button" class="close" id="js-close-popup"></button>
+			<button type="button" class="close js-close-popup"></button>
 		</div>
 		<div class="popup-overlay"></div>
 

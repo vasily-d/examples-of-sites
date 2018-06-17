@@ -296,7 +296,6 @@ body .container {
 .our-projects__btn a {
   background: url('../img/our-projects-btn.svg') 20px 50% no-repeat;
   padding: 24px 39px 21px 48px;
-  background-size: 15px;
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -342,11 +341,9 @@ body .container {
   background: #BDBDBD;
 }
 .switching__tab {
-  /*display: inline-block;
+  display: inline-block;
   vertical-align: top;
   width: 32%;
-  */
-
   margin-bottom: 16px;
   text-align: center;
   cursor: pointer;
@@ -894,7 +891,7 @@ body .container {
   line-height: normal;
   letter-spacing: 1px;
   color: #fff;
-  padding: 25px 50px;
+  padding: 20px 40px;
   margin-bottom: 176px;
   -webkit-transition: all .2s;
   -o-transition: all .2s;

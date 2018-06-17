@@ -78,7 +78,7 @@ $(function() {
 	  $('.popup-overlay').css('display', 'block');
 	  
 	  // поиск button close popup
-	  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	    // $('.popup1').css('display', 'none');
 	    // $('.popup-overlay').css('display', 'none');
 	    // or
@@ -100,7 +100,7 @@ $(function() {
 	  $('.popup-overlay').css('display', 'block');
 	  
 	  // поиск button close popup
-	  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	    // $('.popup2').css('display', 'none');
 	    // $('.popup-overlay').css('display', 'none');
 	    // or
@@ -122,7 +122,7 @@ $(function() {
 	  $('.popup-overlay').css('display', 'block');
 	  
 	  // поиск button close popup
-	  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	    // $('.popup3').css('display', 'none');
 	    // $('.popup-overlay').css('display', 'none');
 	    // or
@@ -144,7 +144,7 @@ $(function() {
 	  $('.popup-overlay').css('display', 'block');
 	  
 	  // поиск button close popup
-	  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	    // $('.popup4').css('display', 'none');
 	    // $('.popup-overlay').css('display', 'none');
 	    // or
@@ -166,7 +166,7 @@ $(function() {
 	  $('.popup-overlay').css('display', 'block');
 	  
 	  // поиск button close popup
-	  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	    // $('.popup5').css('display', 'none');
 	    // $('.popup-overlay').css('display', 'none');
 	    // or
@@ -188,7 +188,7 @@ $(function() {
 	  $('.popup-overlay').css('display', 'block');
 	  
 	  // поиск button close popup
-	  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	    // $('.popup6').css('display', 'none');
 	    // $('.popup-overlay').css('display', 'none');
 	    // or

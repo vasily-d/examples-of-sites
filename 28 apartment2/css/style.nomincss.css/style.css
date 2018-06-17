@@ -112,7 +112,12 @@ body .container {
   height: 100%;
 }
 .header {
-  padding: 20px 0;
+  padding: 15px 0;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 }
 .header .container .header-logo {
   float: left;
@@ -142,7 +147,7 @@ body .container {
 }
 .header .container .header-phone {
   float: right;
-  margin-top: 18px;
+  margin-top: 28px;
 }
 .header .container .header-phone a {
   font-family: 'Geometria-Medium';
@@ -157,7 +162,7 @@ body .container {
 }
 .header .container .header-call-btn {
   float: right;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-left: 20px;
 }
 .header .container .header-call-btn a {

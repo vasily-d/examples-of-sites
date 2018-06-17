@@ -8,27 +8,8 @@ $(function() {
 		console.log($(this).find('input[type=radio]').attr('name'));
 		
 		$(".our-projects__item--first .switching .switching__tab").removeClass("active").eq($(this).index()).addClass("active");
-
-		// старый вариант с tabs
-		// $(".our-projects__item--first .switching__tab-item").hide().eq($(this).index()).fadeIn()
-
-		if ($(this).find('input[type=radio]').val() == '1-1') {
-			$('.our-projects__item--first .switching__price').text('1');
-		}
-		if ($(this).find('input[type=radio]').val() == '1-2') {
-			$('.our-projects__item--first .switching__price').text('2');
-		}
-		if ($(this).find('input[type=radio]').val() == '1-3') {
-			$('.our-projects__item--first .switching__price').text('3');
-		}
-		// пример добавления нового блока - тут добавляем новые блоки меняя value
-		// if ($(this).find('input[type=radio]').val() == '1-4') {
-		// 	$('.our-projects__item--first .switching__price').text('4');
-		// }
-	
+		$(".our-projects__item--first .switching__tab-item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
-
-
 
 	// tab2
 	$(".our-projects__item--second .switching__tab-item").not(":first").hide();
@@ -38,27 +19,8 @@ $(function() {
 		console.log($(this).find('input[type=radio]').attr('name'));
 
 		$(".our-projects__item--second .switching .switching__tab").removeClass("active").eq($(this).index()).addClass("active");
-
-		// старый вариант с tabs
-		// $(".our-projects__item--first .switching__tab-item").hide().eq($(this).index()).fadeIn()
-
-		if ($(this).find('input[type=radio]').val() == '2-1') {
-			$('.our-projects__item--second .switching__price').text('1');
-		}
-		if ($(this).find('input[type=radio]').val() == '2-2') {
-			$('.our-projects__item--second .switching__price').text('2');
-		}
-		if ($(this).find('input[type=radio]').val() == '2-3') {
-			$('.our-projects__item--second .switching__price').text('3');
-		}
-		// пример добавления нового блока - тут добавляем новые блоки меняя value
-		// if ($(this).find('input[type=radio]').val() == '2-4') {
-		// 	$('.our-projects__item--second .switching__price').text('4');
-		// }
-		
+		$(".our-projects__item--second .switching__tab-item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
-
-
 
 	// tab3
 	$(".our-projects__item--third .switching__tab-item").not(":first").hide();
@@ -68,27 +30,8 @@ $(function() {
 		console.log($(this).find('input[type=radio]').attr('name'));
 		
 		$(".our-projects__item--third .switching .switching__tab").removeClass("active").eq($(this).index()).addClass("active");
-
-		// старый вариант с tabs
-		// $(".our-projects__item--third .switching__tab-item").hide().eq($(this).index()).fadeIn()
-
-		if ($(this).find('input[type=radio]').val() == '3-1') {
-			$('.our-projects__item--third .switching__price').text('1');
-		}
-		if ($(this).find('input[type=radio]').val() == '3-2') {
-			$('.our-projects__item--third .switching__price').text('2');
-		}
-		if ($(this).find('input[type=radio]').val() == '3-3') {
-			$('.our-projects__item--third .switching__price').text('3');
-		}
-		// пример добавления нового блока - тут добавляем новые блоки меняя value
-		// if ($(this).find('input[type=radio]').val() == '3-4') {
-		// 	$('.our-projects__item--third .switching__price').text('4');
-		// }
-
+		$(".our-projects__item--third .switching__tab-item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
-
-
 
 	// tab4
 	$(".our-projects__item--fourth .switching__tab-item").not(":first").hide();
@@ -98,28 +41,8 @@ $(function() {
 		console.log($(this).find('input[type=radio]').attr('name'));
 		
 		$(".our-projects__item--fourth .switching .switching__tab").removeClass("active").eq($(this).index()).addClass("active");
-
-
-		// старый вариант с tabs
-		// $(".our-projects__item--fourth .switching__tab-item").hide().eq($(this).index()).fadeIn()
-
-		if ($(this).find('input[type=radio]').val() == '4-1') {
-			$('.our-projects__item--fourth .switching__price').text('1');
-		}
-		if ($(this).find('input[type=radio]').val() == '4-2') {
-			$('.our-projects__item--fourth .switching__price').text('2');
-		}
-		if ($(this).find('input[type=radio]').val() == '4-3') {
-			$('.our-projects__item--fourth .switching__price').text('3');
-		}
-		// пример добавления нового блока - тут добавляем новые блоки меняя value
-		// if ($(this).find('input[type=radio]').val() == '4-4') {
-		// 	$('.our-projects__item--fourth .switching__price').text('4');
-		// }
-		
+		$(".our-projects__item--fourth .switching__tab-item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
-
-
 
 	// tab5
 	$(".our-projects__item--fifth .switching__tab-item").not(":first").hide();
@@ -129,27 +52,8 @@ $(function() {
 		console.log($(this).find('input[type=radio]').attr('name'));
 		
 		$(".our-projects__item--fifth .switching .switching__tab").removeClass("active").eq($(this).index()).addClass("active");
-
-		// старый вариант с tabs
-		// $(".our-projects__item--fifth .switching__tab-item").hide().eq($(this).index()).fadeIn()
-
-		if ($(this).find('input[type=radio]').val() == '5-1') {
-			$('.our-projects__item--fifth .switching__price').text('1');
-		}
-		if ($(this).find('input[type=radio]').val() == '5-2') {
-			$('.our-projects__item--fifth .switching__price').text('2');
-		}
-		if ($(this).find('input[type=radio]').val() == '5-3') {
-			$('.our-projects__item--fifth .switching__price').text('3');
-		}
-		// пример добавления нового блока - тут добавляем новые блоки меняя value
-		// if ($(this).find('input[type=radio]').val() == '5-4') {
-		// 	$('.our-projects__item--fifth .switching__price').text('4');
-		// }
-
+		$(".our-projects__item--fifth .switching__tab-item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
-
-
 
 	// tab6
 	$(".our-projects__item--sixth .switching__tab-item").not(":first").hide();
@@ -159,25 +63,7 @@ $(function() {
 		console.log($(this).find('input[type=radio]').attr('name'));
 		
 		$(".our-projects__item--sixth .switching .switching__tab").removeClass("active").eq($(this).index()).addClass("active");
-
-
-		// старый вариант с tabs
-		// $(".our-projects__item--sixth .switching__tab-item").hide().eq($(this).index()).fadeIn()
-
-		if ($(this).find('input[type=radio]').val() == '6-1') {
-			$('.our-projects__item--sixth .switching__price').text('1');
-		}
-		if ($(this).find('input[type=radio]').val() == '6-2') {
-			$('.our-projects__item--sixth .switching__price').text('2');
-		}
-		if ($(this).find('input[type=radio]').val() == '6-3') {
-			$('.our-projects__item--sixth .switching__price').text('3');
-		}
-		// пример добавления нового блока - тут добавляем новые блоки меняя value
-		// if ($(this).find('input[type=radio]').val() == '6-4') {
-		// 	$('.our-projects__item--sixth .switching__price').text('4');
-		// }
-
+		$(".our-projects__item--sixth .switching__tab-item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 
 
@@ -259,7 +145,7 @@ $(function() {
 	  $('.popup-overlay').css('display', 'block');
 	  
 	  // поиск button close popup1
-	  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	    // $('.popup1').css('display', 'none');
 	    // $('.popup-overlay').css('display', 'none');
 	    // or
@@ -281,7 +167,7 @@ $(function() {
 	  $('.popup-overlay').css('display', 'block');
 	  
 	  // поиск button close popup2
-	  $('#js-close-popup, .popup-overlay').on('click', function(e) {
+	  $('.js-close-popup, .popup-overlay').on('click', function(e) {
 	    // $('.popup2').css('display', 'none');
 	    // $('.popup-overlay').css('display', 'none');
 	    // or
