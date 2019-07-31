@@ -1,4 +1,4 @@
-examples of sites:
+examples of training sites:
 
 0 old training projects (archive)
 
